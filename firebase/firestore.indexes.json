@@ -1,0 +1,170 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "PEDIDO",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Cliente_Ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Ped_Estado",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Ped_Fecha_Hora",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "CARRITO",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "estado",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Cliente_Ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "producto",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "PEDIDO",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Ped_Estado",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Ped_Fecha_Hora",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "VENTA",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Vent_Estado",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Vent_Fecha_Hora",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "CARRITO",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "estado",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "producto",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "VENTA",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Usuario_Ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Estado_Pedido",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fecha_creacion",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "VENTA",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Usuario_Ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Estado_Pedido",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Vent_Estado",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fecha_modificacion",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "AUDITORIA",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "tabla_AUD",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "accion_AUD",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fecha_AUD",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "PEDIDO",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Ped_Estado",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Repartidor_Ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "Entrega_Fecha_Hora",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": [
+    {
+      "collectionGroup": "fcm_tokens",
+      "fieldPath": "fcm_token",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    }
+  ]
+}

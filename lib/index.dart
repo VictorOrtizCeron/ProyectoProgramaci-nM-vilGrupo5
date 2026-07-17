@@ -1,0 +1,94 @@
+// Export pages
+export '/login_full/onboarding/onboarding_widget.dart' show OnboardingWidget;
+export '/login_full/create_account/create_account_widget.dart'
+    show CreateAccountWidget;
+export '/login_full/login_account/login_account_widget.dart'
+    show LoginAccountWidget;
+export '/sistema_pedidos/historial_pedidos/historial_pedidos_widget.dart'
+    show HistorialPedidosWidget;
+export '/admin/admin_sistema_pedidos/detail/detail_widget.dart'
+    show DetailWidget;
+export '/notificaciones/notifications/notifications_widget.dart'
+    show NotificationsWidget;
+export '/notificaciones/setting/setting_widget.dart' show SettingWidget;
+export '/perfil_user/change_password/change_password_widget.dart'
+    show ChangePasswordWidget;
+export '/pages/language/language_widget.dart' show LanguageWidget;
+export '/notificaciones/notification_setting/notification_setting_widget.dart'
+    show NotificationSettingWidget;
+export '/pages/helpand_support/helpand_support_widget.dart'
+    show HelpandSupportWidget;
+export '/admin/admin_sistema_pedidos/admin_cart/admin_cart_widget.dart'
+    show AdminCartWidget;
+export '/admin/gestion_pedidos_admin/admin_menu_inicial/admin_menu_inicial_widget.dart'
+    show AdminMenuInicialWidget;
+export '/admin/gestion_pedidos_admin/admin_eliminar_usuario/admin_eliminar_usuario_widget.dart'
+    show AdminEliminarUsuarioWidget;
+export '/admin/inventario_admin/inventario/inventario_widget.dart'
+    show InventarioWidget;
+export '/admin/gestion_pedidos_admin/admin_users_roles/admin_users_roles_widget.dart'
+    show AdminUsersRolesWidget;
+export '/admin/inventario_admin/ver_inventario/ver_inventario_widget.dart'
+    show VerInventarioWidget;
+export '/admin/gestion_pedidos_admin/admin_gestion_pedidos/admin_gestion_pedidos_widget.dart'
+    show AdminGestionPedidosWidget;
+export '/repartidor/repartidor_mis_entregas/repartidor_mis_entregas_widget.dart'
+    show RepartidorMisEntregasWidget;
+export '/sistema_pedidos/resumen_orden_user/resumen_orden_user_widget.dart'
+    show ResumenOrdenUserWidget;
+export '/admin/inventario_admin/ver_mov_inventario/ver_mov_inventario_widget.dart'
+    show VerMovInventarioWidget;
+export '/admin/inventario_admin/ver_facturas/ver_facturas_widget.dart'
+    show VerFacturasWidget;
+export '/repartidor/menu_repartidor/menu_repartidor_widget.dart'
+    show MenuRepartidorWidget;
+export '/admin/admin_sistema_pedidos/confirma_pago_admin/confirma_pago_admin_widget.dart'
+    show ConfirmaPagoAdminWidget;
+export '/sistema_pedidos/confirma_pago_user/confirma_pago_user_widget.dart'
+    show ConfirmaPagoUserWidget;
+export '/sistema_pedidos/user_cart_oficial/user_cart_oficial_widget.dart'
+    show UserCartOficialWidget;
+export '/reportes_general/inventario_reporteria/inventario_reporteria_widget.dart'
+    show InventarioReporteriaWidget;
+export '/admin/productos_admin/agregar_productos1/agregar_productos1_widget.dart'
+    show AgregarProductos1Widget;
+export '/admin/productos_admin/gestion_productos/gestion_productos_widget.dart'
+    show GestionProductosWidget;
+export '/reportes_general/cierres_reporteria/cierres_reporteria_widget.dart'
+    show CierresReporteriaWidget;
+export '/admin/admin_sistema_pedidos/resumen_orden_admin/resumen_orden_admin_widget.dart'
+    show ResumenOrdenAdminWidget;
+export '/sistema_pedidos/home_screen_user/home_screen_user_widget.dart'
+    show HomeScreenUserWidget;
+export '/sistema_pedidos/detail_user_ofi/detail_user_ofi_widget.dart'
+    show DetailUserOfiWidget;
+export '/admin/setting_admin/setting_admin_widget.dart' show SettingAdminWidget;
+export '/admin/gestion_pedidos_admin/edita_user_admin/edita_user_admin_widget.dart'
+    show EditaUserAdminWidget;
+export '/admin/histo_pedidos_catalogo_admin/histo_pedidos_catalogo_admin_widget.dart'
+    show HistoPedidosCatalogoAdminWidget;
+export '/reportes_general/auditorias_reporteria/auditorias_reporteria_widget.dart'
+    show AuditoriasReporteriaWidget;
+export '/admin/productos_admin/agregar_productos2/agregar_productos2_widget.dart'
+    show AgregarProductos2Widget;
+export '/admin/editar_productos2/editar_productos2_widget.dart'
+    show EditarProductos2Widget;
+export '/admin/admin_sistema_pedidos/home_screen_admin/home_screen_admin_widget.dart'
+    show HomeScreenAdminWidget;
+export '/admin/productos_admin/editar_productos1/editar_productos1_widget.dart'
+    show EditarProductos1Widget;
+export '/admin/productos_admin/editar_productos3/editar_productos3_widget.dart'
+    show EditarProductos3Widget;
+export '/admin/productos_admin/eliminar_productos1/eliminar_productos1_widget.dart'
+    show EliminarProductos1Widget;
+export '/admin/productos_admin/eliminar_productos2/eliminar_productos2_widget.dart'
+    show EliminarProductos2Widget;
+export '/repartidor/historial_pedidos_admin/historial_pedidos_admin_widget.dart'
+    show HistorialPedidosAdminWidget;
+export '/perfil_user/perfil_user/perfil_user_widget.dart' show PerfilUserWidget;
+export '/repartidor/perfil_repartidor/perfil_repartidor_widget.dart'
+    show PerfilRepartidorWidget;
+export '/admin/admin_sistema_pedidos/perfil_admin/perfil_admin_widget.dart'
+    show PerfilAdminWidget;
+export '/sistema_pedidos/historial_pedidos_copy/historial_pedidos_copy_widget.dart'
+    show HistorialPedidosCopyWidget;
