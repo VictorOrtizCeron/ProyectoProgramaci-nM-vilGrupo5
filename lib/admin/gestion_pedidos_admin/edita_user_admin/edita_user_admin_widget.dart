@@ -10,6 +10,7 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/upload_data.dart';
 import 'dart:ui';
+import '/flutter_flow/custom_functions.dart' as functions;
 import '/index.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -680,10 +681,11 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                     ),
                               ),
                               FlutterFlowDropDown<String>(
-                                controller: _model.dropDownValueController1 ??=
-                                    FormFieldController<String>(
-                                  _model.dropDownValue1 ??=
-                                      editaUserAdminUsuariosRecord.roles,
+                                controller:
+                                    _model.dropDownEstadoValueController ??=
+                                        FormFieldController<String>(
+                                  _model.dropDownEstadoValue ??=
+                                      editaUserAdminUsuariosRecord.estado?.name,
                                 ),
                                 options: [
                                   UserEstadoDatos.Activo.name,
@@ -691,7 +693,7 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                   UserEstadoDatos.Bloqueado.name
                                 ],
                                 onChanged: (val) => safeSetState(
-                                    () => _model.dropDownValue1 = val),
+                                    () => _model.dropDownEstadoValue = val),
                                 width: double.infinity,
                                 height: 56.0,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -711,7 +713,7 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                           .fontStyle,
                                     ),
                                 hintText: FFLocalizations.of(context).getText(
-                                  't3t2zjf2' /* Selecciona un rol */,
+                                  't3t2zjf2' /* Seleccion el estado */,
                                 ),
                                 icon: Icon(
                                   Icons.keyboard_arrow_down_rounded,
@@ -827,9 +829,10 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                     ),
                               ),
                               FlutterFlowDropDown<String>(
-                                controller: _model.dropDownValueController2 ??=
-                                    FormFieldController<String>(
-                                  _model.dropDownValue2 ??=
+                                controller:
+                                    _model.dropDownRolesValueController ??=
+                                        FormFieldController<String>(
+                                  _model.dropDownRolesValue ??=
                                       editaUserAdminUsuariosRecord.roles,
                                 ),
                                 options: [
@@ -839,7 +842,7 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                   Roles.CAJERO.name
                                 ],
                                 onChanged: (val) => safeSetState(
-                                    () => _model.dropDownValue2 = val),
+                                    () => _model.dropDownRolesValue = val),
                                 width: double.infinity,
                                 height: 56.0,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -1048,24 +1051,26 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                 .update(createUsuariosRecordData(
                               displayName: _model.textController1.text,
                               email: _model.textController2.text,
-                              roles: _model.dropDownValue1,
+                              roles: _model.dropDownRolesValue,
                               modificadoPor: currentUserDisplayName,
                               editedTime: getCurrentTimestamp,
-                              estado: UserEstadoDatos.Activo,
                               photoUrl: valueOrDefault<String>(
                                 _model.uploadedFileUrl_uploadDataSp9,
                                 'https://firebasestorage.googleapis.com/v0/b/app-movil-rest-dona-cec-l0xdyl.firebasestorage.app/o/productos%2Fnoimage.jpeg?alt=media&token=1499997c-9a92-45a3-97e1-8a09505d006a',
                               ),
+                              estado: functions.stringToUserEstadoDatos(
+                                  _model.dropDownEstadoValue),
                             ));
                           } else {
                             await widget!.refUserAdmin!
                                 .update(createUsuariosRecordData(
                               displayName: _model.textController1.text,
                               email: _model.textController2.text,
-                              roles: _model.dropDownValue1,
+                              roles: _model.dropDownRolesValue,
                               modificadoPor: currentUserDisplayName,
                               editedTime: getCurrentTimestamp,
-                              estado: UserEstadoDatos.Activo,
+                              estado: functions.stringToUserEstadoDatos(
+                                  _model.dropDownEstadoValue),
                               photoUrl: valueOrDefault<String>(
                                 currentUserPhoto,
                                 'https://firebasestorage.googleapis.com/v0/b/app-movil-rest-dona-cec-l0xdyl.firebasestorage.app/o/productos%2Fnoimage.jpeg?alt=media&token=1499997c-9a92-45a3-97e1-8a09505d006a',

@@ -1562,101 +1562,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Hogar',
     },
   },
-  // AgregarProductos1
-  {
-    'ezxglu7y': {
-      'en': 'Crear Producto',
-      'es': 'Crear producto',
-    },
-    'tx874sjp': {
-      'en': 'Nombre del Producto',
-      'es': 'Nombre del Producto',
-    },
-    '9dale3p4': {
-      'en': 'Descripcion',
-      'es': 'Descripción',
-    },
-    'g8x730uj': {
-      'en': 'Seleccione una categoría',
-      'es': 'Seleccione una categoría',
-    },
-    'evfl24fg': {
-      'en': 'Buscar categoría...',
-      'es': 'Buscar categoría...',
-    },
-    'ob09w66r': {
-      'en': 'Ceviches',
-      'es': 'Ceviches',
-    },
-    'k7iwdnay': {
-      'en': 'Pescados',
-      'es': 'Pescados',
-    },
-    'ivro4tdg': {
-      'en': 'Camarones',
-      'es': 'Camarones',
-    },
-    'o4ig42b9': {
-      'en': 'Stock',
-      'es': 'Existencias',
-    },
-    'mavth9ii': {
-      'en': 'Stock Minimo',
-      'es': 'Stock mínimo',
-    },
-    '38n4wetx': {
-      'en': 'Precio',
-      'es': 'Precio',
-    },
-    'rxtzlz2n': {
-      'en': 'Cantidad entera sin comas ni puntos',
-      'es': 'Cantidad entera sin comas ni puntos',
-    },
-    'qfoy6tg6': {
-      'en': 'CREAR',
-      'es': 'CREAR',
-    },
-  },
-  // Gestion_Productos
-  {
-    'qd4ljjat': {
-      'en': 'Panel de Administración',
-      'es': 'Panel de Administración',
-    },
-    'dwwu2ebh': {
-      'en': 'Gestión de Productos',
-      'es': 'Gestión de Productos',
-    },
-    'jl5nxzey': {
-      'en': 'Selecciona una opción para administrar el inventario de productos',
-      'es':
-          'Selecciona una opción para administrar el inventario de productos.',
-    },
-    'cje3w01t': {
-      'en': 'Crear Productos',
-      'es': 'Crear Productos',
-    },
-    '3aimslej': {
-      'en': 'Agregar nuevos productos al catalogo de Platillos',
-      'es': 'Agregar nuevos productos al catalogo de Platillos',
-    },
-    '8i775884': {
-      'en': 'Editar Productos',
-      'es': 'Editar Productos',
-    },
-    'ljou0hs2': {
-      'en': 'Modificar información de Platillos existentes',
-      'es': 'Modificar información de Platillos existentes',
-    },
-    'uj5sor86': {
-      'en': 'Eliminar Productos',
-      'es': 'Eliminar Productos',
-    },
-    'trsyj5tz': {
-      'en': 'Remover Platillos del inventario',
-      'es': 'Removedor de Platillos del inventario',
-    },
-  },
   // CierresReporteria
   {
     'erjvx36m': {
@@ -1956,73 +1861,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'srwhb01q': {
       'en': 'Setting',
       'es': 'Configuración',
-    },
-  },
-  // Edita_User_Admin
-  {
-    '7iybjzdg': {
-      'en': 'Editar Perfil',
-      'es': 'Editar perfil',
-    },
-    'a88gorvp': {
-      'en': 'Nombre completo',
-      'es': 'Nombre completo',
-    },
-    'dx3e2y5k': {
-      'en': 'Ingresa tu nombre completo',
-      'es': 'Ingresa tu nombre completo',
-    },
-    'hj5rww2d': {
-      'en': 'Correo electrónico',
-      'es': 'Correo electrónico',
-    },
-    'yrnntx6e': {
-      'en': 'ejemplo@correo.com',
-      'es': 'ejemplo@correo.com',
-    },
-    '06csvnae': {
-      'en': 'Estado de usuario actual:',
-      'es': 'Rol de usuario actual',
-    },
-    '0cpadtrv': {
-      'en': 'Estado de usuario',
-      'es': 'Rol de usuario',
-    },
-    't3t2zjf2': {
-      'en': 'Selecciona un rol',
-      'es': 'Selecciona un rol',
-    },
-    'myph64b3': {
-      'en': 'Rol de usuario actual',
-      'es': 'Rol de usuario actual',
-    },
-    'ysesart9': {
-      'en': 'Rol de usuario',
-      'es': 'Rol de usuario',
-    },
-    '12ifft4d': {
-      'en': 'Selecciona un rol',
-      'es': 'Selecciona un rol',
-    },
-    'yja027r8': {
-      'en': 'Nueva contraseña',
-      'es': 'Nueva contraseña',
-    },
-    '31nhibd6': {
-      'en': 'Deja en blanco para mantener la actual',
-      'es': 'Deja en blanco para mantener la actual',
-    },
-    '0szgywqi': {
-      'en': 'Deja el campo de contraseña vacío si no deseas cambiarla',
-      'es': 'Deja el campo de contraseña vacío si no deseas cambiarla',
-    },
-    'rn5va1y5': {
-      'en': 'Actualizar Datos',
-      'es': 'Actualizar Datos',
-    },
-    'ju87fx3m': {
-      'en': 'Configuración de Usuario',
-      'es': 'Configuración de Usuario',
     },
   },
   // HistoPedidosCatalogoAdmin
@@ -2785,6 +2623,179 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Mis pedidos',
     },
   },
+  // AgregarProductosPrincipal
+  {
+    'ezxglu7y': {
+      'en': 'Crear Producto',
+      'es': 'Crear producto',
+    },
+    'tx874sjp': {
+      'en': 'Nombre del Producto',
+      'es': 'Nombre del Producto',
+    },
+    '9dale3p4': {
+      'en': 'Descripcion',
+      'es': 'Descripción',
+    },
+    'g8x730uj': {
+      'en': 'Seleccione una categoría',
+      'es': 'Seleccione una categoría',
+    },
+    'evfl24fg': {
+      'en': 'Buscar categoría...',
+      'es': 'Buscar categoría...',
+    },
+    'ob09w66r': {
+      'en': 'Ceviches',
+      'es': 'Ceviches',
+    },
+    'k7iwdnay': {
+      'en': 'Pescados',
+      'es': 'Pescados',
+    },
+    'ivro4tdg': {
+      'en': 'Camarones',
+      'es': 'Camarones',
+    },
+    'o4ig42b9': {
+      'en': 'Stock',
+      'es': 'Existencias',
+    },
+    'mavth9ii': {
+      'en': 'Stock Minimo',
+      'es': 'Stock mínimo',
+    },
+    '38n4wetx': {
+      'en': 'Precio',
+      'es': 'Precio',
+    },
+    'rxtzlz2n': {
+      'en': 'Cantidad entera sin comas ni puntos',
+      'es': 'Cantidad entera sin comas ni puntos',
+    },
+    'qfoy6tg6': {
+      'en': 'CREAR',
+      'es': 'CREAR',
+    },
+  },
+  // Gestion_Productos
+  {
+    'qd4ljjat': {
+      'en': 'Panel de Administración',
+      'es': 'Panel de Administración',
+    },
+    'dwwu2ebh': {
+      'en': 'Gestión de Productos',
+      'es': 'Gestión de Productos',
+    },
+    'jl5nxzey': {
+      'en': 'Selecciona una opción para administrar el inventario de productos',
+      'es':
+          'Selecciona una opción para administrar el inventario de productos.',
+    },
+    'cje3w01t': {
+      'en': 'Crear Productos',
+      'es': 'Crear Productos',
+    },
+    '3aimslej': {
+      'en': 'Agregar nuevos productos al catalogo de Platillos',
+      'es': 'Agregar nuevos productos al catalogo de Platillos',
+    },
+    '8i775884': {
+      'en': 'Editar Productos',
+      'es': 'Editar Productos',
+    },
+    'ljou0hs2': {
+      'en': 'Modificar información de Platillos existentes',
+      'es': 'Modificar información de Platillos existentes',
+    },
+    'uj5sor86': {
+      'en': 'Eliminar Productos',
+      'es': 'Eliminar Productos',
+    },
+    'trsyj5tz': {
+      'en': 'Remover Platillos del inventario',
+      'es': 'Removedor de Platillos del inventario',
+    },
+  },
+  // Edita_User_Admin
+  {
+    'ju87fx3m': {
+      'en': 'Configuración de Usuario',
+      'es': 'Configuración de Usuario',
+    },
+    '7iybjzdg': {
+      'en': 'Editar Perfil',
+      'es': 'Editar perfil',
+    },
+    'a88gorvp': {
+      'en': 'Nombre completo',
+      'es': 'Nombre completo',
+    },
+    'dx3e2y5k': {
+      'en': 'Ingresa tu nombre completo',
+      'es': 'Ingresa tu nombre completo',
+    },
+    'hj5rww2d': {
+      'en': 'Correo electrónico',
+      'es': 'Correo electrónico',
+    },
+    'yrnntx6e': {
+      'en': 'ejemplo@correo.com',
+      'es': 'ejemplo@correo.com',
+    },
+    '06csvnae': {
+      'en': 'Estado de usuario actual:',
+      'es': 'Rol de usuario actual',
+    },
+    '0cpadtrv': {
+      'en': 'Estado de usuario',
+      'es': 'Rol de usuario',
+    },
+    't3t2zjf2': {
+      'en': 'Seleccion el estado',
+      'es': 'Selecciona un rol',
+    },
+    'myph64b3': {
+      'en': 'Rol de usuario actual',
+      'es': 'Rol de usuario actual',
+    },
+    'ysesart9': {
+      'en': 'Rol de usuario',
+      'es': 'Rol de usuario',
+    },
+    '12ifft4d': {
+      'en': 'Selecciona un rol',
+      'es': 'Selecciona un rol',
+    },
+    'yja027r8': {
+      'en': 'Nueva contraseña',
+      'es': 'Nueva contraseña',
+    },
+    '31nhibd6': {
+      'en': 'Deja en blanco para mantener la actual',
+      'es': 'Deja en blanco para mantener la actual',
+    },
+    '0szgywqi': {
+      'en': 'Deja el campo de contraseña vacío si no deseas cambiarla',
+      'es': 'Deja el campo de contraseña vacío si no deseas cambiarla',
+    },
+    'rn5va1y5': {
+      'en': 'Actualizar Datos',
+      'es': 'Actualizar Datos',
+    },
+  },
+  // AgregarProductosTestBug
+  {
+    '3r7cndw7': {
+      'en': 'Si redirige',
+      'es': '',
+    },
+    'c81dhh8n': {
+      'en': 'Home',
+      'es': '',
+    },
+  },
   // registerSuccess_modal
   {
     'vkxriblo': {
@@ -3022,21 +3033,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'eh2zj9q4': {
       'en': 'On Progress',
       'es': 'En progreso',
-    },
-  },
-  // logOut_modal
-  {
-    '38q11wq9': {
-      'en': 'Are you sure you want to logout?',
-      'es': '¿Estás seguro que deseas cerrar la sesión?',
-    },
-    'mpj8eknt': {
-      'en': 'Cancel',
-      'es': 'Cancelar',
-    },
-    'p19zdwc8': {
-      'en': 'Log Out',
-      'es': 'Finalizar la sesión',
     },
   },
   // navigator
@@ -3468,6 +3464,21 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     '95oeoohb': {
       'en': '\$18.75',
       'es': '\$18.75',
+    },
+  },
+  // logOut_modal
+  {
+    '38q11wq9': {
+      'en': 'Are you sure you want to logout?',
+      'es': '¿Estás seguro que deseas cerrar la sesión?',
+    },
+    'mpj8eknt': {
+      'en': 'Cancel',
+      'es': 'Cancelar',
+    },
+    'p19zdwc8': {
+      'en': 'Log Out',
+      'es': 'Finalizar la sesión',
     },
   },
   // Miscellaneous

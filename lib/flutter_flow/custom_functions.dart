@@ -194,3 +194,11 @@ int actualizarCantInv(
 ) {
   return actual - cantidad;
 }
+
+UserEstadoDatos? stringToUserEstadoDatos(String? value) {
+  if (value == null) return null;
+  for (final e in UserEstadoDatos.values) {
+    if (e.name == value) return e;
+  }
+  return null;
+}

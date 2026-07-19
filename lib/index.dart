@@ -50,10 +50,6 @@ export '/sistema_pedidos/user_cart_oficial/user_cart_oficial_widget.dart'
     show UserCartOficialWidget;
 export '/reportes_general/inventario_reporteria/inventario_reporteria_widget.dart'
     show InventarioReporteriaWidget;
-export '/admin/productos_admin/agregar_productos1/agregar_productos1_widget.dart'
-    show AgregarProductos1Widget;
-export '/admin/productos_admin/gestion_productos/gestion_productos_widget.dart'
-    show GestionProductosWidget;
 export '/reportes_general/cierres_reporteria/cierres_reporteria_widget.dart'
     show CierresReporteriaWidget;
 export '/admin/admin_sistema_pedidos/resumen_orden_admin/resumen_orden_admin_widget.dart'
@@ -63,8 +59,6 @@ export '/sistema_pedidos/home_screen_user/home_screen_user_widget.dart'
 export '/sistema_pedidos/detail_user_ofi/detail_user_ofi_widget.dart'
     show DetailUserOfiWidget;
 export '/admin/setting_admin/setting_admin_widget.dart' show SettingAdminWidget;
-export '/admin/gestion_pedidos_admin/edita_user_admin/edita_user_admin_widget.dart'
-    show EditaUserAdminWidget;
 export '/admin/histo_pedidos_catalogo_admin/histo_pedidos_catalogo_admin_widget.dart'
     show HistoPedidosCatalogoAdminWidget;
 export '/reportes_general/auditorias_reporteria/auditorias_reporteria_widget.dart'
@@ -92,3 +86,11 @@ export '/admin/admin_sistema_pedidos/perfil_admin/perfil_admin_widget.dart'
     show PerfilAdminWidget;
 export '/sistema_pedidos/historial_pedidos_copy/historial_pedidos_copy_widget.dart'
     show HistorialPedidosCopyWidget;
+export '/admin/productos_admin/agregar_productos_principal/agregar_productos_principal_widget.dart'
+    show AgregarProductosPrincipalWidget;
+export '/admin/productos_admin/gestion_productos/gestion_productos_widget.dart'
+    show GestionProductosWidget;
+export '/admin/gestion_pedidos_admin/edita_user_admin/edita_user_admin_widget.dart'
+    show EditaUserAdminWidget;
+export '/admin/productos_admin/agregar_productos_test_bug/agregar_productos_test_bug_widget.dart'
+    show AgregarProductosTestBugWidget;

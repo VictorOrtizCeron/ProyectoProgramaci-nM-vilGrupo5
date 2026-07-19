@@ -171,8 +171,6 @@ final parametersBuilderMap =
         },
       ),
   'InventarioReporteria': ParameterData.none(),
-  'AgregarProductos1': ParameterData.none(),
-  'Gestion_Productos': ParameterData.none(),
   'CierresReporteria': ParameterData.none(),
   'ResumenOrdenAdmin': (data) async => ParameterData(
         allParams: {
@@ -187,11 +185,6 @@ final parametersBuilderMap =
         },
       ),
   'SettingAdmin': ParameterData.none(),
-  'Edita_User_Admin': (data) async => ParameterData(
-        allParams: {
-          'refUserAdmin': getParameter<DocumentReference>(data, 'refUserAdmin'),
-        },
-      ),
   'HistoPedidosCatalogoAdmin': ParameterData.none(),
   'AuditoriasReporteria': ParameterData.none(),
   'AgregarProductos2': (data) async => ParameterData(
@@ -242,6 +235,14 @@ final parametersBuilderMap =
   'PerfilRepartidor': ParameterData.none(),
   'PerfilAdmin': ParameterData.none(),
   'HistorialPedidosCopy': ParameterData.none(),
+  'AgregarProductosPrincipal': ParameterData.none(),
+  'Gestion_Productos': ParameterData.none(),
+  'Edita_User_Admin': (data) async => ParameterData(
+        allParams: {
+          'refUserAdmin': getParameter<DocumentReference>(data, 'refUserAdmin'),
+        },
+      ),
+  'AgregarProductosTestBug': ParameterData.none(),
 };
 
 Map<String, dynamic> getInitialParameterData(Map<String, dynamic> data) {

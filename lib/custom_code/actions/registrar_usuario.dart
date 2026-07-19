@@ -16,12 +16,12 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 Future<String?> registrarUsuario(String email, String password) async {
-  try {
-    await FirebaseAuth.instance
-        .createUserWithEmailAndPassword(email: email, password: password);
-    return null; // Éxito
-  } on FirebaseAuthException catch (e) {
-    // Retorna el error específico (ej: "The email address is already in use")
-    return e.message;
+  final emailPattern = RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$');
+  if (!emailPattern.hasMatch(email)) {
+    return 'Correo electrónico no válido';
   }
+  if (password.length < 6) {
+    return 'La contraseña debe tener al menos 6 caracteres';
+  }
+  return null; // Válido
 }

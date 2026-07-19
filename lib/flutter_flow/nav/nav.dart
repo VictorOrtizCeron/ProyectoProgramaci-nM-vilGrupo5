@@ -276,16 +276,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => InventarioReporteriaWidget(),
         ),
         FFRoute(
-          name: AgregarProductos1Widget.routeName,
-          path: AgregarProductos1Widget.routePath,
-          builder: (context, params) => AgregarProductos1Widget(),
-        ),
-        FFRoute(
-          name: GestionProductosWidget.routeName,
-          path: GestionProductosWidget.routePath,
-          builder: (context, params) => GestionProductosWidget(),
-        ),
-        FFRoute(
           name: CierresReporteriaWidget.routeName,
           path: CierresReporteriaWidget.routePath,
           builder: (context, params) => CierresReporteriaWidget(),
@@ -324,18 +314,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: SettingAdminWidget.routeName,
           path: SettingAdminWidget.routePath,
           builder: (context, params) => SettingAdminWidget(),
-        ),
-        FFRoute(
-          name: EditaUserAdminWidget.routeName,
-          path: EditaUserAdminWidget.routePath,
-          builder: (context, params) => EditaUserAdminWidget(
-            refUserAdmin: params.getParam(
-              'refUserAdmin',
-              ParamType.DocumentReference,
-              isList: false,
-              collectionNamePath: ['USUARIOS'],
-            ),
-          ),
         ),
         FFRoute(
           name: HistoPedidosCatalogoAdminWidget.routeName,
@@ -510,6 +488,33 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: HistorialPedidosCopyWidget.routeName,
           path: HistorialPedidosCopyWidget.routePath,
           builder: (context, params) => HistorialPedidosCopyWidget(),
+        ),
+        FFRoute(
+          name: AgregarProductosPrincipalWidget.routeName,
+          path: AgregarProductosPrincipalWidget.routePath,
+          builder: (context, params) => AgregarProductosPrincipalWidget(),
+        ),
+        FFRoute(
+          name: GestionProductosWidget.routeName,
+          path: GestionProductosWidget.routePath,
+          builder: (context, params) => GestionProductosWidget(),
+        ),
+        FFRoute(
+          name: EditaUserAdminWidget.routeName,
+          path: EditaUserAdminWidget.routePath,
+          builder: (context, params) => EditaUserAdminWidget(
+            refUserAdmin: params.getParam(
+              'refUserAdmin',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['USUARIOS'],
+            ),
+          ),
+        ),
+        FFRoute(
+          name: AgregarProductosTestBugWidget.routeName,
+          path: AgregarProductosTestBugWidget.routePath,
+          builder: (context, params) => AgregarProductosTestBugWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

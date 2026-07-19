@@ -172,11 +172,12 @@ class _GestionProductosWidgetState extends State<GestionProductosWidget> {
                       highlightColor: Colors.transparent,
                       onTap: () async {
                         context.pushNamed(
-                          AgregarProductos1Widget.routeName,
+                          AgregarProductosPrincipalWidget.routeName,
                           extra: <String, dynamic>{
                             '__transition_info__': TransitionInfo(
                               hasTransition: true,
-                              transitionType: PageTransitionType.rightToLeft,
+                              transitionType: PageTransitionType.fade,
+                              duration: Duration(milliseconds: 0),
                             ),
                           },
                         );

@@ -10,6 +10,7 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/upload_data.dart';
 import 'dart:ui';
+import '/flutter_flow/custom_functions.dart' as functions;
 import '/index.dart';
 import 'edita_user_admin_widget.dart' show EditaUserAdminWidget;
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -43,12 +44,12 @@ class EditaUserAdminModel extends FlutterFlowModel<EditaUserAdminWidget> {
   FocusNode? textFieldFocusNode2;
   TextEditingController? textController2;
   String? Function(BuildContext, String?)? textController2Validator;
-  // State field(s) for DropDown widget.
-  String? dropDownValue1;
-  FormFieldController<String>? dropDownValueController1;
-  // State field(s) for DropDown widget.
-  String? dropDownValue2;
-  FormFieldController<String>? dropDownValueController2;
+  // State field(s) for DropDownEstado widget.
+  String? dropDownEstadoValue;
+  FormFieldController<String>? dropDownEstadoValueController;
+  // State field(s) for DropDownRoles widget.
+  String? dropDownRolesValue;
+  FormFieldController<String>? dropDownRolesValueController;
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode3;
   TextEditingController? textController3;

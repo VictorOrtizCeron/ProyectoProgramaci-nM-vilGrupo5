@@ -10,7 +10,8 @@ import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/upload_data.dart';
 import 'dart:ui';
 import '/index.dart';
-import 'agregar_productos1_widget.dart' show AgregarProductos1Widget;
+import 'agregar_productos_principal_widget.dart'
+    show AgregarProductosPrincipalWidget;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -18,7 +19,8 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class AgregarProductos1Model extends FlutterFlowModel<AgregarProductos1Widget> {
+class AgregarProductosPrincipalModel
+    extends FlutterFlowModel<AgregarProductosPrincipalWidget> {
   ///  Local state fields for this page.
 
   bool imagenactiva = false;
