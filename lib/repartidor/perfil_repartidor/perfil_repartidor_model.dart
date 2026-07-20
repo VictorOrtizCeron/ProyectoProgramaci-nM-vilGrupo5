@@ -24,9 +24,7 @@ class PerfilRepartidorModel extends FlutterFlowModel<PerfilRepartidorWidget> {
 
   final formKey = GlobalKey<FormState>();
   // State field(s) for Column widget.
-  ScrollController? columnController1;
-  // State field(s) for Column widget.
-  ScrollController? columnController2;
+  ScrollController? columnController;
   bool isDataUploading_uploadDataU72 = false;
   FFUploadedFile uploadedLocalFile_uploadDataU72 =
       FFUploadedFile(bytes: Uint8List.fromList([]), originalFilename: '');
@@ -55,14 +53,12 @@ class PerfilRepartidorModel extends FlutterFlowModel<PerfilRepartidorWidget> {
 
   @override
   void initState(BuildContext context) {
-    columnController1 = ScrollController();
-    columnController2 = ScrollController();
+    columnController = ScrollController();
   }
 
   @override
   void dispose() {
-    columnController1?.dispose();
-    columnController2?.dispose();
+    columnController?.dispose();
     textFieldNombreFocusNode?.dispose();
     textFieldNombreTextController?.dispose();
 
