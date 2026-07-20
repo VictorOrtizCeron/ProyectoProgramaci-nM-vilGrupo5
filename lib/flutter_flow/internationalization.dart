@@ -998,17 +998,17 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Actualizado el Estado:',
       'es': 'Actualizado el Estado:',
     },
-    'fcyuzzlp': {
-      'en': 'En preparación',
-      'es': 'En preparación',
+    '2mxey13l': {
+      'en': 'Recibido',
+      'es': 'Recibido',
     },
     '0h5qla5w': {
       'en': 'Listo para Entrega',
       'es': 'Listo para Entrega',
     },
-    '2mxey13l': {
-      'en': 'Recibido',
-      'es': 'Recibido',
+    'fcyuzzlp': {
+      'en': 'En preparación',
+      'es': 'En preparación',
     },
   },
   // Repartidor_MisEntregas
