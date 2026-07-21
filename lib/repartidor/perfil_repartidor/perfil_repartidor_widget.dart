@@ -127,160 +127,157 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Expanded(
-                        child: Stack(
-                          children: [
-                            Align(
-                              alignment: AlignmentDirectional(-0.01, 0.0),
-                              child: AuthUserStreamWidget(
-                                builder: (context) => Container(
-                                  width: 137.1,
-                                  height: 137.1,
-                                  decoration: BoxDecoration(
-                                    color: Color(0xFFDBDBDB),
-                                    image: DecorationImage(
-                                      fit: BoxFit.cover,
-                                      image: Image.network(
-                                        currentUserPhoto,
-                                      ).image,
-                                    ),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        blurRadius: 4.0,
-                                        color: Color(0x33000000),
-                                        offset: Offset(
-                                          0.0,
-                                          2.0,
-                                        ),
-                                      )
-                                    ],
-                                    shape: BoxShape.circle,
-                                    border: Border.all(
-                                      color: Color(0xFFF9C69C),
-                                      width: 2.0,
-                                    ),
-                                  ),
-                                  child: InkWell(
-                                    splashColor: Colors.transparent,
-                                    focusColor: Colors.transparent,
-                                    hoverColor: Colors.transparent,
-                                    highlightColor: Colors.transparent,
-                                    onTap: () async {
-                                      final selectedMedia =
-                                          await selectMediaWithSourceBottomSheet(
-                                        context: context,
-                                        allowPhoto: true,
-                                      );
-                                      if (selectedMedia != null &&
-                                          selectedMedia.every((m) =>
-                                              validateFileFormat(
-                                                  m.storagePath, context))) {
-                                        safeSetState(() => _model
-                                                .isDataUploading_uploadDataU72 =
-                                            true);
-                                        var selectedUploadedFiles =
-                                            <FFUploadedFile>[];
-
-                                        var downloadUrls = <String>[];
-                                        try {
-                                          selectedUploadedFiles = selectedMedia
-                                              .map((m) => FFUploadedFile(
-                                                    name: m.storagePath
-                                                        .split('/')
-                                                        .last,
-                                                    bytes: m.bytes,
-                                                    height:
-                                                        m.dimensions?.height,
-                                                    width: m.dimensions?.width,
-                                                    blurHash: m.blurHash,
-                                                    originalFilename:
-                                                        m.originalFilename,
-                                                  ))
-                                              .toList();
-
-                                          downloadUrls = (await Future.wait(
-                                            selectedMedia.map(
-                                              (m) async => await uploadData(
-                                                  m.storagePath, m.bytes),
-                                            ),
-                                          ))
-                                              .where((u) => u != null)
-                                              .map((u) => u!)
-                                              .toList();
-                                        } finally {
-                                          _model.isDataUploading_uploadDataU72 =
-                                              false;
-                                        }
-                                        if (selectedUploadedFiles.length ==
-                                                selectedMedia.length &&
-                                            downloadUrls.length ==
-                                                selectedMedia.length) {
-                                          safeSetState(() {
-                                            _model.uploadedLocalFile_uploadDataU72 =
-                                                selectedUploadedFiles.first;
-                                            _model.uploadedFileUrl_uploadDataU72 =
-                                                downloadUrls.first;
-                                          });
-                                        } else {
-                                          safeSetState(() {});
-                                          return;
-                                        }
-                                      }
-                                    },
-                                    child: Container(
-                                      width: 200.0,
-                                      height: 200.0,
-                                      clipBehavior: Clip.antiAlias,
-                                      decoration: BoxDecoration(
-                                        shape: BoxShape.circle,
-                                      ),
-                                      child: Image.network(
-                                        valueOrDefault<String>(
-                                          _model.uploadedFileUrl_uploadDataU72 !=
-                                                      null &&
-                                                  _model.uploadedFileUrl_uploadDataU72 !=
-                                                      ''
-                                              ? _model
-                                                  .uploadedFileUrl_uploadDataU72
-                                              : valueOrDefault<String>(
-                                                  currentUserPhoto,
-                                                  'https://firebasestorage.googleapis.com/v0/b/proyectoprogramacionmovi-c6375.firebasestorage.app/o/Image-not-found.png?alt=media&token=d7f1ab77-a4b0-4fdb-a373-acbbb22855c2',
-                                                ),
-                                          'https://firebasestorage.googleapis.com/v0/b/proyectoprogramacionmovi-c6375.firebasestorage.app/o/Image-not-found.png?alt=media&token=d7f1ab77-a4b0-4fdb-a373-acbbb22855c2',
-                                        ),
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Align(
-                              alignment: AlignmentDirectional(1.0, 1.0),
-                              child: Container(
-                                width: 32.0,
-                                height: 32.0,
+                      Stack(
+                        children: [
+                          Align(
+                            alignment: AlignmentDirectional(-0.01, 0.0),
+                            child: AuthUserStreamWidget(
+                              builder: (context) => Container(
+                                width: 137.1,
+                                height: 137.1,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFFFF6A4D),
+                                  color: Color(0xFFDBDBDB),
+                                  image: DecorationImage(
+                                    fit: BoxFit.cover,
+                                    image: Image.network(
+                                      currentUserPhoto,
+                                    ).image,
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      blurRadius: 4.0,
+                                      color: Color(0x33000000),
+                                      offset: Offset(
+                                        0.0,
+                                        2.0,
+                                      ),
+                                    )
+                                  ],
                                   shape: BoxShape.circle,
                                   border: Border.all(
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    width: 3.0,
+                                    color: Color(0xFFF9C69C),
+                                    width: 2.0,
                                   ),
                                 ),
-                                child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
-                                  child: Icon(
-                                    Icons.camera_alt_rounded,
-                                    color: FlutterFlowTheme.of(context).info,
-                                    size: 18.0,
+                                child: InkWell(
+                                  splashColor: Colors.transparent,
+                                  focusColor: Colors.transparent,
+                                  hoverColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () async {
+                                    final selectedMedia =
+                                        await selectMediaWithSourceBottomSheet(
+                                      context: context,
+                                      allowPhoto: true,
+                                    );
+                                    if (selectedMedia != null &&
+                                        selectedMedia.every((m) =>
+                                            validateFileFormat(
+                                                m.storagePath, context))) {
+                                      safeSetState(() =>
+                                          _model.isDataUploading_uploadDataU72 =
+                                              true);
+                                      var selectedUploadedFiles =
+                                          <FFUploadedFile>[];
+
+                                      var downloadUrls = <String>[];
+                                      try {
+                                        selectedUploadedFiles = selectedMedia
+                                            .map((m) => FFUploadedFile(
+                                                  name: m.storagePath
+                                                      .split('/')
+                                                      .last,
+                                                  bytes: m.bytes,
+                                                  height: m.dimensions?.height,
+                                                  width: m.dimensions?.width,
+                                                  blurHash: m.blurHash,
+                                                  originalFilename:
+                                                      m.originalFilename,
+                                                ))
+                                            .toList();
+
+                                        downloadUrls = (await Future.wait(
+                                          selectedMedia.map(
+                                            (m) async => await uploadData(
+                                                m.storagePath, m.bytes),
+                                          ),
+                                        ))
+                                            .where((u) => u != null)
+                                            .map((u) => u!)
+                                            .toList();
+                                      } finally {
+                                        _model.isDataUploading_uploadDataU72 =
+                                            false;
+                                      }
+                                      if (selectedUploadedFiles.length ==
+                                              selectedMedia.length &&
+                                          downloadUrls.length ==
+                                              selectedMedia.length) {
+                                        safeSetState(() {
+                                          _model.uploadedLocalFile_uploadDataU72 =
+                                              selectedUploadedFiles.first;
+                                          _model.uploadedFileUrl_uploadDataU72 =
+                                              downloadUrls.first;
+                                        });
+                                      } else {
+                                        safeSetState(() {});
+                                        return;
+                                      }
+                                    }
+                                  },
+                                  child: Container(
+                                    width: 200.0,
+                                    height: 200.0,
+                                    clipBehavior: Clip.antiAlias,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: Image.network(
+                                      valueOrDefault<String>(
+                                        _model.uploadedFileUrl_uploadDataU72 !=
+                                                    null &&
+                                                _model.uploadedFileUrl_uploadDataU72 !=
+                                                    ''
+                                            ? _model
+                                                .uploadedFileUrl_uploadDataU72
+                                            : valueOrDefault<String>(
+                                                currentUserPhoto,
+                                                'https://firebasestorage.googleapis.com/v0/b/proyectoprogramacionmovi-c6375.firebasestorage.app/o/Image-not-found.png?alt=media&token=d7f1ab77-a4b0-4fdb-a373-acbbb22855c2',
+                                              ),
+                                        'https://firebasestorage.googleapis.com/v0/b/proyectoprogramacionmovi-c6375.firebasestorage.app/o/Image-not-found.png?alt=media&token=d7f1ab77-a4b0-4fdb-a373-acbbb22855c2',
+                                      ),
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
                                 ),
                               ),
                             ),
-                          ],
-                        ),
+                          ),
+                          Align(
+                            alignment: AlignmentDirectional(1.0, 1.0),
+                            child: Container(
+                              width: 32.0,
+                              height: 32.0,
+                              decoration: BoxDecoration(
+                                color: Color(0xFFFF6A4D),
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                  color: FlutterFlowTheme.of(context)
+                                      .primaryBackground,
+                                  width: 3.0,
+                                ),
+                              ),
+                              child: Align(
+                                alignment: AlignmentDirectional(0.0, 0.0),
+                                child: Icon(
+                                  Icons.camera_alt_rounded,
+                                  color: FlutterFlowTheme.of(context).info,
+                                  size: 18.0,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                       Form(
                         key: _model.formKey,
