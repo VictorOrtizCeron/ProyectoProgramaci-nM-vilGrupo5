@@ -3481,6 +3481,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Finalizar la sesión',
     },
   },
+  // UsuarioActualizadoRepartidor
+  {
+    'selsejax': {
+      'en': '¡Datos Actualizados!',
+      'es': '¡Datos actualizados!',
+    },
+    'e9gc37vp': {
+      'en': 'Tu información de usuario se ha actualizado correctamente.',
+      'es': 'Tu información de usuario se ha actualizado correctamente.',
+    },
+    'gok3t1e1': {
+      'en': 'Continuar Editando',
+      'es': 'Continuar editando',
+    },
+    'bypm2618': {
+      'en': 'Volver al panel de repartidor',
+      'es': 'Ir al Catálogo',
+    },
+  },
   // Miscellaneous
   {
     'b3u7as3r': {

@@ -3,7 +3,7 @@ import '/backend/backend.dart';
 import '/backend/firebase_storage/storage.dart';
 import '/components/new_password_modal/new_password_modal_widget.dart';
 import '/components/ubicacion_modal/ubicacion_modal_widget.dart';
-import '/components/usuario_actualizado/usuario_actualizado_widget.dart';
+import '/components/usuario_actualizado_repartidor/usuario_actualizado_repartidor_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -1329,7 +1329,7 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
                                 },
                                 child: Padding(
                                   padding: MediaQuery.viewInsetsOf(context),
-                                  child: UsuarioActualizadoWidget(),
+                                  child: UsuarioActualizadoRepartidorWidget(),
                                 ),
                               );
                             },
