@@ -147,12 +147,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // Onboarding
   {
     'f9al2jiq': {
-      'en': 'Comida a domicilio en pocos clics',
+      'en': 'Pida su comida en un click ',
       'es': 'Comida a domicilio en pocos clics',
     },
     'q7mzy88d': {
       'en':
-          'Disfruta del los mejores maricos de la zona, con nuestros fantasticos platillos.',
+          '\"Sabor del mar en su punto: los mejores mariscos de la zona, preparados con pasión en cada platillo.\"',
       'es':
           'Disfruta de los mejores maricos de la zona, con nuestros fantásticos platillos.',
     },
@@ -172,39 +172,39 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // CreateAccount
   {
     'fqhfxosd': {
-      'en': 'Create Account',
+      'en': 'Crear Cuenta',
       'es': 'Crear una cuenta',
     },
     '8r2ftoyt': {
-      'en': 'Start learning with create your account',
-      'es': 'Empieza a aprender creando tu cuenta',
+      'en': 'Comienza a aprender creando tu cuenta.',
+      'es': 'Comienza a aprender creando tu cuenta.',
     },
     '5ejt2igx': {
-      'en': 'Email or Phone Number',
+      'en': 'Correo electrónico',
       'es': 'Correo electrónico o número de teléfono',
     },
-    '1k2s07d4': {
-      'en': 'Enter your email or phone number',
-      'es': 'Introduce tu correo electrónico o número de teléfono',
+    '2enoeupk': {
+      'en': 'Ingrese su Correo Electrónico',
+      'es': '',
     },
     '8hrnyurr': {
-      'en': 'Password',
+      'en': 'Contraseña',
       'es': 'Contraseña',
     },
-    '5ta75wx9': {
-      'en': 'Create your password',
-      'es': 'Crea tu contraseña',
+    'pzfozymr': {
+      'en': 'Ingrese su Contraseña',
+      'es': '',
     },
     '7318gst0': {
-      'en': 'Create Account',
+      'en': 'Crear Cuenta',
       'es': 'Crear una cuenta',
     },
     'tj5ofugi': {
-      'en': 'Have an acccount',
+      'en': 'Tiene una cuenta',
       'es': 'Tener una cuenta',
     },
     '96k4zm5b': {
-      'en': 'Login',
+      'en': 'Iniciar Sesión',
       'es': 'Acceso',
     },
     'i6bq0pen': {
@@ -215,47 +215,47 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // LoginAccount
   {
     'absgjmyr': {
-      'en': 'Login Account',
+      'en': '\nIniciar sesión en la cuenta',
       'es': 'Iniciar sesión en la cuenta',
     },
     '7yyc6yio': {
-      'en': 'Please login with registered account',
+      'en': 'Por favor, inicie sesión con su cuenta registrada.',
       'es': 'Por favor, inicie sesión con una cuenta registrada',
     },
     '0y1a56v9': {
-      'en': 'Email or Phone Number',
+      'en': 'Correo Electrónico',
       'es': 'Correo electrónico o número de teléfono',
     },
-    'xq55heau': {
-      'en': 'Enter your email...',
-      'es': 'Introduce tu email...',
+    'e5jzwrfr': {
+      'en': 'Ingrese su correo electrónico',
+      'es': '',
     },
     'iyk0cszg': {
-      'en': 'Password',
+      'en': 'Contraseña',
       'es': 'Contraseña',
     },
-    'tec1pifi': {
-      'en': 'Write your password...',
-      'es': 'Escribe tu contraseña...',
+    'gvm8z4dg': {
+      'en': 'Escriba su contraseña ',
+      'es': '',
     },
     'urzirdij': {
-      'en': 'Registrate Aqui!',
+      'en': 'Registrarse',
       'es': '¡Regístrate aquí!',
     },
     '3ev1m26j': {
-      'en': 'Forgot Password?',
+      'en': '¿Olvidó su contraseña?',
       'es': '¿Has olvidado tu contraseña?',
     },
     '58ybobvm': {
-      'en': 'Signin',
+      'en': 'Iniciar Sesión',
       'es': 'Iniciar sesión',
     },
     'cy7y6bn2': {
-      'en': 'Or using other method',
+      'en': 'O usar otro método',
       'es': 'O utilizando otro método',
     },
     'qwppiiww': {
-      'en': 'Contact support!',
+      'en': 'Servicio al cliente',
       'es': '¡Contacta con soporte técnico!',
     },
     '84xsjzjp': {
@@ -494,25 +494,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // ChangePassword
   {
     'qta47nw1': {
-      'en': 'Recover Password',
+      'en': 'Recuperar contraseña',
       'es': 'Recuperar contraseña',
     },
     'tubwwdsg': {
       'en':
-          '¿Olvidaste tu contraseña? Recupérala aquí.\n\nNo puedes acceder a tu cuenta, restablece tu contraseña.',
+          '¿Olvidaste tu contraseña?   Recupérala aquí.\n\nNo puedes acceder a tu cuenta, restablece tu contraseña.',
       'es':
           '¿Olvidaste tu contraseña? Recupérala aquí.\n\nNo puedes acceder a tu cuenta, restablece tu contraseña.',
     },
     'm44q6y3o': {
-      'en': 'New Password',
+      'en': 'Nueva Contraseña',
       'es': 'Nueva contraseña',
     },
-    'ytk5ba6l': {
-      'en': 'Enter the email',
-      'es': 'Introduce el correo electrónico',
+    'ki7u6cx1': {
+      'en': 'Ingrese su contraseña',
+      'es': '',
     },
     'hi2yymxk': {
-      'en': 'Send Link',
+      'en': 'Enviar enlace',
       'es': 'Enviar enlace',
     },
     '92rkz0wl': {
@@ -523,12 +523,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // Language
   {
     'pw9fhsfe': {
-      'en': 'Language',
+      'en': 'Idioma',
       'es': 'Idioma',
     },
-    '54vikyjk': {
-      'en': 'Search language',
-      'es': 'Idioma de búsqueda',
+    'rxjf1ypg': {
+      'en': 'Buscar idiomas',
+      'es': '',
     },
     '6x0nymve': {
       'en': 'English',
@@ -1149,47 +1149,47 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // ResumenOrdenUser
   {
     'xbpnloy3': {
-      'en': 'Order Confirmed',
+      'en': 'Orden confirmada',
       'es': 'Pedido confirmado',
     },
     'pgpf3904': {
-      'en': 'Your order has been placed successfully!',
+      'en': '¡Su pedido se ha realizado exitosamente!',
       'es': '¡Su pedido se ha realizado exitosamente!',
     },
     'dt7a3sj1': {
-      'en': 'Order Details',
+      'en': 'Detalles del pedido',
       'es': 'Detalles del pedido',
     },
     '2devum9o': {
-      'en': 'Order Number:',
+      'en': 'Número de orden:',
       'es': 'Número de orden:',
     },
     'ythz3wwi': {
-      'en': 'Order Date:',
+      'en': 'Fecha del pedido:',
       'es': 'Fecha del pedido:',
     },
     '138pjtju': {
-      'en': 'Delivery Information',
+      'en': 'Información de entrega',
       'es': 'Información de entrega',
     },
     'lm9te84j': {
-      'en': 'Payment Method:',
+      'en': 'Método de pago:',
       'es': 'Método de pago:',
     },
     'rycj59gk': {
-      'en': 'Delivery Address:',
+      'en': 'Dirección de entrega:',
       'es': 'Dirección de entrega:',
     },
     'u5f73mkg': {
-      'en': 'Order Items',
+      'en': 'Artículos del pedido',
       'es': 'Artículos del pedido',
     },
     'rewqa3k1': {
-      'en': 'Order Summary',
+      'en': 'Resumen del pedido',
       'es': 'Resumen del pedido',
     },
     '8czydbpx': {
-      'en': 'Discount Applied:',
+      'en': 'Descuento aplicado:',
       'es': 'Descuento aplicado:',
     },
     's01sgsgc': {
@@ -1197,11 +1197,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '-₡0',
     },
     'btnv7y2l': {
-      'en': 'Tax (13%):',
+      'en': 'Impuesto (13%):',
       'es': 'Impuesto (13%):',
     },
     'g6sws51b': {
-      'en': 'Delivery Fee:',
+      'en': 'Tarifa de envío:',
       'es': 'Tarifa de envío:',
     },
     'hf24pora': {
@@ -1209,15 +1209,15 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '₡800',
     },
     'd5pd69b4': {
-      'en': 'Grand Total:',
+      'en': 'Total:',
       'es': 'Gran total:',
     },
     'dvqcf9uv': {
-      'en': 'View My Orders',
+      'en': 'Ver mis ordenes',
       'es': 'Ver mis pedidos',
     },
     '7ohjuyiq': {
-      'en': 'Back to Home',
+      'en': 'Regresar al inicio',
       'es': 'Volver a Inicio',
     },
   },
@@ -1294,7 +1294,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Listo para recibir nuevos pedidos',
     },
     'ud4f6lk4': {
-      'en': 'Hola, Carlos',
+      'en': 'Hola, Usuario',
       'es': 'Hola, Carlos',
     },
     'fiom6ovv': {
@@ -1372,7 +1372,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // ConfirmaPagoUser
   {
     '44t7jk1j': {
-      'en': 'Confirmacion de Pedido',
+      'en': 'Confirmación de Pedido',
       'es': 'Confirmacion de Pedido',
     },
     'tttr81eq': {
@@ -1486,23 +1486,23 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // InventarioReporteria
   {
     'w7rxr3zt': {
-      'en': 'INVENTARIO',
+      'en': 'Inventario',
       'es': 'INVENTARIO',
     },
     'qcvrx2fg': {
-      'en': 'CATEGORIA',
+      'en': 'Categoría',
       'es': 'CATEGORÍA',
     },
     'yvkr7nrz': {
-      'en': 'INVENTARIO',
+      'en': 'Inventario',
       'es': 'INVENTARIO',
     },
     'v0z4w2z9': {
-      'en': 'CIERRES',
+      'en': 'Cierres',
       'es': 'CIERRES',
     },
     'll54tlqi': {
-      'en': 'AUDITORIAS',
+      'en': 'Auditorias',
       'es': 'AUDITORÍAS',
     },
     'ufurcnvu': {
@@ -1510,7 +1510,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Volver',
     },
     'jc178evu': {
-      'en': 'SELECCION DE FECHA',
+      'en': 'Seleccionar Fecha',
       'es': 'SELECCIÓN DE FECHA',
     },
     'f05zl743': {
@@ -1565,23 +1565,23 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // CierresReporteria
   {
     'erjvx36m': {
-      'en': 'CIERRES',
+      'en': 'Cierres',
       'es': 'CIERRES',
     },
     'o6gpf4ct': {
-      'en': 'CATEGORIA',
+      'en': 'Categoría',
       'es': 'CATEGORÍA',
     },
     'br7tekne': {
-      'en': 'INVENTARIO',
+      'en': 'Inventario',
       'es': 'INVENTARIO',
     },
     'yrr1bgs1': {
-      'en': 'CIERRES',
+      'en': 'Cierres',
       'es': 'CIERRES',
     },
     'q0shpqzm': {
-      'en': 'AUDITORIAS',
+      'en': 'Auditorias',
       'es': 'AUDITORÍAS',
     },
     'yf24lmq0': {
@@ -1633,7 +1633,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Total',
     },
     'oevpuwa9': {
-      'en': 'TOTAL FECHAS SELECCIONADAS:',
+      'en': 'Total fechas seleccionadas:',
       'es': 'TOTAL FECHAS SELECCIONADAS:',
     },
     'dpqm92uc': {
@@ -1731,7 +1731,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // HomeScreenUser
   {
     'lfdko049': {
-      'en': 'Location',
+      'en': 'Ubicación',
       'es': 'Ubicación',
     },
     'y3aqkdjm': {
@@ -1788,7 +1788,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // DetailUserOfi
   {
     'x8nler7r': {
-      'en': 'Menu Detail',
+      'en': 'Detalles del menú',
       'es': 'Detalle del menú',
     },
     'rfeie538': {
@@ -1921,23 +1921,23 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // AuditoriasReporteria
   {
     'o7hlaxnj': {
-      'en': 'AUDITORIAS',
+      'en': 'Auditorias',
       'es': 'AUDITORÍAS',
     },
     'kaak8vn9': {
-      'en': 'CATEGORIA',
+      'en': 'Categoría',
       'es': 'CATEGORÍA',
     },
     'g8nu3msa': {
-      'en': 'INVENTARIO',
+      'en': 'Inventario',
       'es': 'INVENTARIO',
     },
     'ixi2rsbt': {
-      'en': 'CIERRES',
+      'en': 'Cierres',
       'es': 'CIERRES',
     },
     'n9uhu4pu': {
-      'en': 'AUDITORIAS',
+      'en': 'Auditorias',
       'es': 'AUDITORÍAS',
     },
     '48en1ytj': {
@@ -2543,11 +2543,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // HistorialPedidosCopy
   {
     'ldbmk8td': {
-      'en': 'My Orders',
+      'en': 'Mis ordenes',
       'es': 'Mis pedidos',
     },
     'y2567ilu': {
-      'en': 'My Order',
+      'en': 'Mi orden',
       'es': 'Mi pedido',
     },
     'z18vkve1': {
@@ -2555,19 +2555,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Cevichera Doña Cecilia',
     },
     'gxb2x8zt': {
-      'en': 'Date',
+      'en': 'Fecha',
       'es': 'Fecha',
     },
     'f6jkzdfv': {
-      'en': 'Price',
+      'en': 'Precio',
       'es': 'Precio',
     },
     'dk6eilfe': {
-      'en': 'Detail',
+      'en': 'Detalles',
       'es': 'Detalle',
     },
     'hutw57a7': {
-      'en': 'History',
+      'en': 'Historial',
       'es': 'Historia',
     },
     'ododxty1': {
@@ -2575,19 +2575,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Cevichera Doña Cecilia',
     },
     'a7b1rpvd': {
-      'en': 'Date',
+      'en': 'Fecha',
       'es': 'Fecha',
     },
     '9rhw22x8': {
-      'en': 'Price',
+      'en': 'Precio',
       'es': 'Precio',
     },
     'eqnr4msm': {
-      'en': 'Detail',
+      'en': 'Detalle',
       'es': 'Detalle',
     },
     'pnjc4uk4': {
-      'en': 'Tracking',
+      'en': 'Seguimiento',
       'es': 'Seguimiento',
     },
     '2584l5pv': {
@@ -3207,7 +3207,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Cevichera',
     },
     'ss8oc7rp': {
-      'en': 'Home',
+      'en': 'Inicio',
       'es': 'Hogar',
     },
     'gbwp0epi': {
@@ -3231,7 +3231,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Configuración',
     },
     'mf41gikt': {
-      'en': 'Menu Administrador',
+      'en': 'Menú Administrador',
       'es': 'Administrador del menú',
     },
     'ejkmaant': {

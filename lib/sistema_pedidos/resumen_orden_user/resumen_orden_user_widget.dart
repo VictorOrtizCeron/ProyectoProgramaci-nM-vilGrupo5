@@ -87,7 +87,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
               automaticallyImplyLeading: false,
               title: Text(
                 FFLocalizations.of(context).getText(
-                  'xbpnloy3' /* Order Confirmed */,
+                  'xbpnloy3' /* Orden confirmada */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       font: GoogleFonts.plusJakartaSans(
@@ -156,7 +156,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                           ),
                           Text(
                             FFLocalizations.of(context).getText(
-                              'pgpf3904' /* Your order has been placed suc... */,
+                              'pgpf3904' /* ¡Su pedido se ha realizado exi... */,
                             ),
                             textAlign: TextAlign.center,
                             style: FlutterFlowTheme.of(context)
@@ -205,7 +205,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                               children: [
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    'dt7a3sj1' /* Order Details */,
+                                    'dt7a3sj1' /* Detalles del pedido */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
@@ -232,7 +232,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                                   children: [
                                     Text(
                                       FFLocalizations.of(context).getText(
-                                        '2devum9o' /* Order Number: */,
+                                        '2devum9o' /* Número de orden: */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -295,7 +295,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                                   children: [
                                     Text(
                                       FFLocalizations.of(context).getText(
-                                        'ythz3wwi' /* Order Date: */,
+                                        'ythz3wwi' /* Fecha del pedido: */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -385,7 +385,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                               children: [
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    '138pjtju' /* Delivery Information */,
+                                    '138pjtju' /* Información de entrega */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
@@ -412,7 +412,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                                   children: [
                                     Text(
                                       FFLocalizations.of(context).getText(
-                                        'lm9te84j' /* Payment Method: */,
+                                        'lm9te84j' /* Método de pago: */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -470,7 +470,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                                   children: [
                                     Text(
                                       FFLocalizations.of(context).getText(
-                                        'rycj59gk' /* Delivery Address: */,
+                                        'rycj59gk' /* Dirección de entrega: */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -562,7 +562,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                               children: [
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    'u5f73mkg' /* Order Items */,
+                                    'u5f73mkg' /* Artículos del pedido */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
@@ -810,7 +810,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                               children: [
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    'rewqa3k1' /* Order Summary */,
+                                    'rewqa3k1' /* Resumen del pedido */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
@@ -837,7 +837,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                                   children: [
                                     Text(
                                       FFLocalizations.of(context).getText(
-                                        '8czydbpx' /* Discount Applied: */,
+                                        '8czydbpx' /* Descuento aplicado: */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -900,7 +900,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                                   children: [
                                     Text(
                                       FFLocalizations.of(context).getText(
-                                        'btnv7y2l' /* Tax (13%): */,
+                                        'btnv7y2l' /* Impuesto (13%): */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -966,7 +966,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                                   children: [
                                     Text(
                                       FFLocalizations.of(context).getText(
-                                        'g6sws51b' /* Delivery Fee: */,
+                                        'g6sws51b' /* Tarifa de envío: */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -1032,7 +1032,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                                   children: [
                                     Text(
                                       FFLocalizations.of(context).getText(
-                                        'd5pd69b4' /* Grand Total: */,
+                                        'd5pd69b4' /* Total: */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .titleMedium
@@ -1093,7 +1093,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                                   .pushNamed(HistorialPedidosWidget.routeName);
                             },
                             text: FFLocalizations.of(context).getText(
-                              'dvqcf9uv' /* View My Orders */,
+                              'dvqcf9uv' /* Ver mis ordenes */,
                             ),
                             options: FFButtonOptions(
                               width: double.infinity,
@@ -1132,7 +1132,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                               context.pushNamed(HomeScreenUserWidget.routeName);
                             },
                             text: FFLocalizations.of(context).getText(
-                              '7ohjuyiq' /* Back to Home */,
+                              '7ohjuyiq' /* Regresar al inicio */,
                             ),
                             options: FFButtonOptions(
                               width: double.infinity,

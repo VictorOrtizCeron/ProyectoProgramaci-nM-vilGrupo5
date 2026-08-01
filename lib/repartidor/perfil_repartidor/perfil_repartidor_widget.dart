@@ -40,20 +40,32 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
     super.initState();
     _model = createModel(context, () => PerfilRepartidorModel());
 
-    _model.textFieldNombreTextController ??=
-        TextEditingController(text: currentUserDisplayName);
+    _model.textFieldNombreTextController ??= TextEditingController(
+        text: valueOrDefault<String>(
+      currentUserDisplayName,
+      'Sin nombre de usuario',
+    ));
     _model.textFieldNombreFocusNode ??= FocusNode();
 
-    _model.textFieldCorreoTextController ??=
-        TextEditingController(text: currentUserEmail);
+    _model.textFieldCorreoTextController ??= TextEditingController(
+        text: valueOrDefault<String>(
+      currentUserEmail,
+      'Sin correo electrónico',
+    ));
     _model.textFieldCorreoFocusNode ??= FocusNode();
 
-    _model.textFieldNumTelTextController ??=
-        TextEditingController(text: currentPhoneNumber);
+    _model.textFieldNumTelTextController ??= TextEditingController(
+        text: valueOrDefault<String>(
+      currentPhoneNumber,
+      'Sin número de teléfono',
+    ));
     _model.textFieldNumTelFocusNode ??= FocusNode();
 
     _model.textFieldDireccionTextController ??= TextEditingController(
-        text: valueOrDefault(currentUserDocument?.direccion, ''));
+        text: valueOrDefault<String>(
+      valueOrDefault(currentUserDocument?.direccion, ''),
+      'Sin dirección',
+    ));
     _model.textFieldDireccionFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -272,7 +284,7 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
                                 child: Icon(
                                   Icons.camera_alt_rounded,
                                   color: FlutterFlowTheme.of(context).info,
-                                  size: 18.0,
+                                  size: 20.0,
                                 ),
                               ),
                             ),

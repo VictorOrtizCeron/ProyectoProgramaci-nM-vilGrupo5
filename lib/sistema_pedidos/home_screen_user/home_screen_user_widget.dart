@@ -18,6 +18,7 @@ import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:text_search/text_search.dart';
@@ -174,7 +175,7 @@ class _HomeScreenUserWidgetState extends State<HomeScreenUserWidget> {
                     children: [
                       Text(
                         FFLocalizations.of(context).getText(
-                          'lfdko049' /* Location */,
+                          'lfdko049' /* Ubicación */,
                         ),
                         style: FlutterFlowTheme.of(context).labelSmall.override(
                               font: GoogleFonts.plusJakartaSans(
@@ -185,7 +186,8 @@ class _HomeScreenUserWidgetState extends State<HomeScreenUserWidget> {
                                     .labelSmall
                                     .fontStyle,
                               ),
-                              fontSize: 15.0,
+                              color: FlutterFlowTheme.of(context).primaryText,
+                              fontSize: 16.0,
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
                                   .labelSmall
@@ -323,9 +325,7 @@ class _HomeScreenUserWidgetState extends State<HomeScreenUserWidget> {
                                             ),
                                             showBadge: true,
                                             shape: badges.BadgeShape.circle,
-                                            badgeColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .secondary,
+                                            badgeColor: Color(0xFF108BE8),
                                             elevation: 3.0,
                                             padding: EdgeInsets.all(8.0),
                                             position:
@@ -353,8 +353,9 @@ class _HomeScreenUserWidgetState extends State<HomeScreenUserWidget> {
                                                       UserCartOficialWidget
                                                           .routeName);
                                                 },
-                                                child: Icon(
-                                                  FFIcons.kbasket,
+                                                child: FaIcon(
+                                                  FontAwesomeIcons
+                                                      .shoppingBasket,
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primaryText,
@@ -641,8 +642,9 @@ class _HomeScreenUserWidgetState extends State<HomeScreenUserWidget> {
                                                                       FontStyle
                                                                           .italic,
                                                                 ),
-                                                                color: Color(
-                                                                    0xFF1A1A1A),
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primaryBackground,
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:

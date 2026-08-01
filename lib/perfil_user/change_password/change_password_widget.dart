@@ -101,26 +101,21 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                 Flexible(
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'qta47nw1' /* Recover Password */,
+                                      'qta47nw1' /* Recuperar contraseña */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .labelLarge
                                         .override(
                                           font: GoogleFonts.plusJakartaSans(
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelLarge
-                                                    .fontWeight,
+                                            fontWeight: FontWeight.bold,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge
                                                     .fontStyle,
                                           ),
+                                          fontSize: 17.0,
                                           letterSpacing: 0.0,
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelLarge
-                                                  .fontWeight,
+                                          fontWeight: FontWeight.bold,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge
@@ -149,33 +144,35 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
-                                    Text(
-                                      FFLocalizations.of(context).getText(
-                                        'tubwwdsg' /* ¿Olvidaste tu contraseña? Recu... */,
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            font: GoogleFonts.plusJakartaSans(
-                                              fontWeight:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontWeight,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontStyle,
-                                            ),
-                                            letterSpacing: 0.0,
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontWeight,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontStyle,
+                                    Expanded(
+                                      child: Padding(
+                                        padding: EdgeInsets.all(10.0),
+                                        child: Text(
+                                          FFLocalizations.of(context).getText(
+                                            'tubwwdsg' /* ¿Olvidaste tu contraseña?   Re... */,
                                           ),
+                                          textAlign: TextAlign.center,
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                font:
+                                                    GoogleFonts.plusJakartaSans(
+                                                  fontWeight: FontWeight.normal,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontStyle,
+                                                ),
+                                                letterSpacing: 0.0,
+                                                fontWeight: FontWeight.normal,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
+                                              ),
+                                        ),
+                                      ),
                                     ),
                                   ].divide(SizedBox(height: 20.0)),
                                 ),
@@ -192,7 +189,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'm44q6y3o' /* New Password */,
+                                                'm44q6y3o' /* Nueva Contraseña */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -280,7 +277,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                                   hintText: FFLocalizations.of(
                                                           context)
                                                       .getText(
-                                                    'ytk5ba6l' /* Enter the email */,
+                                                    'ki7u6cx1' /* Ingrese su contraseña */,
                                                   ),
                                                   hintStyle:
                                                       FlutterFlowTheme.of(
@@ -471,7 +468,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                     );
                                   },
                                   text: FFLocalizations.of(context).getText(
-                                    'hi2yymxk' /* Send Link */,
+                                    'hi2yymxk' /* Enviar enlace */,
                                   ),
                                   options: FFButtonOptions(
                                     height: 56.0,
@@ -484,10 +481,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                         .titleSmall
                                         .override(
                                           font: GoogleFonts.plusJakartaSans(
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmall
-                                                    .fontWeight,
+                                            fontWeight: FontWeight.bold,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
@@ -495,10 +489,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                           ),
                                           color: Colors.white,
                                           letterSpacing: 0.0,
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmall
-                                                  .fontWeight,
+                                          fontWeight: FontWeight.bold,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .titleSmall

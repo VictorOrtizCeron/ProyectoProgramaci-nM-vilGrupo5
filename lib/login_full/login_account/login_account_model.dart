@@ -31,7 +31,7 @@ class LoginAccountModel extends FlutterFlowModel<LoginAccountWidget> {
   late bool passwordTextFieldVisibility;
   String? Function(BuildContext, String?)?
       passwordTextFieldTextControllerValidator;
-  // Stores action output result for [Custom Action - signInProcess] action in Button widget.
+  // Stores action output result for [Custom Action - signInProcess] action in btnIniciarSesion widget.
   String? authError;
 
   @override

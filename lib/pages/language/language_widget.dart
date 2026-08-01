@@ -101,26 +101,21 @@ class _LanguageWidgetState extends State<LanguageWidget> {
                                 Flexible(
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'pw9fhsfe' /* Language */,
+                                      'pw9fhsfe' /* Idioma */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .labelLarge
                                         .override(
                                           font: GoogleFonts.plusJakartaSans(
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelLarge
-                                                    .fontWeight,
+                                            fontWeight: FontWeight.w600,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge
                                                     .fontStyle,
                                           ),
+                                          fontSize: 17.0,
                                           letterSpacing: 0.0,
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelLarge
-                                                  .fontWeight,
+                                          fontWeight: FontWeight.w600,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge
@@ -208,7 +203,7 @@ class _LanguageWidgetState extends State<LanguageWidget> {
                                                   hintText: FFLocalizations.of(
                                                           context)
                                                       .getText(
-                                                    '54vikyjk' /* Search language */,
+                                                    'rxjf1ypg' /* Buscar idiomas */,
                                                   ),
                                                   hintStyle:
                                                       FlutterFlowTheme.of(

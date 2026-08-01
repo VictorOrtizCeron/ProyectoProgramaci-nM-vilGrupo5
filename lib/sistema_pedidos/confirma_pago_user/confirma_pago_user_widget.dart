@@ -77,7 +77,7 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
           ),
           title: Text(
             FFLocalizations.of(context).getText(
-              '44t7jk1j' /* Confirmacion de Pedido */,
+              '44t7jk1j' /* Confirmación de Pedido */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   font: GoogleFonts.plusJakartaSans(
@@ -154,7 +154,7 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                               children: [
                                 Icon(
                                   Icons.shopping_cart_outlined,
-                                  color: FlutterFlowTheme.of(context).primary,
+                                  color: Color(0xFF108BE8),
                                   size: 24.0,
                                 ),
                                 Expanded(
@@ -833,7 +833,7 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                                       );
                                     }
                                     List<CarritoRecord>
-                                        buttonCarritoRecordList =
+                                        confirmarOrdenCarritoRecordList =
                                         snapshot.data!;
 
                                     return FFButtonWidget(
@@ -848,10 +848,11 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                                         safeSetState(() {});
                                         for (int loop1Index = 0;
                                             loop1Index <
-                                                buttonCarritoRecordList.length;
+                                                confirmarOrdenCarritoRecordList
+                                                    .length;
                                             loop1Index++) {
                                           final currentLoop1Item =
-                                              buttonCarritoRecordList[
+                                              confirmarOrdenCarritoRecordList[
                                                   loop1Index];
 
                                           await currentLoop1Item.reference
@@ -885,11 +886,11 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                                           clienteRef:
                                               columnCarritoRecord?.clienteRef,
                                           pedTotal: functions.totalDescSub(
-                                              buttonCarritoRecordList
+                                              confirmarOrdenCarritoRecordList
                                                   .map((e) => e.subtotal)
                                                   .toList(),
                                               0.0,
-                                              buttonCarritoRecordList
+                                              confirmarOrdenCarritoRecordList
                                                   .map((e) => e.cantidad)
                                                   .toList()),
                                           repartidorRef: currentUserReference,
@@ -916,17 +917,16 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                                                   clienteRef:
                                                       columnCarritoRecord
                                                           ?.clienteRef,
-                                                  pedTotal:
-                                                      functions.totalDescSub(
-                                                          buttonCarritoRecordList
-                                                              .map((e) =>
-                                                                  e.subtotal)
-                                                              .toList(),
-                                                          0.0,
-                                                          buttonCarritoRecordList
-                                                              .map((e) =>
-                                                                  e.cantidad)
-                                                              .toList()),
+                                                  pedTotal: functions.totalDescSub(
+                                                      confirmarOrdenCarritoRecordList
+                                                          .map(
+                                                              (e) => e.subtotal)
+                                                          .toList(),
+                                                      0.0,
+                                                      confirmarOrdenCarritoRecordList
+                                                          .map(
+                                                              (e) => e.cantidad)
+                                                          .toList()),
                                                   repartidorRef:
                                                       currentUserReference,
                                                   carritoRef:
@@ -948,11 +948,11 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                                             .set(createVentaRecordData(
                                           ventFechaHora: getCurrentTimestamp,
                                           ventTotal: functions.totalDescSub(
-                                              buttonCarritoRecordList
+                                              confirmarOrdenCarritoRecordList
                                                   .map((e) => e.subtotal)
                                                   .toList(),
                                               0.0,
-                                              buttonCarritoRecordList
+                                              confirmarOrdenCarritoRecordList
                                                   .map((e) => e.cantidad)
                                                   .toList()),
                                           ventEstado: EstadoVentas.Completada,
@@ -971,17 +971,16 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                                                 createVentaRecordData(
                                                   ventFechaHora:
                                                       getCurrentTimestamp,
-                                                  ventTotal:
-                                                      functions.totalDescSub(
-                                                          buttonCarritoRecordList
-                                                              .map((e) =>
-                                                                  e.subtotal)
-                                                              .toList(),
-                                                          0.0,
-                                                          buttonCarritoRecordList
-                                                              .map((e) =>
-                                                                  e.cantidad)
-                                                              .toList()),
+                                                  ventTotal: functions.totalDescSub(
+                                                      confirmarOrdenCarritoRecordList
+                                                          .map(
+                                                              (e) => e.subtotal)
+                                                          .toList(),
+                                                      0.0,
+                                                      confirmarOrdenCarritoRecordList
+                                                          .map(
+                                                              (e) => e.cantidad)
+                                                          .toList()),
                                                   ventEstado:
                                                       EstadoVentas.Completada,
                                                   fechaCreacion:
@@ -1022,8 +1021,7 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                                         iconPadding:
                                             EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: FlutterFlowTheme.of(context)
-                                            .primary,
+                                        color: Color(0xFF108BE8),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(

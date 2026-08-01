@@ -103,29 +103,13 @@ class _InventarioReporteriaWidgetState extends State<InventarioReporteriaWidget>
                     width: MediaQuery.sizeOf(context).width * 1.0,
                     height: MediaQuery.sizeOf(context).height * 0.1,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: Image.asset(
-                          'assets/images/gradiante.png',
-                        ).image,
-                      ),
-                      boxShadow: [
-                        BoxShadow(
-                          blurRadius: 4.0,
-                          color: Color(0x33000000),
-                          offset: Offset(
-                            0.0,
-                            2.0,
-                          ),
-                        )
-                      ],
+                      color: Color(0xFFE84C10),
                     ),
                     child: Align(
                       alignment: AlignmentDirectional(0.0, 0.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          'qcvrx2fg' /* CATEGORIA */,
+                          'qcvrx2fg' /* Categoría */,
                         ),
                         textAlign: TextAlign.center,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -174,7 +158,7 @@ class _InventarioReporteriaWidgetState extends State<InventarioReporteriaWidget>
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'yvkr7nrz' /* INVENTARIO */,
+                            'yvkr7nrz' /* Inventario */,
                           ),
                           textAlign: TextAlign.center,
                           style:
@@ -185,7 +169,7 @@ class _InventarioReporteriaWidgetState extends State<InventarioReporteriaWidget>
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    fontSize: 22.0,
+                                    fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
@@ -224,7 +208,7 @@ class _InventarioReporteriaWidgetState extends State<InventarioReporteriaWidget>
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'v0z4w2z9' /* CIERRES */,
+                            'v0z4w2z9' /* Cierres */,
                           ),
                           textAlign: TextAlign.center,
                           style:
@@ -235,7 +219,7 @@ class _InventarioReporteriaWidgetState extends State<InventarioReporteriaWidget>
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    fontSize: 22.0,
+                                    fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
@@ -274,7 +258,7 @@ class _InventarioReporteriaWidgetState extends State<InventarioReporteriaWidget>
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'll54tlqi' /* AUDITORIAS */,
+                            'll54tlqi' /* Auditorias */,
                           ),
                           textAlign: TextAlign.center,
                           style:
@@ -285,7 +269,7 @@ class _InventarioReporteriaWidgetState extends State<InventarioReporteriaWidget>
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    fontSize: 22.0,
+                                    fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
@@ -318,7 +302,7 @@ class _InventarioReporteriaWidgetState extends State<InventarioReporteriaWidget>
               ),
               title: Text(
                 FFLocalizations.of(context).getText(
-                  'w7rxr3zt' /* INVENTARIO */,
+                  'w7rxr3zt' /* Inventario */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       font: GoogleFonts.plusJakartaSans(
@@ -407,13 +391,7 @@ class _InventarioReporteriaWidgetState extends State<InventarioReporteriaWidget>
                       width: MediaQuery.sizeOf(context).width * 1.0,
                       height: MediaQuery.sizeOf(context).height * 0.1,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
-                        image: DecorationImage(
-                          fit: BoxFit.cover,
-                          image: Image.asset(
-                            'assets/images/gradiante.png',
-                          ).image,
-                        ),
+                        color: Color(0xFFE84C10),
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 4.0,
@@ -430,7 +408,7 @@ class _InventarioReporteriaWidgetState extends State<InventarioReporteriaWidget>
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'jc178evu' /* SELECCION DE FECHA */,
+                            'jc178evu' /* Seleccionar Fecha */,
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(

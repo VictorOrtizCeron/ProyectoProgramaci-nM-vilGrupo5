@@ -139,7 +139,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                                               FFLocalizations.of(
                                                                       context)
                                                                   .getText(
-                                                                'f9al2jiq' /* Comida a domicilio en pocos cl... */,
+                                                                'f9al2jiq' /* Pida su comida en un click  */,
                                                               ),
                                                               textAlign:
                                                                   TextAlign
@@ -187,7 +187,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                              'q7mzy88d' /* Disfruta del los mejores maric... */,
+                                                              'q7mzy88d' /* "Sabor del mar en su punto: lo... */,
                                                             ),
                                                             textAlign: TextAlign
                                                                 .center,
@@ -206,6 +206,9 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                                                         .labelMedium
                                                                         .fontStyle,
                                                                   ),
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primaryText,
                                                                   letterSpacing:
                                                                       0.0,
                                                                   fontWeight: FlutterFlowTheme.of(
@@ -379,25 +382,18 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                                           font: GoogleFonts
                                                               .plusJakartaSans(
                                                             fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelLarge
-                                                                    .fontWeight,
+                                                                FontWeight.w600,
                                                             fontStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
                                                                     .labelLarge
                                                                     .fontStyle,
                                                           ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primary,
+                                                          color:
+                                                              Color(0xFF108BE8),
                                                           letterSpacing: 0.0,
                                                           fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelLarge
-                                                                  .fontWeight,
+                                                              FontWeight.w600,
                                                           fontStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)

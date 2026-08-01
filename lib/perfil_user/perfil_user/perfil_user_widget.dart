@@ -50,20 +50,32 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
       safeSetState(() {});
     });
 
-    _model.textFieldNombreTextController ??=
-        TextEditingController(text: currentUserDisplayName);
+    _model.textFieldNombreTextController ??= TextEditingController(
+        text: valueOrDefault<String>(
+      currentUserDisplayName,
+      'Sin nombre de usuario',
+    ));
     _model.textFieldNombreFocusNode ??= FocusNode();
 
-    _model.textFieldCorreoTextController ??=
-        TextEditingController(text: currentUserEmail);
+    _model.textFieldCorreoTextController ??= TextEditingController(
+        text: valueOrDefault<String>(
+      currentUserEmail,
+      'Sin correo electrónico',
+    ));
     _model.textFieldCorreoFocusNode ??= FocusNode();
 
-    _model.textFieldNumTelTextController ??=
-        TextEditingController(text: currentPhoneNumber);
+    _model.textFieldNumTelTextController ??= TextEditingController(
+        text: valueOrDefault<String>(
+      currentPhoneNumber,
+      'Sin número de teléfono',
+    ));
     _model.textFieldNumTelFocusNode ??= FocusNode();
 
-    _model.textFieldDireccionTextController ??=
-        TextEditingController(text: _model.direccionObtener);
+    _model.textFieldDireccionTextController ??= TextEditingController(
+        text: valueOrDefault<String>(
+      _model.direccionObtener,
+      'Sin dirección',
+    ));
     _model.textFieldDireccionFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -290,13 +302,13 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
                                                   ? valueOrDefault<String>(
                                                       _model
                                                           .uploadedFileUrl_uploadDataU75,
-                                                      'https://firebasestorage.googleapis.com/v0/b/app-movil-rest-dona-cec-l0xdyl.firebasestorage.app/o/productos%2Fnoimage.jpeg?alt=media&token=1499997c-9a92-45a3-97e1-8a09505d006a',
+                                                      'https://firebasestorage.googleapis.com/v0/b/proyectoprogramacionmovi-c6375.firebasestorage.app/o/Image-not-found.png?alt=media&token=d7f1ab77-a4b0-4fdb-a373-acbbb22855c2',
                                                     )
                                                   : valueOrDefault<String>(
                                                       currentUserPhoto,
-                                                      'https://firebasestorage.googleapis.com/v0/b/app-movil-rest-dona-cec-l0xdyl.firebasestorage.app/o/productos%2Fnoimage.jpeg?alt=media&token=1499997c-9a92-45a3-97e1-8a09505d006a',
+                                                      'https://firebasestorage.googleapis.com/v0/b/proyectoprogramacionmovi-c6375.firebasestorage.app/o/Image-not-found.png?alt=media&token=d7f1ab77-a4b0-4fdb-a373-acbbb22855c2',
                                                     ),
-                                              'https://firebasestorage.googleapis.com/v0/b/app-movil-rest-dona-cec-l0xdyl.firebasestorage.app/o/productos%2Fnoimage.jpeg?alt=media&token=1499997c-9a92-45a3-97e1-8a09505d006a',
+                                              'https://firebasestorage.googleapis.com/v0/b/proyectoprogramacionmovi-c6375.firebasestorage.app/o/Image-not-found.png?alt=media&token=d7f1ab77-a4b0-4fdb-a373-acbbb22855c2',
                                             ),
                                             fit: BoxFit.cover,
                                           ),
@@ -1374,8 +1386,9 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
                                                                       .bodySmall
                                                                       .fontStyle,
                                                                 ),
-                                                                color: Color(
-                                                                    0xFFFF6A4D),
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primary,
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
@@ -1459,7 +1472,8 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
                                           ),
                                       elevation: 0.0,
                                       borderSide: BorderSide(
-                                        color: Color(0xFFFF6A4D),
+                                        color: FlutterFlowTheme.of(context)
+                                            .primary,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),
@@ -1560,7 +1574,7 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
                         padding: EdgeInsets.all(8.0),
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0xFFFF6A4D),
+                        color: FlutterFlowTheme.of(context).primary,
                         textStyle:
                             FlutterFlowTheme.of(context).titleMedium.override(
                                   font: GoogleFonts.plusJakartaSans(

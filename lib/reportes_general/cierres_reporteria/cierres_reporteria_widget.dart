@@ -104,29 +104,13 @@ class _CierresReporteriaWidgetState extends State<CierresReporteriaWidget>
                     width: MediaQuery.sizeOf(context).width * 1.0,
                     height: MediaQuery.sizeOf(context).height * 0.1,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: Image.asset(
-                          'assets/images/gradiante.png',
-                        ).image,
-                      ),
-                      boxShadow: [
-                        BoxShadow(
-                          blurRadius: 4.0,
-                          color: Color(0x33000000),
-                          offset: Offset(
-                            0.0,
-                            2.0,
-                          ),
-                        )
-                      ],
+                      color: FlutterFlowTheme.of(context).primary,
                     ),
                     child: Align(
                       alignment: AlignmentDirectional(0.0, 0.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          'o6gpf4ct' /* CATEGORIA */,
+                          'o6gpf4ct' /* Categoría */,
                         ),
                         textAlign: TextAlign.center,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -175,7 +159,7 @@ class _CierresReporteriaWidgetState extends State<CierresReporteriaWidget>
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'br7tekne' /* INVENTARIO */,
+                            'br7tekne' /* Inventario */,
                           ),
                           textAlign: TextAlign.center,
                           style:
@@ -186,7 +170,7 @@ class _CierresReporteriaWidgetState extends State<CierresReporteriaWidget>
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    fontSize: 22.0,
+                                    fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
@@ -225,7 +209,7 @@ class _CierresReporteriaWidgetState extends State<CierresReporteriaWidget>
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'yrr1bgs1' /* CIERRES */,
+                            'yrr1bgs1' /* Cierres */,
                           ),
                           textAlign: TextAlign.center,
                           style:
@@ -236,7 +220,7 @@ class _CierresReporteriaWidgetState extends State<CierresReporteriaWidget>
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    fontSize: 22.0,
+                                    fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
@@ -275,7 +259,7 @@ class _CierresReporteriaWidgetState extends State<CierresReporteriaWidget>
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'q0shpqzm' /* AUDITORIAS */,
+                            'q0shpqzm' /* Auditorias */,
                           ),
                           textAlign: TextAlign.center,
                           style:
@@ -286,7 +270,7 @@ class _CierresReporteriaWidgetState extends State<CierresReporteriaWidget>
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    fontSize: 22.0,
+                                    fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
@@ -319,7 +303,7 @@ class _CierresReporteriaWidgetState extends State<CierresReporteriaWidget>
               ),
               title: Text(
                 FFLocalizations.of(context).getText(
-                  'erjvx36m' /* CIERRES */,
+                  'erjvx36m' /* Cierres */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       font: GoogleFonts.plusJakartaSans(
@@ -408,13 +392,7 @@ class _CierresReporteriaWidgetState extends State<CierresReporteriaWidget>
                       width: MediaQuery.sizeOf(context).width * 1.0,
                       height: MediaQuery.sizeOf(context).height * 0.1,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
-                        image: DecorationImage(
-                          fit: BoxFit.cover,
-                          image: Image.asset(
-                            'assets/images/gradiante.png',
-                          ).image,
-                        ),
+                        color: Color(0xFFE84C10),
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 4.0,
@@ -1650,24 +1628,20 @@ class _CierresReporteriaWidgetState extends State<CierresReporteriaWidget>
                             alignment: AlignmentDirectional(0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'oevpuwa9' /* TOTAL FECHAS SELECCIONADAS: */,
+                                'oevpuwa9' /* Total fechas seleccionadas: */,
                               ),
                               textAlign: TextAlign.center,
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
                                     font: GoogleFonts.plusJakartaSans(
-                                      fontWeight: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .fontWeight,
+                                      fontWeight: FontWeight.bold,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .fontStyle,
                                     ),
                                     letterSpacing: 0.0,
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .fontWeight,
+                                    fontWeight: FontWeight.bold,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .fontStyle,

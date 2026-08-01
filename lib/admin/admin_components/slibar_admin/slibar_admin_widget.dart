@@ -609,7 +609,7 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                                             Duration(milliseconds: 500),
                                         imageUrl: valueOrDefault<String>(
                                           currentUserPhoto,
-                                          'https://firebasestorage.googleapis.com/v0/b/app-movil-rest-dona-cec-l0xdyl.firebasestorage.app/o/productos%2Fnoimage.jpeg?alt=media&token=1499997c-9a92-45a3-97e1-8a09505d006a',
+                                          'https://firebasestorage.googleapis.com/v0/b/proyectoprogramacionmovi-c6375.firebasestorage.app/o/Image-not-found.png?alt=media&token=d7f1ab77-a4b0-4fdb-a373-acbbb22855c2',
                                         ),
                                         width: 44.0,
                                         height: 44.0,
@@ -630,7 +630,10 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                                     children: [
                                       AuthUserStreamWidget(
                                         builder: (context) => Text(
-                                          currentUserDisplayName,
+                                          valueOrDefault<String>(
+                                            currentUserDisplayName,
+                                            'Sin nombre de usuario',
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
@@ -658,7 +661,10 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 4.0, 0.0, 0.0),
                                         child: Text(
-                                          currentUserEmail,
+                                          valueOrDefault<String>(
+                                            currentUserEmail,
+                                            'Sin correo electrónico',
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(

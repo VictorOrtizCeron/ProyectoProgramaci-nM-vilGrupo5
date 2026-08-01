@@ -99,7 +99,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                         Flexible(
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              'fqhfxosd' /* Create Account */,
+                                              'fqhfxosd' /* Crear Cuenta */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .titleLarge
@@ -139,7 +139,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                         Flexible(
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              '8r2ftoyt' /* Start learning with create you... */,
+                                              '8r2ftoyt' /* Comienza a aprender creando tu... */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
@@ -195,7 +195,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                 child: Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    '5ejt2igx' /* Email or Phone Number */,
+                                                    '5ejt2igx' /* Correo electrónico */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -288,7 +288,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                           FFLocalizations.of(
                                                                   context)
                                                               .getText(
-                                                        '1k2s07d4' /* Enter your email or phone numb... */,
+                                                        '2enoeupk' /* Ingrese su Correo Electrónico */,
                                                       ),
                                                       hintStyle:
                                                           FlutterFlowTheme.of(
@@ -474,7 +474,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                 child: Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    '8hrnyurr' /* Password */,
+                                                    '8hrnyurr' /* Contraseña */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -561,7 +561,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                           FFLocalizations.of(
                                                                   context)
                                                               .getText(
-                                                        '5ta75wx9' /* Create your password */,
+                                                        'pzfozymr' /* Ingrese su Contraseña */,
                                                       ),
                                                       hintStyle:
                                                           FlutterFlowTheme.of(
@@ -855,7 +855,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          '7318gst0' /* Create Account */,
+                                          '7318gst0' /* Crear Cuenta */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 56.0,
@@ -907,15 +907,6 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     24.0, 0.0, 24.0, 0.0),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [],
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    24.0, 0.0, 24.0, 0.0),
                                 child: InkWell(
                                   splashColor: Colors.transparent,
                                   focusColor: Colors.transparent,
@@ -932,7 +923,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                       Flexible(
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            'tj5ofugi' /* Have an acccount */,
+                                            'tj5ofugi' /* Tiene una cuenta */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
@@ -974,18 +965,14 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                           },
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              '96k4zm5b' /* Login */,
+                                              '96k4zm5b' /* Iniciar Sesión */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
                                                   font: GoogleFonts
                                                       .plusJakartaSans(
-                                                    fontWeight:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMedium
-                                                            .fontWeight,
+                                                    fontWeight: FontWeight.w600,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -996,11 +983,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                           context)
                                                       .primary,
                                                   letterSpacing: 0.0,
-                                                  fontWeight:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMedium
-                                                          .fontWeight,
+                                                  fontWeight: FontWeight.w600,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
                                                               context)

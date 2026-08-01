@@ -95,7 +95,9 @@ class _LoginAccountWidgetState extends State<LoginAccountWidget> {
                                         Flexible(
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              'absgjmyr' /* Login Account */,
+                                              'absgjmyr' /* 
+Iniciar sesión en la cuenta */
+                                              ,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .titleLarge
@@ -135,7 +137,7 @@ class _LoginAccountWidgetState extends State<LoginAccountWidget> {
                                         Flexible(
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              '7yyc6yio' /* Please login with registered a... */,
+                                              '7yyc6yio' /* Por favor, inicie sesión con s... */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
@@ -153,6 +155,9 @@ class _LoginAccountWidgetState extends State<LoginAccountWidget> {
                                                             .labelMedium
                                                             .fontStyle,
                                                   ),
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryText,
                                                   letterSpacing: 0.0,
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
@@ -191,7 +196,7 @@ class _LoginAccountWidgetState extends State<LoginAccountWidget> {
                                                 child: Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    '0y1a56v9' /* Email or Phone Number */,
+                                                    '0y1a56v9' /* Correo Electrónico */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -284,7 +289,7 @@ class _LoginAccountWidgetState extends State<LoginAccountWidget> {
                                                           FFLocalizations.of(
                                                                   context)
                                                               .getText(
-                                                        'xq55heau' /* Enter your email... */,
+                                                        'e5jzwrfr' /* Ingrese su correo electrónico */,
                                                       ),
                                                       hintStyle:
                                                           FlutterFlowTheme.of(
@@ -470,7 +475,7 @@ class _LoginAccountWidgetState extends State<LoginAccountWidget> {
                                                 child: Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    'iyk0cszg' /* Password */,
+                                                    'iyk0cszg' /* Contraseña */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -557,7 +562,7 @@ class _LoginAccountWidgetState extends State<LoginAccountWidget> {
                                                           FFLocalizations.of(
                                                                   context)
                                                               .getText(
-                                                        'tec1pifi' /* Write your password... */,
+                                                        'gvm8z4dg' /* Escriba su contraseña  */,
                                                       ),
                                                       hintStyle:
                                                           FlutterFlowTheme.of(
@@ -778,7 +783,7 @@ class _LoginAccountWidgetState extends State<LoginAccountWidget> {
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          'urzirdij' /* Registrate Aqui! */,
+                                                          'urzirdij' /* Registrarse */,
                                                         ),
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -906,7 +911,7 @@ class _LoginAccountWidgetState extends State<LoginAccountWidget> {
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          '3ev1m26j' /* Forgot Password? */,
+                                                          '3ev1m26j' /* ¿Olvidó su contraseña? */,
                                                         ),
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -1057,7 +1062,7 @@ class _LoginAccountWidgetState extends State<LoginAccountWidget> {
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          '58ybobvm' /* Signin */,
+                                          '58ybobvm' /* Iniciar Sesión */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 56.0,
@@ -1116,7 +1121,7 @@ class _LoginAccountWidgetState extends State<LoginAccountWidget> {
                                     Flexible(
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'cy7y6bn2' /* Or using other method */,
+                                          'cy7y6bn2' /* O usar otro método */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
@@ -1131,6 +1136,9 @@ class _LoginAccountWidgetState extends State<LoginAccountWidget> {
                                                         .labelMedium
                                                         .fontStyle,
                                               ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryText,
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
@@ -1163,7 +1171,7 @@ class _LoginAccountWidgetState extends State<LoginAccountWidget> {
                                             },
                                             text: FFLocalizations.of(context)
                                                 .getText(
-                                              'qwppiiww' /* Contact support! */,
+                                              'qwppiiww' /* Servicio al cliente */,
                                             ),
                                             icon: Icon(
                                               Icons.support_agent,

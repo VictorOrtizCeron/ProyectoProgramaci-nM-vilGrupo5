@@ -29,9 +29,9 @@ class ConfirmaPagoUserModel extends FlutterFlowModel<ConfirmaPagoUserWidget> {
   ScrollController? columnController;
   // State field(s) for RadioButton widget.
   FormFieldController<String>? radioButtonValueController;
-  // Stores action output result for [Backend Call - Create Document] action in Button widget.
+  // Stores action output result for [Backend Call - Create Document] action in confirmarOrden widget.
   PedidoRecord? pedidoRef;
-  // Stores action output result for [Backend Call - Create Document] action in Button widget.
+  // Stores action output result for [Backend Call - Create Document] action in confirmarOrden widget.
   VentaRecord? newVentaRef;
 
   @override

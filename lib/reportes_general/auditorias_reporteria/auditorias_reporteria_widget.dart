@@ -119,29 +119,13 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
                     width: MediaQuery.sizeOf(context).width * 1.0,
                     height: MediaQuery.sizeOf(context).height * 0.1,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: Image.asset(
-                          'assets/images/gradiante.png',
-                        ).image,
-                      ),
-                      boxShadow: [
-                        BoxShadow(
-                          blurRadius: 4.0,
-                          color: Color(0x33000000),
-                          offset: Offset(
-                            0.0,
-                            2.0,
-                          ),
-                        )
-                      ],
+                      color: FlutterFlowTheme.of(context).primary,
                     ),
                     child: Align(
                       alignment: AlignmentDirectional(0.0, 0.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          'kaak8vn9' /* CATEGORIA */,
+                          'kaak8vn9' /* Categoría */,
                         ),
                         textAlign: TextAlign.center,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -190,7 +174,7 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'g8nu3msa' /* INVENTARIO */,
+                            'g8nu3msa' /* Inventario */,
                           ),
                           textAlign: TextAlign.center,
                           style:
@@ -201,7 +185,7 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    fontSize: 22.0,
+                                    fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
@@ -240,7 +224,7 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'ixi2rsbt' /* CIERRES */,
+                            'ixi2rsbt' /* Cierres */,
                           ),
                           textAlign: TextAlign.center,
                           style:
@@ -251,7 +235,7 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    fontSize: 22.0,
+                                    fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
@@ -290,7 +274,7 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'n9uhu4pu' /* AUDITORIAS */,
+                            'n9uhu4pu' /* Auditorias */,
                           ),
                           textAlign: TextAlign.center,
                           style:
@@ -301,7 +285,7 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    fontSize: 22.0,
+                                    fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
@@ -334,7 +318,7 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
               ),
               title: Text(
                 FFLocalizations.of(context).getText(
-                  'o7hlaxnj' /* AUDITORIAS */,
+                  'o7hlaxnj' /* Auditorias */,
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       font: GoogleFonts.plusJakartaSans(
@@ -423,13 +407,7 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
                       width: MediaQuery.sizeOf(context).width * 1.0,
                       height: MediaQuery.sizeOf(context).height * 0.1,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
-                        image: DecorationImage(
-                          fit: BoxFit.cover,
-                          image: Image.asset(
-                            'assets/images/gradiante.png',
-                          ).image,
-                        ),
+                        color: FlutterFlowTheme.of(context).primary,
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 4.0,

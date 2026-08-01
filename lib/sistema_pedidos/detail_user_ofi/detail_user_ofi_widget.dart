@@ -445,7 +445,7 @@ class _DetailUserOfiWidgetState extends State<DetailUserOfiWidget> {
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          'x8nler7r' /* Menu Detail */,
+                                                          'x8nler7r' /* Detalles del menú */,
                                                         ),
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -768,7 +768,7 @@ class _DetailUserOfiWidgetState extends State<DetailUserOfiWidget> {
                                                                 widget!
                                                                     .productoDetail
                                                                     ?.proDescripcion,
-                                                                'Descr',
+                                                                'Descripción',
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -1092,16 +1092,16 @@ class _DetailUserOfiWidgetState extends State<DetailUserOfiWidget> {
                                                 );
                                               }
                                               List<ProductoRecord>
-                                                  buttonAddProductoRecordList =
+                                                  anadirCarritoProductoRecordList =
                                                   snapshot.data!;
                                               // Return an empty Container when the item does not exist.
                                               if (snapshot.data!.isEmpty) {
                                                 return Container();
                                               }
-                                              final buttonAddProductoRecord =
-                                                  buttonAddProductoRecordList
+                                              final anadirCarritoProductoRecord =
+                                                  anadirCarritoProductoRecordList
                                                           .isNotEmpty
-                                                      ? buttonAddProductoRecordList
+                                                      ? anadirCarritoProductoRecordList
                                                           .first
                                                       : null;
 

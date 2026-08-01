@@ -101,7 +101,7 @@ class _HistorialPedidosCopyWidgetState extends State<HistorialPedidosCopyWidget>
                               Flexible(
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'ldbmk8td' /* My Orders */,
+                                    'ldbmk8td' /* Mis ordenes */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .labelLarge
@@ -222,13 +222,13 @@ class _HistorialPedidosCopyWidgetState extends State<HistorialPedidosCopyWidget>
                                           Tab(
                                             text: FFLocalizations.of(context)
                                                 .getText(
-                                              'y2567ilu' /* My Order */,
+                                              'y2567ilu' /* Mi orden */,
                                             ),
                                           ),
                                           Tab(
                                             text: FFLocalizations.of(context)
                                                 .getText(
-                                              'hutw57a7' /* History */,
+                                              'hutw57a7' /* Historial */,
                                             ),
                                           ),
                                         ],
@@ -496,7 +496,7 @@ class _HistorialPedidosCopyWidgetState extends State<HistorialPedidosCopyWidget>
                                                                                   children: [
                                                                                     Text(
                                                                                       FFLocalizations.of(context).getText(
-                                                                                        'gxb2x8zt' /* Date */,
+                                                                                        'gxb2x8zt' /* Fecha */,
                                                                                       ),
                                                                                       style: FlutterFlowTheme.of(context).labelSmall.override(
                                                                                             font: GoogleFonts.plusJakartaSans(
@@ -541,7 +541,7 @@ class _HistorialPedidosCopyWidgetState extends State<HistorialPedidosCopyWidget>
                                                                                   children: [
                                                                                     Text(
                                                                                       FFLocalizations.of(context).getText(
-                                                                                        'f6jkzdfv' /* Price */,
+                                                                                        'f6jkzdfv' /* Precio */,
                                                                                       ),
                                                                                       style: FlutterFlowTheme.of(context).labelSmall.override(
                                                                                             font: GoogleFonts.plusJakartaSans(
@@ -617,7 +617,7 @@ class _HistorialPedidosCopyWidgetState extends State<HistorialPedidosCopyWidget>
                                                                           },
                                                                           text:
                                                                               FFLocalizations.of(context).getText(
-                                                                            'dk6eilfe' /* Detail */,
+                                                                            'dk6eilfe' /* Detalles */,
                                                                           ),
                                                                           options:
                                                                               FFButtonOptions(
@@ -634,7 +634,7 @@ class _HistorialPedidosCopyWidgetState extends State<HistorialPedidosCopyWidget>
                                                                                 0.0,
                                                                                 0.0),
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
+                                                                                Color(0xFFE84C10),
                                                                             textStyle: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                   font: GoogleFonts.plusJakartaSans(
                                                                                     fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
@@ -862,7 +862,10 @@ class _HistorialPedidosCopyWidgetState extends State<HistorialPedidosCopyWidget>
                                                                                 ClipRRect(
                                                                               borderRadius: BorderRadius.circular(0.0),
                                                                               child: Image.network(
-                                                                                rowProductoRecord.proFotoUrl,
+                                                                                valueOrDefault<String>(
+                                                                                  rowProductoRecord.proFotoUrl,
+                                                                                  'https://firebasestorage.googleapis.com/v0/b/proyectoprogramacionmovi-c6375.firebasestorage.app/o/Image-not-found.png?alt=media&token=d7f1ab77-a4b0-4fdb-a373-acbbb22855c2',
+                                                                                ),
                                                                                 width: 300.0,
                                                                                 height: 200.0,
                                                                                 fit: BoxFit.cover,
@@ -934,7 +937,7 @@ class _HistorialPedidosCopyWidgetState extends State<HistorialPedidosCopyWidget>
                                                                                   children: [
                                                                                     Text(
                                                                                       FFLocalizations.of(context).getText(
-                                                                                        'a7b1rpvd' /* Date */,
+                                                                                        'a7b1rpvd' /* Fecha */,
                                                                                       ),
                                                                                       style: FlutterFlowTheme.of(context).labelSmall.override(
                                                                                             font: GoogleFonts.plusJakartaSans(
@@ -983,7 +986,7 @@ class _HistorialPedidosCopyWidgetState extends State<HistorialPedidosCopyWidget>
                                                                                   children: [
                                                                                     Text(
                                                                                       FFLocalizations.of(context).getText(
-                                                                                        '9rhw22x8' /* Price */,
+                                                                                        '9rhw22x8' /* Precio */,
                                                                                       ),
                                                                                       style: FlutterFlowTheme.of(context).labelSmall.override(
                                                                                             font: GoogleFonts.plusJakartaSans(
@@ -1041,7 +1044,7 @@ class _HistorialPedidosCopyWidgetState extends State<HistorialPedidosCopyWidget>
                                                                           },
                                                                           text:
                                                                               FFLocalizations.of(context).getText(
-                                                                            'eqnr4msm' /* Detail */,
+                                                                            'eqnr4msm' /* Detalle */,
                                                                           ),
                                                                           options:
                                                                               FFButtonOptions(
@@ -1090,7 +1093,7 @@ class _HistorialPedidosCopyWidgetState extends State<HistorialPedidosCopyWidget>
                                                                           },
                                                                           text:
                                                                               FFLocalizations.of(context).getText(
-                                                                            'pnjc4uk4' /* Tracking */,
+                                                                            'pnjc4uk4' /* Seguimiento */,
                                                                           ),
                                                                           options:
                                                                               FFButtonOptions(

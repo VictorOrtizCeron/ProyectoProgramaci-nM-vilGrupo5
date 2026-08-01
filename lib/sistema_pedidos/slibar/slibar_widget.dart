@@ -158,7 +158,7 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'ss8oc7rp' /* Home */,
+                                'ss8oc7rp' /* Inicio */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyLarge
@@ -522,7 +522,7 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                                     12.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'mf41gikt' /* Menu Administrador */,
+                                    'mf41gikt' /* Menú Administrador */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .labelLarge

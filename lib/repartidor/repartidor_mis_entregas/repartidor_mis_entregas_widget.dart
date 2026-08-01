@@ -258,9 +258,7 @@ class _RepartidorMisEntregasWidgetState
                                                   .fromSTEB(8.0, 4.0, 8.0, 4.0),
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryText,
+                                                  color: Color(0xFFFFF000),
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           16.0),
@@ -287,8 +285,9 @@ class _RepartidorMisEntregasWidgetState
                                                                     .labelSmall
                                                                     .fontStyle,
                                                           ),
-                                                          color:
-                                                              Color(0xFFFFFF00),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primaryText,
                                                           fontSize: 12.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:

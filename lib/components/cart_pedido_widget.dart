@@ -119,7 +119,7 @@ class _CartPedidoWidgetState extends State<CartPedidoWidget> {
               color: FlutterFlowTheme.of(context).info,
               size: 16.0,
             ),
-            fillColor: FlutterFlowTheme.of(context).primary,
+            fillColor: Color(0xFF108BE8),
             elevation: 0.0,
             borderColor: Colors.transparent,
             borderWidth: 0.0,

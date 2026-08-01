@@ -65,7 +65,7 @@ class _MenuRepartidorWidgetState extends State<MenuRepartidorWidget> {
                 width: 40.0,
                 height: 40.0,
                 decoration: BoxDecoration(
-                  color: FlutterFlowTheme.of(context).primary,
+                  color: Color(0xFF108BE8),
                   shape: BoxShape.circle,
                 ),
                 child: Align(
@@ -83,7 +83,7 @@ class _MenuRepartidorWidgetState extends State<MenuRepartidorWidget> {
                 children: [
                   Text(
                     FFLocalizations.of(context).getText(
-                      'ud4f6lk4' /* Hola, Carlos */,
+                      'ud4f6lk4' /* Hola, Usuario */,
                     ),
                     style: FlutterFlowTheme.of(context).titleLarge.override(
                           font: GoogleFonts.plusJakartaSans(
