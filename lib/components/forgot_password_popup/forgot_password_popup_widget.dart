@@ -107,19 +107,14 @@ class _ForgotPasswordPopupWidgetState extends State<ForgotPasswordPopupWidget> {
                                       .titleLarge
                                       .override(
                                         font: GoogleFonts.plusJakartaSans(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleLarge
-                                                  .fontWeight,
+                                          fontWeight: FontWeight.w600,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .titleLarge
                                                   .fontStyle,
                                         ),
                                         letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontWeight,
+                                        fontWeight: FontWeight.w600,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .titleLarge
                                             .fontStyle,
@@ -149,6 +144,8 @@ class _ForgotPasswordPopupWidgetState extends State<ForgotPasswordPopupWidget> {
                                                   .labelMedium
                                                   .fontStyle,
                                         ),
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryText,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
@@ -193,7 +190,9 @@ class _ForgotPasswordPopupWidgetState extends State<ForgotPasswordPopupWidget> {
                                                     .labelLarge
                                                     .fontStyle,
                                           ),
-                                          fontSize: 10.0,
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryText,
+                                          fontSize: 12.0,
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -238,6 +237,8 @@ class _ForgotPasswordPopupWidgetState extends State<ForgotPasswordPopupWidget> {
                                                       .labelMedium
                                                       .fontStyle,
                                             ),
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryText,
                                             letterSpacing: 0.0,
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
@@ -265,6 +266,8 @@ class _ForgotPasswordPopupWidgetState extends State<ForgotPasswordPopupWidget> {
                                                       .labelMedium
                                                       .fontStyle,
                                             ),
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryText,
                                             letterSpacing: 0.0,
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
@@ -278,11 +281,11 @@ class _ForgotPasswordPopupWidgetState extends State<ForgotPasswordPopupWidget> {
                                       enabledBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
                                           color: FlutterFlowTheme.of(context)
-                                              .grey3,
+                                              .alternate,
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(16.0),
+                                            BorderRadius.circular(12.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
@@ -291,7 +294,7 @@ class _ForgotPasswordPopupWidgetState extends State<ForgotPasswordPopupWidget> {
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(16.0),
+                                            BorderRadius.circular(12.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
@@ -300,7 +303,7 @@ class _ForgotPasswordPopupWidgetState extends State<ForgotPasswordPopupWidget> {
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(16.0),
+                                            BorderRadius.circular(12.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
@@ -309,11 +312,11 @@ class _ForgotPasswordPopupWidgetState extends State<ForgotPasswordPopupWidget> {
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(16.0),
+                                            BorderRadius.circular(12.0),
                                       ),
                                       filled: true,
-                                      fillColor: FlutterFlowTheme.of(context)
-                                          .lightGrey2,
+                                      fillColor:
+                                          FlutterFlowTheme.of(context).white,
                                       contentPadding:
                                           EdgeInsetsDirectional.fromSTEB(
                                               8.0, 0.0, 0.0, 0.0),
@@ -348,6 +351,8 @@ class _ForgotPasswordPopupWidgetState extends State<ForgotPasswordPopupWidget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryText,
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)

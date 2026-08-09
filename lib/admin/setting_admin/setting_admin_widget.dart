@@ -51,7 +51,7 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).lightGrey3,
+        backgroundColor: Color(0xFFF7F5F1),
         body: SafeArea(
           top: true,
           child: Container(
@@ -63,14 +63,14 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                   width: double.infinity,
                   height: double.infinity,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).grey3,
+                    color: Color(0xFFF7F5F1),
                   ),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Container(
                         decoration: BoxDecoration(
-                          color: FlutterFlowTheme.of(context).grey3,
+                          color: Color(0xFFF7F5F1),
                         ),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
@@ -94,10 +94,7 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                       .labelLarge
                                       .override(
                                         font: GoogleFonts.plusJakartaSans(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelLarge
-                                                  .fontWeight,
+                                          fontWeight: FontWeight.w600,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge
@@ -105,9 +102,7 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                         ),
                                         fontSize: 19.0,
                                         letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .labelLarge
-                                            .fontWeight,
+                                        fontWeight: FontWeight.w600,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .labelLarge
                                             .fontStyle,
@@ -198,9 +193,15 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
-                                                BorderRadius.circular(16.0),
+                                                BorderRadius.circular(12.0),
+                                            border: Border.all(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                              width: 1.0,
+                                            ),
                                           ),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -240,6 +241,10 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -261,6 +266,11 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
                                                 dense: false,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          12.0),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -272,9 +282,15 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
-                                                BorderRadius.circular(16.0),
+                                                BorderRadius.circular(12.0),
+                                            border: Border.all(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                              width: 1.0,
+                                            ),
                                           ),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -315,6 +331,10 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -336,6 +356,11 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
                                                 dense: false,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          12.0),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -347,9 +372,15 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
-                                                BorderRadius.circular(16.0),
+                                                BorderRadius.circular(12.0),
+                                            border: Border.all(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                              width: 1.0,
+                                            ),
                                           ),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -390,6 +421,10 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -411,6 +446,11 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
                                                 dense: false,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          12.0),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -422,9 +462,15 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
-                                                BorderRadius.circular(16.0),
+                                                BorderRadius.circular(12.0),
+                                            border: Border.all(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                              width: 1.0,
+                                            ),
                                           ),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -465,6 +511,10 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -486,6 +536,11 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
                                                 dense: false,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          12.0),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -509,9 +564,14 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
-                                                BorderRadius.circular(16.0),
+                                                BorderRadius.circular(12.0),
+                                            border: Border.all(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                            ),
                                           ),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -551,6 +611,10 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -572,6 +636,11 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
                                                 dense: false,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          12.0),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -635,9 +704,14 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
-                                                BorderRadius.circular(16.0),
+                                                BorderRadius.circular(12.0),
+                                            border: Border.all(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                            ),
                                           ),
                                           child: Material(
                                             color: Colors.transparent,
@@ -668,6 +742,9 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                                                     .bodyMedium
                                                                     .fontStyle,
                                                           ),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryText,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -689,6 +766,10 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .primaryBackground,
                                               dense: false,
+                                              shape: RoundedRectangleBorder(
+                                                borderRadius:
+                                                    BorderRadius.circular(12.0),
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -699,9 +780,14 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
-                                                BorderRadius.circular(16.0),
+                                                BorderRadius.circular(12.0),
+                                            border: Border.all(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                            ),
                                           ),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -742,6 +828,10 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -763,6 +853,11 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
                                                 dense: false,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          12.0),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -774,9 +869,14 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
-                                                BorderRadius.circular(16.0),
+                                                BorderRadius.circular(12.0),
+                                            border: Border.all(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                            ),
                                           ),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -858,13 +958,18 @@ class _SettingAdminWidgetState extends State<SettingAdminWidget> {
                                                   Icons.arrow_forward_ios,
                                                   color: FlutterFlowTheme.of(
                                                           context)
-                                                      .primary,
+                                                      .grey2,
                                                   size: 20.0,
                                                 ),
                                                 tileColor:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
                                                 dense: false,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          12.0),
+                                                ),
                                               ),
                                             ),
                                           ),

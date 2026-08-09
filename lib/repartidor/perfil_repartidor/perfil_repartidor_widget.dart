@@ -87,9 +87,9 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+          backgroundColor: Color(0xFFF7F5F1),
           automaticallyImplyLeading: false,
           leading: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
@@ -113,12 +113,12 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
             ),
             style: FlutterFlowTheme.of(context).titleLarge.override(
                   font: GoogleFonts.plusJakartaSans(
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.bold,
                     fontStyle:
                         FlutterFlowTheme.of(context).titleLarge.fontStyle,
                   ),
                   letterSpacing: 0.0,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.bold,
                   fontStyle: FlutterFlowTheme.of(context).titleLarge.fontStyle,
                 ),
           ),
@@ -411,8 +411,8 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
                                               BorderRadius.circular(12.0),
                                         ),
                                         filled: true,
-                                        fillColor: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
+                                        fillColor:
+                                            FlutterFlowTheme.of(context).white,
                                         contentPadding:
                                             EdgeInsetsDirectional.fromSTEB(
                                                 16.0, 16.0, 16.0, 16.0),
@@ -431,7 +431,7 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
                                                       .fontStyle,
                                             ),
                                             color: FlutterFlowTheme.of(context)
-                                                .primaryText,
+                                                .secondaryText,
                                             letterSpacing: 0.0,
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
@@ -573,8 +573,8 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       filled: true,
-                                      fillColor: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
+                                      fillColor:
+                                          FlutterFlowTheme.of(context).white,
                                       contentPadding:
                                           EdgeInsetsDirectional.fromSTEB(
                                               16.0, 16.0, 16.0, 16.0),
@@ -599,7 +599,7 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
                                                     .fontStyle,
                                           ),
                                           color: FlutterFlowTheme.of(context)
-                                              .primaryText,
+                                              .secondaryText,
                                           letterSpacing: 0.0,
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
@@ -746,8 +746,8 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
                                               BorderRadius.circular(12.0),
                                         ),
                                         filled: true,
-                                        fillColor: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
+                                        fillColor:
+                                            FlutterFlowTheme.of(context).white,
                                         contentPadding:
                                             EdgeInsetsDirectional.fromSTEB(
                                                 16.0, 16.0, 16.0, 16.0),
@@ -772,7 +772,7 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
                                                       .fontStyle,
                                             ),
                                             color: FlutterFlowTheme.of(context)
-                                                .primaryText,
+                                                .secondaryText,
                                             letterSpacing: 0.0,
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
@@ -920,8 +920,8 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
                                               BorderRadius.circular(12.0),
                                         ),
                                         filled: true,
-                                        fillColor: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
+                                        fillColor:
+                                            FlutterFlowTheme.of(context).white,
                                         contentPadding:
                                             EdgeInsetsDirectional.fromSTEB(
                                                 16.0, 16.0, 16.0, 16.0),
@@ -946,7 +946,7 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
                                                       .fontStyle,
                                             ),
                                             color: FlutterFlowTheme.of(context)
-                                                .primaryText,
+                                                .secondaryText,
                                             letterSpacing: 0.0,
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
@@ -1038,8 +1038,7 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
                                     width: double.infinity,
                                     height: 56.0,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
+                                      color: FlutterFlowTheme.of(context).white,
                                       borderRadius: BorderRadius.circular(12.0),
                                       border: Border.all(
                                         color: FlutterFlowTheme.of(context)
@@ -1095,7 +1094,7 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
                                                                 ),
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .primaryText,
+                                                                    .secondaryText,
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight: FlutterFlowTheme.of(
@@ -1267,26 +1266,26 @@ class _PerfilRepartidorWidgetState extends State<PerfilRepartidorWidget> {
                                     16.0, 0.0, 16.0, 0.0),
                                 iconPadding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
-                                color: Colors.transparent,
+                                color: FlutterFlowTheme.of(context).white,
                                 textStyle: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
                                       font: GoogleFonts.plusJakartaSans(
-                                        fontWeight: FontWeight.w500,
+                                        fontWeight: FontWeight.w600,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .fontStyle,
                                       ),
                                       color: Color(0xFFFF6A4D),
                                       letterSpacing: 0.0,
-                                      fontWeight: FontWeight.w500,
+                                      fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .fontStyle,
                                     ),
                                 elevation: 0.0,
                                 borderSide: BorderSide(
-                                  color: Color(0xFFFF6A4D),
+                                  color: FlutterFlowTheme.of(context).alternate,
                                   width: 1.0,
                                 ),
                                 borderRadius: BorderRadius.circular(8.0),

@@ -58,7 +58,7 @@ class _VerMovInventarioWidgetState extends State<VerMovInventarioWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).alternate,
+            backgroundColor: Color(0xFFF7F5F1),
             body: Center(
               child: SizedBox(
                 width: 40.0,
@@ -81,17 +81,17 @@ class _VerMovInventarioWidgetState extends State<VerMovInventarioWidget> {
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).alternate,
+            backgroundColor: Color(0xFFF7F5F1),
             appBar: AppBar(
-              backgroundColor: FlutterFlowTheme.of(context).primary,
+              backgroundColor: Color(0xFFF7F5F1),
               automaticallyImplyLeading: false,
               leading: FlutterFlowIconButton(
                 borderRadius: 8.0,
                 buttonSize: 40.0,
-                fillColor: FlutterFlowTheme.of(context).primary,
+                fillColor: Color(0xFFF7F5F1),
                 icon: Icon(
                   Icons.arrow_back,
-                  color: FlutterFlowTheme.of(context).info,
+                  color: FlutterFlowTheme.of(context).primaryText,
                   size: 24.0,
                 ),
                 onPressed: () async {
@@ -111,7 +111,7 @@ class _VerMovInventarioWidgetState extends State<VerMovInventarioWidget> {
                           fontStyle:
                               FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                         ),
-                        color: FlutterFlowTheme.of(context).primaryBackground,
+                        color: FlutterFlowTheme.of(context).primaryText,
                         fontSize: 28.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.bold,
@@ -155,8 +155,23 @@ class _VerMovInventarioWidgetState extends State<VerMovInventarioWidget> {
                                     width: double.infinity,
                                     height: 100.0,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
+                                      color: FlutterFlowTheme.of(context).white,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 8.0,
+                                          color: Color(0x1A000000),
+                                          offset: Offset(
+                                            0.0,
+                                            2.0,
+                                          ),
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(12.0),
+                                      border: Border.all(
+                                        color: FlutterFlowTheme.of(context)
+                                            .alternate,
+                                        width: 1.0,
+                                      ),
                                     ),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -376,12 +391,13 @@ class _VerMovInventarioWidgetState extends State<VerMovInventarioWidget> {
                           size: 15.0,
                         ),
                         options: FFButtonOptions(
-                          height: 40.0,
+                          width: MediaQuery.sizeOf(context).width * 0.9,
+                          height: 45.0,
                           padding: EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: Color(0x4C4B39EF),
+                          color: FlutterFlowTheme.of(context).primary,
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
                                     font: GoogleFonts.plusJakartaSans(
@@ -402,7 +418,7 @@ class _VerMovInventarioWidgetState extends State<VerMovInventarioWidget> {
                                         .fontStyle,
                                   ),
                           elevation: 0.0,
-                          borderRadius: BorderRadius.circular(8.0),
+                          borderRadius: BorderRadius.circular(12.0),
                         ),
                       ),
                     ),

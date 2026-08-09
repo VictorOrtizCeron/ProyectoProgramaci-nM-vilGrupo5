@@ -99,7 +99,7 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             body: Center(
               child: SizedBox(
                 width: 40.0,
@@ -130,9 +130,9 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             appBar: AppBar(
-              backgroundColor: Colors.white,
+              backgroundColor: Color(0xFFF7F5F1),
               automaticallyImplyLeading: false,
               leading: FlutterFlowIconButton(
                 borderColor: Colors.transparent,
@@ -263,8 +263,7 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                   width: MediaQuery.sizeOf(context).width * 0.5,
                                   height: 190.0,
                                   decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
+                                    color: Color(0xFFFDF0E9),
                                     boxShadow: [
                                       BoxShadow(
                                         blurRadius: 4.0,
@@ -276,6 +275,11 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                       )
                                     ],
                                     borderRadius: BorderRadius.circular(24.0),
+                                    border: Border.all(
+                                      color:
+                                          FlutterFlowTheme.of(context).primary,
+                                      width: 1.0,
+                                    ),
                                   ),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(24.0),
@@ -306,9 +310,6 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                               textInputAction: TextInputAction.next,
                               obscureText: false,
                               decoration: InputDecoration(
-                                labelText: FFLocalizations.of(context).getText(
-                                  '6l5hvf96' /* Nombre del Producto */,
-                                ),
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -320,6 +321,8 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -343,6 +346,8 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                             .bodySmall
                                             .fontStyle,
                                       ),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodySmall
@@ -353,36 +358,35 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                     ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryText,
+                                    color:
+                                        FlutterFlowTheme.of(context).alternate,
                                     width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8.0),
+                                  borderRadius: BorderRadius.circular(12.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).primary,
                                     width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8.0),
+                                  borderRadius: BorderRadius.circular(12.0),
                                 ),
                                 errorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
                                     width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8.0),
+                                  borderRadius: BorderRadius.circular(12.0),
                                 ),
                                 focusedErrorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
                                     width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8.0),
+                                  borderRadius: BorderRadius.circular(12.0),
                                 ),
                                 filled: true,
-                                fillColor: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
+                                fillColor: FlutterFlowTheme.of(context).white,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
@@ -396,7 +400,7 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                           .fontStyle,
                                     ),
                                     color: FlutterFlowTheme.of(context)
-                                        .primaryText,
+                                        .secondaryText,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -432,10 +436,6 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                 textInputAction: TextInputAction.next,
                                 obscureText: false,
                                 decoration: InputDecoration(
-                                  labelText:
-                                      FFLocalizations.of(context).getText(
-                                    '21amlkhk' /* Descripcion */,
-                                  ),
                                   labelStyle: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
@@ -449,6 +449,8 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryText,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -474,6 +476,8 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                                   .bodySmall
                                                   .fontStyle,
                                         ),
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryText,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodySmall
@@ -485,10 +489,10 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
                                       color: FlutterFlowTheme.of(context)
-                                          .primaryText,
+                                          .alternate,
                                       width: 1.0,
                                     ),
-                                    borderRadius: BorderRadius.circular(8.0),
+                                    borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   focusedBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
@@ -496,25 +500,24 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                           FlutterFlowTheme.of(context).primary,
                                       width: 1.0,
                                     ),
-                                    borderRadius: BorderRadius.circular(8.0),
+                                    borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   errorBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
                                       color: FlutterFlowTheme.of(context).error,
                                       width: 1.0,
                                     ),
-                                    borderRadius: BorderRadius.circular(8.0),
+                                    borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   focusedErrorBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
                                       color: FlutterFlowTheme.of(context).error,
                                       width: 1.0,
                                     ),
-                                    borderRadius: BorderRadius.circular(8.0),
+                                    borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   filled: true,
-                                  fillColor: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
+                                  fillColor: FlutterFlowTheme.of(context).white,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -527,6 +530,8 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -591,6 +596,8 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -604,16 +611,17 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                 ),
                                 icon: Icon(
                                   Icons.keyboard_arrow_down_rounded,
-                                  color: FlutterFlowTheme.of(context).primary,
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryText,
                                   size: 24.0,
                                 ),
                                 fillColor: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
                                 elevation: 2.0,
                                 borderColor:
-                                    FlutterFlowTheme.of(context).primaryText,
+                                    FlutterFlowTheme.of(context).alternate,
                                 borderWidth: 1.0,
-                                borderRadius: 8.0,
+                                borderRadius: 12.0,
                                 margin: EdgeInsetsDirectional.fromSTEB(
                                     12.0, 4.0, 12.0, 4.0),
                                 hidesUnderline: true,
@@ -671,24 +679,46 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                             ),
                                           ),
                                         ),
-                                        TextFormField(
-                                          controller:
-                                              _model.txtPrecioTextController,
-                                          focusNode: _model.txtPrecioFocusNode,
-                                          autofocus: false,
-                                          textInputAction: TextInputAction.done,
-                                          obscureText: false,
-                                          decoration: InputDecoration(
-                                            hintText: valueOrDefault<String>(
-                                              widget!.precio?.toString(),
-                                              'Precio Error',
-                                            ),
-                                            hintStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodySmall
-                                                    .override(
-                                                      font: GoogleFonts
-                                                          .plusJakartaSans(
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 15.0),
+                                          child: TextFormField(
+                                            controller:
+                                                _model.txtPrecioTextController,
+                                            focusNode:
+                                                _model.txtPrecioFocusNode,
+                                            autofocus: false,
+                                            textInputAction:
+                                                TextInputAction.done,
+                                            obscureText: false,
+                                            decoration: InputDecoration(
+                                              hintText: valueOrDefault<String>(
+                                                widget!.precio?.toString(),
+                                                'Precio Error',
+                                              ),
+                                              hintStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodySmall
+                                                      .override(
+                                                        font: GoogleFonts
+                                                            .plusJakartaSans(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodySmall
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodySmall
+                                                                  .fontStyle,
+                                                        ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
+                                                        letterSpacing: 0.0,
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -700,69 +730,69 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                                                 .bodySmall
                                                                 .fontStyle,
                                                       ),
-                                                      letterSpacing: 0.0,
-                                                      fontWeight:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodySmall
-                                                              .fontWeight,
-                                                      fontStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodySmall
-                                                              .fontStyle,
-                                                    ),
-                                            enabledBorder: OutlineInputBorder(
-                                              borderSide: BorderSide(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryText,
-                                                width: 1.0,
+                                              enabledBorder: OutlineInputBorder(
+                                                borderSide: BorderSide(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .alternate,
+                                                  width: 1.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(12.0),
                                               ),
-                                              borderRadius:
-                                                  BorderRadius.circular(8.0),
-                                            ),
-                                            focusedBorder: OutlineInputBorder(
-                                              borderSide: BorderSide(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                width: 1.0,
+                                              focusedBorder: OutlineInputBorder(
+                                                borderSide: BorderSide(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primary,
+                                                  width: 1.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(12.0),
                                               ),
-                                              borderRadius:
-                                                  BorderRadius.circular(8.0),
-                                            ),
-                                            errorBorder: OutlineInputBorder(
-                                              borderSide: BorderSide(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .error,
-                                                width: 1.0,
+                                              errorBorder: OutlineInputBorder(
+                                                borderSide: BorderSide(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .error,
+                                                  width: 1.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(12.0),
                                               ),
-                                              borderRadius:
-                                                  BorderRadius.circular(8.0),
-                                            ),
-                                            focusedErrorBorder:
-                                                OutlineInputBorder(
-                                              borderSide: BorderSide(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .error,
-                                                width: 1.0,
+                                              focusedErrorBorder:
+                                                  OutlineInputBorder(
+                                                borderSide: BorderSide(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .error,
+                                                  width: 1.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(12.0),
                                               ),
-                                              borderRadius:
-                                                  BorderRadius.circular(8.0),
+                                              filled: true,
+                                              fillColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .white,
                                             ),
-                                            filled: true,
-                                            fillColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .secondaryBackground,
-                                          ),
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                font:
-                                                    GoogleFonts.plusJakartaSans(
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  font: GoogleFonts
+                                                      .plusJakartaSans(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  letterSpacing: 0.0,
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -774,24 +804,16 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                                           .bodyMedium
                                                           .fontStyle,
                                                 ),
-                                                letterSpacing: 0.0,
-                                                fontWeight:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .fontWeight,
-                                                fontStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .fontStyle,
-                                              ),
-                                          keyboardType: const TextInputType
-                                              .numberWithOptions(decimal: true),
-                                          cursorColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .primary,
-                                          validator: _model
-                                              .txtPrecioTextControllerValidator
-                                              .asValidator(context),
+                                            keyboardType: const TextInputType
+                                                .numberWithOptions(
+                                                decimal: true),
+                                            cursorColor:
+                                                FlutterFlowTheme.of(context)
+                                                    .primary,
+                                            validator: _model
+                                                .txtPrecioTextControllerValidator
+                                                .asValidator(context),
+                                          ),
                                         ),
                                       ],
                                     ),
@@ -839,13 +861,12 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                                       safeSetState(() =>
                                           _model.swActivoValue = newValue!);
                                     },
-                                    activeColor: Color(0xFFFF4700),
+                                    activeColor:
+                                        FlutterFlowTheme.of(context).primary,
                                     activeTrackColor: Color(0xFFF4B49A),
-                                    inactiveTrackColor:
-                                        FlutterFlowTheme.of(context).alternate,
+                                    inactiveTrackColor: Color(0xFFFDF0E9),
                                     inactiveThumbColor:
-                                        FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
+                                        FlutterFlowTheme.of(context).tertiary,
                                   ),
                                 ),
                               ],
@@ -945,7 +966,7 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                             );
                           },
                           text: FFLocalizations.of(context).getText(
-                            'cvnei46h' /* EDITAR */,
+                            'cvnei46h' /* Editar */,
                           ),
                           options: FFButtonOptions(
                             width: double.infinity,
@@ -953,7 +974,7 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                             padding: EdgeInsets.all(8.0),
                             iconPadding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context).primaryText,
+                            color: FlutterFlowTheme.of(context).primary,
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
@@ -979,7 +1000,7 @@ class _EditarProductos2WidgetState extends State<EditarProductos2Widget> {
                               color: Colors.transparent,
                               width: 1.0,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            borderRadius: BorderRadius.circular(12.0),
                           ),
                         ),
                       ),

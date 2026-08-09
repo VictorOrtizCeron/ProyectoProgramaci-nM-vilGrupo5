@@ -87,17 +87,13 @@ class _LogOutModalWidgetState extends State<LogOutModalWidget> {
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).titleMedium.override(
                             font: GoogleFonts.plusJakartaSans(
-                              fontWeight: FlutterFlowTheme.of(context)
-                                  .titleMedium
-                                  .fontWeight,
+                              fontWeight: FontWeight.w600,
                               fontStyle: FlutterFlowTheme.of(context)
                                   .titleMedium
                                   .fontStyle,
                             ),
                             letterSpacing: 0.0,
-                            fontWeight: FlutterFlowTheme.of(context)
-                                .titleMedium
-                                .fontWeight,
+                            fontWeight: FontWeight.w600,
                             fontStyle: FlutterFlowTheme.of(context)
                                 .titleMedium
                                 .fontStyle,
@@ -128,18 +124,14 @@ class _LogOutModalWidgetState extends State<LogOutModalWidget> {
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   font: GoogleFonts.plusJakartaSans(
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .fontWeight,
+                                    fontWeight: FontWeight.w500,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .fontStyle,
                                   ),
                                   color: Colors.white,
                                   letterSpacing: 0.0,
-                                  fontWeight: FlutterFlowTheme.of(context)
-                                      .titleSmall
-                                      .fontWeight,
+                                  fontWeight: FontWeight.w500,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .fontStyle,
@@ -171,6 +163,7 @@ class _LogOutModalWidgetState extends State<LogOutModalWidget> {
                     child: Container(
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
+                        borderRadius: BorderRadius.circular(12.0),
                       ),
                       child: Padding(
                         padding: EdgeInsets.all(8.0),

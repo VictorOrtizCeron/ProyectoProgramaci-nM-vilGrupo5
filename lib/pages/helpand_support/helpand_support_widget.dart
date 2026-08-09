@@ -61,14 +61,14 @@ class _HelpandSupportWidgetState extends State<HelpandSupportWidget> {
                   width: double.infinity,
                   height: double.infinity,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).primaryBackground,
+                    color: Color(0xFFF7F5F1),
                   ),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Container(
                         decoration: BoxDecoration(
-                          color: FlutterFlowTheme.of(context).primaryBackground,
+                          color: Color(0xFFF7F5F1),
                         ),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
@@ -99,19 +99,14 @@ class _HelpandSupportWidgetState extends State<HelpandSupportWidget> {
                                       .labelLarge
                                       .override(
                                         font: GoogleFonts.plusJakartaSans(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelLarge
-                                                  .fontWeight,
+                                          fontWeight: FontWeight.w500,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge
                                                   .fontStyle,
                                         ),
                                         letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .labelLarge
-                                            .fontWeight,
+                                        fontWeight: FontWeight.w500,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .labelLarge
                                             .fontStyle,
@@ -181,11 +176,7 @@ class _HelpandSupportWidgetState extends State<HelpandSupportWidget> {
                                               .override(
                                                 font:
                                                     GoogleFonts.plusJakartaSans(
-                                                  fontWeight:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .headlineMedium
-                                                          .fontWeight,
+                                                  fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -193,10 +184,7 @@ class _HelpandSupportWidgetState extends State<HelpandSupportWidget> {
                                                           .fontStyle,
                                                 ),
                                                 letterSpacing: 0.0,
-                                                fontWeight:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineMedium
-                                                        .fontWeight,
+                                                fontWeight: FontWeight.w500,
                                                 fontStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .headlineMedium
@@ -250,7 +238,7 @@ class _HelpandSupportWidgetState extends State<HelpandSupportWidget> {
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
+                                                      .white,
                                               borderRadius:
                                                   BorderRadius.circular(12.0),
                                               border: Border.all(
@@ -361,7 +349,7 @@ class _HelpandSupportWidgetState extends State<HelpandSupportWidget> {
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
+                                                      .white,
                                               borderRadius:
                                                   BorderRadius.circular(12.0),
                                               border: Border.all(
@@ -468,7 +456,7 @@ class _HelpandSupportWidgetState extends State<HelpandSupportWidget> {
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
+                                                      .white,
                                               borderRadius:
                                                   BorderRadius.circular(12.0),
                                               border: Border.all(
@@ -492,7 +480,7 @@ class _HelpandSupportWidgetState extends State<HelpandSupportWidget> {
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .tertiary,
+                                                                .primary,
                                                         size: 24.0,
                                                       ),
                                                       Expanded(

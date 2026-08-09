@@ -57,7 +57,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             body: Center(
               child: SizedBox(
                 width: 40.0,
@@ -79,9 +79,9 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             appBar: AppBar(
-              backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+              backgroundColor: Color(0xFFF7F5F1),
               automaticallyImplyLeading: false,
               title: Row(
                 mainAxisSize: MainAxisSize.max,
@@ -169,15 +169,12 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       FlutterFlowIconButton(
-                        borderColor: FlutterFlowTheme.of(context).alternate,
-                        borderRadius: 8.0,
-                        borderWidth: 1.0,
+                        borderRadius: 12.0,
                         buttonSize: 40.0,
-                        fillColor:
-                            FlutterFlowTheme.of(context).primaryBackground,
+                        fillColor: FlutterFlowTheme.of(context).primary,
                         icon: Icon(
                           Icons.notifications_rounded,
-                          color: FlutterFlowTheme.of(context).primaryText,
+                          color: FlutterFlowTheme.of(context).white,
                           size: 20.0,
                         ),
                         onPressed: () {
@@ -197,7 +194,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                             width: 56.31,
                             height: 56.31,
                             decoration: BoxDecoration(
-                              color: Color(0x4C1100FF),
+                              color: Color(0xFFE9A62A),
                               image: DecorationImage(
                                 fit: BoxFit.cover,
                                 image: Image.network(
@@ -261,8 +258,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                 borderRadius: 8.0,
                                 borderWidth: 1.0,
                                 buttonSize: 40.0,
-                                fillColor: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
+                                fillColor: FlutterFlowTheme.of(context).white,
                                 icon: Icon(
                                   Icons.refresh_rounded,
                                   color:
@@ -284,8 +280,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
+                          color: FlutterFlowTheme.of(context).white,
                           borderRadius: BorderRadius.circular(12.0),
                           border: Border.all(
                             color: FlutterFlowTheme.of(context).alternate,
@@ -364,7 +359,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(12.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
@@ -373,7 +368,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(12.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
@@ -381,7 +376,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(12.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
@@ -389,11 +384,11 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(12.0),
                                         ),
                                         filled: true,
-                                        fillColor: FlutterFlowTheme.of(context)
-                                            .primaryBackground,
+                                        fillColor:
+                                            FlutterFlowTheme.of(context).white,
                                         contentPadding:
                                             EdgeInsetsDirectional.fromSTEB(
                                                 12.0, 12.0, 12.0, 12.0),
@@ -417,6 +412,8 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                                       .bodyMedium
                                                       .fontStyle,
                                             ),
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryText,
                                             letterSpacing: 0.0,
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
@@ -463,6 +460,8 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryText,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,
                                           fontStyle:
@@ -480,13 +479,13 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                           .secondaryText,
                                       size: 20.0,
                                     ),
-                                    fillColor: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
+                                    fillColor:
+                                        FlutterFlowTheme.of(context).white,
                                     elevation: 0.0,
                                     borderColor:
                                         FlutterFlowTheme.of(context).alternate,
                                     borderWidth: 1.0,
-                                    borderRadius: 8.0,
+                                    borderRadius: 12.0,
                                     margin: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     hidesUnderline: true,
@@ -503,7 +502,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                     Container(
                       height: 955.1,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        color: Color(0xFFF7F5F1),
                         borderRadius: BorderRadius.circular(12.0),
                         border: Border.all(
                           color: FlutterFlowTheme.of(context).alternate,
@@ -524,8 +523,8 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                 child: Container(
                                   width: double.infinity,
                                   decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context).accent1,
-                                    borderRadius: BorderRadius.circular(0.0),
+                                    color: FlutterFlowTheme.of(context).primary,
+                                    borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   child: Padding(
                                     padding: EdgeInsets.all(12.0),
@@ -552,7 +551,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                                 ),
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .primary,
+                                                        .white,
                                                 fontSize: 15.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.bold,
@@ -569,7 +568,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                               FontAwesomeIcons.userCog,
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryText,
+                                                      .white,
                                               size: 24.0,
                                             ),
                                           ],
@@ -592,7 +591,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                                 ),
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .primary,
+                                                        .white,
                                                 fontSize: 15.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.bold,
@@ -609,7 +608,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                               FFIcons.kmailCog,
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryText,
+                                                      .white,
                                               size: 26.0,
                                             ),
                                           ],
@@ -633,7 +632,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                                 ),
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .primary,
+                                                        .white,
                                                 fontSize: 15.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.bold,
@@ -661,7 +660,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                                 ),
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .primary,
+                                                        .white,
                                                 fontSize: 13.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.bold,
@@ -704,9 +703,24 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .primaryBackground,
+                                                        .white,
+                                                boxShadow: [
+                                                  BoxShadow(
+                                                    blurRadius: 8.0,
+                                                    color: Color(0x1A000000),
+                                                    offset: Offset(
+                                                      0.0,
+                                                      2.0,
+                                                    ),
+                                                  )
+                                                ],
                                                 borderRadius:
-                                                    BorderRadius.circular(0.0),
+                                                    BorderRadius.circular(12.0),
+                                                border: Border.all(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .alternate,
+                                                ),
                                               ),
                                               child: Padding(
                                                 padding: EdgeInsets.all(12.0),
@@ -976,7 +990,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                                             borderRadius:
                                                                 BorderRadius
                                                                     .circular(
-                                                                        8.0),
+                                                                        12.0),
                                                           ),
                                                         ),
                                                       ),
@@ -989,12 +1003,10 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                                               .center,
                                                       children: [
                                                         FlutterFlowIconButton(
-                                                          borderRadius: 6.0,
+                                                          borderRadius: 12.0,
                                                           buttonSize: 40.0,
                                                           fillColor:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .accent3,
+                                                              Color(0xFFFDF0E9),
                                                           icon: Icon(
                                                             Icons.edit_rounded,
                                                             color: FlutterFlowTheme
@@ -1021,7 +1033,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                                           },
                                                         ),
                                                         FlutterFlowIconButton(
-                                                          borderRadius: 6.0,
+                                                          borderRadius: 12.0,
                                                           buttonSize: 40.0,
                                                           fillColor:
                                                               FlutterFlowTheme.of(

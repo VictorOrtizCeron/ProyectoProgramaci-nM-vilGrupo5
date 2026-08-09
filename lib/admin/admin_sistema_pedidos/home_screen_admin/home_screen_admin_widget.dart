@@ -68,7 +68,7 @@ class _HomeScreenAdminWidgetState extends State<HomeScreenAdminWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             body: Center(
               child: SizedBox(
                 width: 40.0,
@@ -90,7 +90,7 @@ class _HomeScreenAdminWidgetState extends State<HomeScreenAdminWidget> {
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             drawer: Drawer(
               elevation: 16.0,
               child: wrapWithModel(
@@ -102,7 +102,7 @@ class _HomeScreenAdminWidgetState extends State<HomeScreenAdminWidget> {
             appBar: PreferredSize(
               preferredSize: Size.fromHeight(34.0),
               child: AppBar(
-                backgroundColor: Colors.white,
+                backgroundColor: Color(0xFFF7F5F1),
                 automaticallyImplyLeading: false,
                 leading: Align(
                   alignment: AlignmentDirectional(0.0, 0.0),
@@ -180,8 +180,7 @@ class _HomeScreenAdminWidgetState extends State<HomeScreenAdminWidget> {
 
                           return Container(
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
+                              color: Color(0xFFF7F5F1),
                             ),
                             alignment: AlignmentDirectional(0.0, -1.0),
                             child: Padding(
@@ -563,9 +562,15 @@ class _HomeScreenAdminWidgetState extends State<HomeScreenAdminWidget> {
                                           child: Container(
                                             width: double.infinity,
                                             decoration: BoxDecoration(
-                                              color: Color(0x7DE3E3E3),
+                                              color: Colors.white,
                                               borderRadius:
                                                   BorderRadius.circular(24.0),
+                                              border: Border.all(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .alternate,
+                                                width: 1.0,
+                                              ),
                                             ),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -786,6 +791,11 @@ class _HomeScreenAdminWidgetState extends State<HomeScreenAdminWidget> {
                                                                   .circular(
                                                                       16.0),
                                                         ),
+                                                        filled: true,
+                                                        fillColor:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .white,
                                                         prefixIcon: Icon(
                                                           FFIcons.ksearch,
                                                           color:
@@ -831,6 +841,10 @@ class _HomeScreenAdminWidgetState extends State<HomeScreenAdminWidget> {
                                                 FlutterFlowIconButton(
                                                   borderRadius: 28.0,
                                                   buttonSize: 40.0,
+                                                  hoverColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .white,
                                                   icon: Icon(
                                                     Icons.clear,
                                                     color: Color(0xFFD5D6D6),
@@ -945,9 +959,10 @@ class _HomeScreenAdminWidgetState extends State<HomeScreenAdminWidget> {
                                   fillColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   elevation: 2.0,
-                                  borderColor: Colors.transparent,
-                                  borderWidth: 0.0,
-                                  borderRadius: 8.0,
+                                  borderColor:
+                                      FlutterFlowTheme.of(context).alternate,
+                                  borderWidth: 1.0,
+                                  borderRadius: 12.0,
                                   margin: EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 12.0, 0.0),
                                   hidesUnderline: true,
@@ -1002,6 +1017,8 @@ class _HomeScreenAdminWidgetState extends State<HomeScreenAdminWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryText,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -1102,15 +1119,21 @@ class _HomeScreenAdminWidgetState extends State<HomeScreenAdminWidget> {
                                                             .primaryBackground,
                                                         boxShadow: [
                                                           BoxShadow(
-                                                            blurRadius: 4.0,
+                                                            blurRadius: 8.0,
                                                             color: Color(
-                                                                0x33000000),
+                                                                0x1A000000),
                                                             offset: Offset(
                                                               0.0,
                                                               2.0,
                                                             ),
                                                           )
                                                         ],
+                                                        border: Border.all(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .alternate,
+                                                          width: 1.0,
+                                                        ),
                                                       ),
                                                       child: Row(
                                                         mainAxisSize:

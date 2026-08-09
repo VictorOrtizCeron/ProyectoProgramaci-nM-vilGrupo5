@@ -53,9 +53,9 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+          backgroundColor: Color(0xFFF7F5F1),
           automaticallyImplyLeading: false,
           title: InkWell(
             splashColor: Colors.transparent,
@@ -176,10 +176,9 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                   FlutterFlowIconButton(
                     borderRadius: 12.0,
                     buttonSize: 40.0,
-                    fillColor: FlutterFlowTheme.of(context).error,
                     icon: Icon(
                       Icons.logout_rounded,
-                      color: FlutterFlowTheme.of(context).info,
+                      color: FlutterFlowTheme.of(context).primaryText,
                       size: 20.0,
                     ),
                     onPressed: () async {
@@ -284,7 +283,7 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                           width: 48.0,
                           height: 48.0,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context).accent1,
+                            color: Color(0xFFE9A62A),
                             shape: BoxShape.circle,
                           ),
                           child: Align(
@@ -316,9 +315,8 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            borderRadius: BorderRadius.circular(16.0),
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(12.0),
                             border: Border.all(
                               color: FlutterFlowTheme.of(context).alternate,
                               width: 1.0,
@@ -343,8 +341,7 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                                     width: 56.0,
                                     height: 56.0,
                                     decoration: BoxDecoration(
-                                      color:
-                                          FlutterFlowTheme.of(context).accent1,
+                                      color: Color(0xFFE9A62A),
                                       shape: BoxShape.circle,
                                     ),
                                     child: Align(
@@ -430,9 +427,8 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            borderRadius: BorderRadius.circular(16.0),
+                            color: FlutterFlowTheme.of(context).white,
+                            borderRadius: BorderRadius.circular(12.0),
                             border: Border.all(
                               color: FlutterFlowTheme.of(context).alternate,
                               width: 1.0,
@@ -457,8 +453,7 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                                     width: 56.0,
                                     height: 56.0,
                                     decoration: BoxDecoration(
-                                      color:
-                                          FlutterFlowTheme.of(context).accent1,
+                                      color: Color(0xFFE9A62A),
                                       shape: BoxShape.circle,
                                     ),
                                     child: Align(
@@ -544,9 +539,8 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            borderRadius: BorderRadius.circular(16.0),
+                            color: FlutterFlowTheme.of(context).white,
+                            borderRadius: BorderRadius.circular(12.0),
                             border: Border.all(
                               color: FlutterFlowTheme.of(context).alternate,
                               width: 1.0,
@@ -570,8 +564,7 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                                     width: 56.0,
                                     height: 56.0,
                                     decoration: BoxDecoration(
-                                      color:
-                                          FlutterFlowTheme.of(context).accent1,
+                                      color: Color(0xFFE9A62A),
                                       shape: BoxShape.circle,
                                     ),
                                     child: Align(
@@ -668,7 +661,7 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
-                              borderRadius: BorderRadius.circular(16.0),
+                              borderRadius: BorderRadius.circular(12.0),
                               border: Border.all(
                                 color: FlutterFlowTheme.of(context).alternate,
                                 width: 1.0,
@@ -684,8 +677,7 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                                     width: 56.0,
                                     height: 56.0,
                                     decoration: BoxDecoration(
-                                      color:
-                                          FlutterFlowTheme.of(context).accent1,
+                                      color: Color(0xFFE9A62A),
                                       shape: BoxShape.circle,
                                     ),
                                     child: Align(
@@ -779,8 +771,7 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                           child: Container(
                             width: double.infinity,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
+                              color: FlutterFlowTheme.of(context).white,
                               borderRadius: BorderRadius.circular(16.0),
                               border: Border.all(
                                 color: FlutterFlowTheme.of(context).alternate,
@@ -797,8 +788,7 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                                     width: 56.0,
                                     height: 56.0,
                                     decoration: BoxDecoration(
-                                      color:
-                                          FlutterFlowTheme.of(context).accent1,
+                                      color: Color(0xFFE9A62A),
                                       shape: BoxShape.circle,
                                     ),
                                     child: Align(
@@ -892,8 +882,7 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                           child: Container(
                             width: double.infinity,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
+                              color: FlutterFlowTheme.of(context).white,
                               borderRadius: BorderRadius.circular(16.0),
                               border: Border.all(
                                 color: FlutterFlowTheme.of(context).alternate,
@@ -910,8 +899,7 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                                     width: 56.0,
                                     height: 56.0,
                                     decoration: BoxDecoration(
-                                      color:
-                                          FlutterFlowTheme.of(context).accent1,
+                                      color: Color(0xFFE9A62A),
                                       shape: BoxShape.circle,
                                     ),
                                     child: Align(
@@ -1000,7 +988,7 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        borderRadius: BorderRadius.circular(16.0),
+                        borderRadius: BorderRadius.circular(12.0),
                         border: Border.all(
                           color: FlutterFlowTheme.of(context).alternate,
                           width: 1.0,
@@ -1015,7 +1003,7 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                               width: 56.0,
                               height: 56.0,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context).accent1,
+                                color: Color(0xFFE9A62A),
                                 shape: BoxShape.circle,
                               ),
                               child: Align(
@@ -1100,8 +1088,8 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                       width: double.infinity,
                       height: 80.0,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).accent1,
-                        borderRadius: BorderRadius.circular(16.0),
+                        color: FlutterFlowTheme.of(context).primary,
+                        borderRadius: BorderRadius.circular(12.0),
                       ),
                       child: Padding(
                         padding: EdgeInsets.all(12.0),
@@ -1111,7 +1099,7 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                           children: [
                             Icon(
                               Icons.notifications_active_rounded,
-                              color: FlutterFlowTheme.of(context).primary,
+                              color: FlutterFlowTheme.of(context).white,
                               size: 24.0,
                             ),
                             Column(
@@ -1131,8 +1119,8 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                                                   .titleSmall
                                                   .fontStyle,
                                         ),
-                                        color: FlutterFlowTheme.of(context)
-                                            .primary,
+                                        color:
+                                            FlutterFlowTheme.of(context).white,
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w600,
@@ -1158,8 +1146,8 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                                                   .bodySmall
                                                   .fontStyle,
                                         ),
-                                        color: FlutterFlowTheme.of(context)
-                                            .primary,
+                                        color:
+                                            FlutterFlowTheme.of(context).white,
                                         fontSize: 12.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)

@@ -110,17 +110,13 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                   .titleLarge
                                   .override(
                                     font: GoogleFonts.plusJakartaSans(
-                                      fontWeight: FlutterFlowTheme.of(context)
-                                          .titleLarge
-                                          .fontWeight,
+                                      fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .titleLarge
                                           .fontStyle,
                                     ),
                                     letterSpacing: 0.0,
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .titleLarge
-                                        .fontWeight,
+                                    fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .titleLarge
                                         .fontStyle,
@@ -141,17 +137,15 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                   .labelMedium
                                   .override(
                                     font: GoogleFonts.plusJakartaSans(
-                                      fontWeight: FlutterFlowTheme.of(context)
-                                          .labelMedium
-                                          .fontWeight,
+                                      fontWeight: FontWeight.w500,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .fontStyle,
                                     ),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     letterSpacing: 0.0,
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .labelMedium
-                                        .fontWeight,
+                                    fontWeight: FontWeight.w500,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .fontStyle,
@@ -240,6 +234,9 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                                         .labelMedium
                                                         .fontStyle,
                                               ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryText,
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
@@ -267,6 +264,9 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                                         .labelMedium
                                                         .fontStyle,
                                               ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryText,
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
@@ -280,11 +280,11 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                         enabledBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
                                             color: FlutterFlowTheme.of(context)
-                                                .grey3,
+                                                .alternate,
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(16.0),
+                                              BorderRadius.circular(12.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
@@ -293,7 +293,7 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(16.0),
+                                              BorderRadius.circular(12.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
@@ -302,7 +302,7 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(16.0),
+                                              BorderRadius.circular(12.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
@@ -311,11 +311,11 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(16.0),
+                                              BorderRadius.circular(12.0),
                                         ),
                                         filled: true,
-                                        fillColor: FlutterFlowTheme.of(context)
-                                            .lightGrey2,
+                                        fillColor:
+                                            FlutterFlowTheme.of(context).white,
                                         prefixIcon: Icon(
                                           Icons.lock_outlined,
                                           color: valueOrDefault<Color>(
@@ -356,20 +356,16 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                           .bodyMedium
                                           .override(
                                             font: GoogleFonts.plusJakartaSans(
-                                              fontWeight:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontWeight,
+                                              fontWeight: FontWeight.w500,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .fontStyle,
                                             ),
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryText,
                                             letterSpacing: 0.0,
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontWeight,
+                                            fontWeight: FontWeight.w500,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -458,6 +454,9 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                                         .labelMedium
                                                         .fontStyle,
                                               ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryText,
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
@@ -485,6 +484,9 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                                         .labelMedium
                                                         .fontStyle,
                                               ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryText,
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
@@ -498,11 +500,11 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                         enabledBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
                                             color: FlutterFlowTheme.of(context)
-                                                .grey3,
+                                                .alternate,
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(16.0),
+                                              BorderRadius.circular(12.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
@@ -511,7 +513,7 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(16.0),
+                                              BorderRadius.circular(12.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
@@ -520,7 +522,7 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(16.0),
+                                              BorderRadius.circular(12.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
@@ -529,11 +531,11 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(16.0),
+                                              BorderRadius.circular(12.0),
                                         ),
                                         filled: true,
-                                        fillColor: FlutterFlowTheme.of(context)
-                                            .lightGrey2,
+                                        fillColor:
+                                            FlutterFlowTheme.of(context).white,
                                         prefixIcon: Icon(
                                           Icons.lock_outlined,
                                           color: valueOrDefault<Color>(
@@ -574,20 +576,14 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                           .bodyMedium
                                           .override(
                                             font: GoogleFonts.plusJakartaSans(
-                                              fontWeight:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontWeight,
+                                              fontWeight: FontWeight.w500,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .fontStyle,
                                             ),
                                             letterSpacing: 0.0,
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontWeight,
+                                            fontWeight: FontWeight.w500,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -673,18 +669,14 @@ class _NewPasswordModalWidgetState extends State<NewPasswordModalWidget> {
                                 .titleSmall
                                 .override(
                                   font: GoogleFonts.plusJakartaSans(
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .fontWeight,
+                                    fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .fontStyle,
                                   ),
                                   color: Colors.white,
                                   letterSpacing: 0.0,
-                                  fontWeight: FlutterFlowTheme.of(context)
-                                      .titleSmall
-                                      .fontWeight,
+                                  fontWeight: FontWeight.w600,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .fontStyle,

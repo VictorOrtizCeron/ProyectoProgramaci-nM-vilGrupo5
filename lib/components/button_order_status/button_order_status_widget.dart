@@ -69,7 +69,7 @@ class _ButtonOrderStatusWidgetState extends State<ButtonOrderStatusWidget> {
           color: FlutterFlowTheme.of(context).coralGreen2,
           width: 2.0,
         ),
-        borderRadius: BorderRadius.circular(6.0),
+        borderRadius: BorderRadius.circular(12.0),
       ),
     );
   }

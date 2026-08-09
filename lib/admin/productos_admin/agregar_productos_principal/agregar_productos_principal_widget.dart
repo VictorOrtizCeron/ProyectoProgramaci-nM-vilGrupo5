@@ -75,9 +75,9 @@ class _AgregarProductosPrincipalWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: Color(0xFFF7F5F1),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -201,12 +201,11 @@ class _AgregarProductosPrincipalWidgetState
                               width: MediaQuery.sizeOf(context).width * 0.5,
                               height: 190.0,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
+                                color: Color(0xFFFDF0E9),
                                 boxShadow: [
                                   BoxShadow(
-                                    blurRadius: 4.0,
-                                    color: Color(0x33000000),
+                                    blurRadius: 8.0,
+                                    color: Color(0x1A000000),
                                     offset: Offset(
                                       0.0,
                                       2.0,
@@ -214,6 +213,10 @@ class _AgregarProductosPrincipalWidgetState
                                   )
                                 ],
                                 borderRadius: BorderRadius.circular(24.0),
+                                border: Border.all(
+                                  color: FlutterFlowTheme.of(context).primary,
+                                  width: 1.0,
+                                ),
                               ),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(24.0),
@@ -254,6 +257,8 @@ class _AgregarProductosPrincipalWidgetState
                                         .bodyMedium
                                         .fontStyle,
                                   ),
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryText,
                                   letterSpacing: 0.0,
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -272,6 +277,8 @@ class _AgregarProductosPrincipalWidgetState
                                             .bodySmall
                                             .fontStyle,
                                       ),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodySmall
@@ -282,35 +289,34 @@ class _AgregarProductosPrincipalWidgetState
                                     ),
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
-                                color: FlutterFlowTheme.of(context).primaryText,
+                                color: FlutterFlowTheme.of(context).alternate,
                                 width: 1.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(12.0),
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).primary,
                                 width: 1.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(12.0),
                             ),
                             errorBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).error,
                                 width: 1.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(12.0),
                             ),
                             focusedErrorBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).error,
                                 width: 1.0,
                               ),
-                              borderRadius: BorderRadius.circular(8.0),
+                              borderRadius: BorderRadius.circular(12.0),
                             ),
                             filled: true,
-                            fillColor: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
+                            fillColor: FlutterFlowTheme.of(context).white,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
@@ -323,7 +329,8 @@ class _AgregarProductosPrincipalWidgetState
                                       .bodyMedium
                                       .fontStyle,
                                 ),
-                                color: FlutterFlowTheme.of(context).primaryText,
+                                color:
+                                    FlutterFlowTheme.of(context).secondaryText,
                                 letterSpacing: 0.0,
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -372,6 +379,8 @@ class _AgregarProductosPrincipalWidgetState
                                           .bodyMedium
                                           .fontStyle,
                                     ),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -391,6 +400,8 @@ class _AgregarProductosPrincipalWidgetState
                                           .bodySmall
                                           .fontStyle,
                                     ),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .bodySmall
@@ -401,36 +412,34 @@ class _AgregarProductosPrincipalWidgetState
                                   ),
                               enabledBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
+                                  color: FlutterFlowTheme.of(context).alternate,
                                   width: 1.0,
                                 ),
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(12.0),
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
                                   color: FlutterFlowTheme.of(context).primary,
                                   width: 1.0,
                                 ),
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(12.0),
                               ),
                               errorBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
                                   color: FlutterFlowTheme.of(context).error,
                                   width: 1.0,
                                 ),
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(12.0),
                               ),
                               focusedErrorBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
                                   color: FlutterFlowTheme.of(context).error,
                                   width: 1.0,
                                 ),
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(12.0),
                               ),
                               filled: true,
-                              fillColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
+                              fillColor: FlutterFlowTheme.of(context).white,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
@@ -443,6 +452,8 @@ class _AgregarProductosPrincipalWidgetState
                                         .bodyMedium
                                         .fontStyle,
                                   ),
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryText,
                                   letterSpacing: 0.0,
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -503,6 +514,8 @@ class _AgregarProductosPrincipalWidgetState
                                         .bodyMedium
                                         .fontStyle,
                                   ),
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryText,
                                   letterSpacing: 0.0,
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -516,16 +529,14 @@ class _AgregarProductosPrincipalWidgetState
                             ),
                             icon: Icon(
                               Icons.keyboard_arrow_down_rounded,
-                              color: FlutterFlowTheme.of(context).primary,
+                              color: FlutterFlowTheme.of(context).secondaryText,
                               size: 24.0,
                             ),
-                            fillColor: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
+                            fillColor: FlutterFlowTheme.of(context).white,
                             elevation: 2.0,
-                            borderColor:
-                                FlutterFlowTheme.of(context).primaryText,
+                            borderColor: FlutterFlowTheme.of(context).alternate,
                             borderWidth: 1.0,
-                            borderRadius: 8.0,
+                            borderRadius: 12.0,
                             margin: EdgeInsetsDirectional.fromSTEB(
                                 12.0, 4.0, 12.0, 4.0),
                             hidesUnderline: true,
@@ -558,6 +569,8 @@ class _AgregarProductosPrincipalWidgetState
                                           .bodyMedium
                                           .fontStyle,
                                     ),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -577,6 +590,8 @@ class _AgregarProductosPrincipalWidgetState
                                           .bodySmall
                                           .fontStyle,
                                     ),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .bodySmall
@@ -587,36 +602,34 @@ class _AgregarProductosPrincipalWidgetState
                                   ),
                               enabledBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
+                                  color: FlutterFlowTheme.of(context).alternate,
                                   width: 1.0,
                                 ),
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(12.0),
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
                                   color: FlutterFlowTheme.of(context).primary,
                                   width: 1.0,
                                 ),
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(12.0),
                               ),
                               errorBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
                                   color: FlutterFlowTheme.of(context).error,
                                   width: 1.0,
                                 ),
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(12.0),
                               ),
                               focusedErrorBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
                                   color: FlutterFlowTheme.of(context).error,
                                   width: 1.0,
                                 ),
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(12.0),
                               ),
                               filled: true,
-                              fillColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
+                              fillColor: FlutterFlowTheme.of(context).white,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
@@ -629,8 +642,8 @@ class _AgregarProductosPrincipalWidgetState
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryText,
                                   letterSpacing: 0.0,
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -680,6 +693,8 @@ class _AgregarProductosPrincipalWidgetState
                                           .bodyMedium
                                           .fontStyle,
                                     ),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -699,6 +714,8 @@ class _AgregarProductosPrincipalWidgetState
                                           .bodySmall
                                           .fontStyle,
                                     ),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .bodySmall
@@ -709,36 +726,34 @@ class _AgregarProductosPrincipalWidgetState
                                   ),
                               enabledBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
+                                  color: FlutterFlowTheme.of(context).alternate,
                                   width: 1.0,
                                 ),
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(12.0),
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
                                   color: FlutterFlowTheme.of(context).primary,
                                   width: 1.0,
                                 ),
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(12.0),
                               ),
                               errorBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
                                   color: FlutterFlowTheme.of(context).error,
                                   width: 1.0,
                                 ),
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(12.0),
                               ),
                               focusedErrorBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
                                   color: FlutterFlowTheme.of(context).error,
                                   width: 1.0,
                                 ),
-                                borderRadius: BorderRadius.circular(8.0),
+                                borderRadius: BorderRadius.circular(12.0),
                               ),
                               filled: true,
-                              fillColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
+                              fillColor: FlutterFlowTheme.of(context).white,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
@@ -751,8 +766,8 @@ class _AgregarProductosPrincipalWidgetState
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryText,
                                   letterSpacing: 0.0,
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -844,6 +859,9 @@ class _AgregarProductosPrincipalWidgetState
                                                         .bodySmall
                                                         .fontStyle,
                                               ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryText,
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
@@ -857,11 +875,11 @@ class _AgregarProductosPrincipalWidgetState
                                         enabledBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
                                             color: FlutterFlowTheme.of(context)
-                                                .primaryText,
+                                                .alternate,
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(12.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
@@ -870,7 +888,7 @@ class _AgregarProductosPrincipalWidgetState
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(12.0),
                                         ),
                                         errorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
@@ -879,7 +897,7 @@ class _AgregarProductosPrincipalWidgetState
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(12.0),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
@@ -888,11 +906,11 @@ class _AgregarProductosPrincipalWidgetState
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(12.0),
                                         ),
                                         filled: true,
-                                        fillColor: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
+                                        fillColor:
+                                            FlutterFlowTheme.of(context).white,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -907,6 +925,8 @@ class _AgregarProductosPrincipalWidgetState
                                                       .bodyMedium
                                                       .fontStyle,
                                             ),
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryText,
                                             letterSpacing: 0.0,
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
@@ -1054,7 +1074,7 @@ class _AgregarProductosPrincipalWidgetState
                         safeSetState(() {});
                       },
                       text: FFLocalizations.of(context).getText(
-                        'qfoy6tg6' /* CREAR */,
+                        'qfoy6tg6' /* Crear */,
                       ),
                       options: FFButtonOptions(
                         width: double.infinity,
@@ -1062,7 +1082,7 @@ class _AgregarProductosPrincipalWidgetState
                         padding: EdgeInsets.all(8.0),
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).primaryText,
+                        color: FlutterFlowTheme.of(context).primary,
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   font: GoogleFonts.plusJakartaSans(
@@ -1084,10 +1104,9 @@ class _AgregarProductosPrincipalWidgetState
                                 ),
                         elevation: 2.0,
                         borderSide: BorderSide(
-                          color: Colors.transparent,
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(12.0),
                       ),
                     ),
                   ),

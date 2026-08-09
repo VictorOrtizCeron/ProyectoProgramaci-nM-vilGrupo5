@@ -54,9 +54,9 @@ class _AdminGestionPedidosWidgetState extends State<AdminGestionPedidosWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: Color(0xFFF7F5F1),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -87,15 +87,7 @@ class _AdminGestionPedidosWidgetState extends State<AdminGestionPedidosWidget> {
                   width: double.infinity,
                   height: 120.0,
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [
-                        Color(0xFF4A90E2),
-                        FlutterFlowTheme.of(context).primary
-                      ],
-                      stops: [0.8, 1.0],
-                      begin: AlignmentDirectional(1.0, -1.0),
-                      end: AlignmentDirectional(-1.0, 1.0),
-                    ),
+                    color: Color(0xFFF7F5F1),
                     borderRadius: BorderRadius.circular(0.0),
                   ),
                   child: Padding(
@@ -121,7 +113,8 @@ class _AdminGestionPedidosWidgetState extends State<AdminGestionPedidosWidget> {
                                         .headlineMedium
                                         .fontStyle,
                                   ),
-                                  color: FlutterFlowTheme.of(context).info,
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.bold,
                                   fontStyle: FlutterFlowTheme.of(context)
@@ -147,7 +140,8 @@ class _AdminGestionPedidosWidgetState extends State<AdminGestionPedidosWidget> {
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xCCFFFFFF),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -169,8 +163,12 @@ class _AdminGestionPedidosWidgetState extends State<AdminGestionPedidosWidget> {
                   child: Container(
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
-                      borderRadius: BorderRadius.circular(20.0),
+                      color: FlutterFlowTheme.of(context).white,
+                      borderRadius: BorderRadius.circular(12.0),
+                      border: Border.all(
+                        color: FlutterFlowTheme.of(context).alternate,
+                        width: 1.0,
+                      ),
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(16.0),
@@ -211,10 +209,9 @@ class _AdminGestionPedidosWidgetState extends State<AdminGestionPedidosWidget> {
                                         ),
                                   ),
                                   FlutterFlowIconButton(
-                                    borderRadius: 8.0,
+                                    borderRadius: 12.0,
                                     buttonSize: 32.0,
-                                    fillColor:
-                                        FlutterFlowTheme.of(context).accent1,
+                                    fillColor: Color(0xFFFDF0E9),
                                     icon: Icon(
                                       Icons.refresh_rounded,
                                       color:
@@ -322,11 +319,11 @@ class _AdminGestionPedidosWidgetState extends State<AdminGestionPedidosWidget> {
                                         width: double.infinity,
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
+                                              .white,
                                           boxShadow: [
                                             BoxShadow(
-                                              blurRadius: 4.0,
-                                              color: Color(0x33000000),
+                                              blurRadius: 8.0,
+                                              color: Color(0x1A000000),
                                               offset: Offset(
                                                 0.0,
                                                 2.0,
@@ -563,7 +560,7 @@ class _AdminGestionPedidosWidgetState extends State<AdminGestionPedidosWidget> {
                                                       ),
                                                       borderRadius:
                                                           BorderRadius.circular(
-                                                              14.0),
+                                                              12.0),
                                                     ),
                                                     child: Padding(
                                                       padding:
@@ -969,7 +966,7 @@ class _AdminGestionPedidosWidgetState extends State<AdminGestionPedidosWidget> {
                                                             borderRadius:
                                                                 BorderRadius
                                                                     .circular(
-                                                                        8.0),
+                                                                        12.0),
                                                           ),
                                                           showLoadingIndicator:
                                                               false,
@@ -1049,7 +1046,7 @@ class _AdminGestionPedidosWidgetState extends State<AdminGestionPedidosWidget> {
                                                             borderRadius:
                                                                 BorderRadius
                                                                     .circular(
-                                                                        8.0),
+                                                                        12.0),
                                                           ),
                                                           showLoadingIndicator:
                                                               false,
@@ -1114,8 +1111,9 @@ class _AdminGestionPedidosWidgetState extends State<AdminGestionPedidosWidget> {
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
-                                                              color: Color(
-                                                                  0xFFFF9255),
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .tertiary,
                                                               textStyle:
                                                                   FlutterFlowTheme.of(
                                                                           context)
@@ -1145,7 +1143,7 @@ class _AdminGestionPedidosWidgetState extends State<AdminGestionPedidosWidget> {
                                                               borderRadius:
                                                                   BorderRadius
                                                                       .circular(
-                                                                          8.0),
+                                                                          12.0),
                                                             ),
                                                             showLoadingIndicator:
                                                                 false,
@@ -1161,14 +1159,12 @@ class _AdminGestionPedidosWidgetState extends State<AdminGestionPedidosWidget> {
                                                                     .max,
                                                             children: [
                                                               FlutterFlowIconButton(
-                                                                borderColor: Color(
-                                                                    0xFF929292),
                                                                 borderRadius:
-                                                                    8.0,
+                                                                    12.0,
                                                                 buttonSize:
                                                                     41.0,
                                                                 fillColor: Color(
-                                                                    0xFFE9E9E9),
+                                                                    0xFFFDF0E9),
                                                                 icon: Icon(
                                                                   Icons
                                                                       .cancel_rounded,

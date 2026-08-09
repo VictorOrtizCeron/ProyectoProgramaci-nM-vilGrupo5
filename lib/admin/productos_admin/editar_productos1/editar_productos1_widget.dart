@@ -59,7 +59,7 @@ class _EditarProductos1WidgetState extends State<EditarProductos1Widget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             body: Center(
               child: SizedBox(
                 width: 40.0,
@@ -82,9 +82,9 @@ class _EditarProductos1WidgetState extends State<EditarProductos1Widget> {
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             appBar: AppBar(
-              backgroundColor: Colors.white,
+              backgroundColor: Color(0xFFF7F5F1),
               automaticallyImplyLeading: false,
               leading: FlutterFlowIconButton(
                 borderColor: Colors.transparent,
@@ -142,27 +142,10 @@ class _EditarProductos1WidgetState extends State<EditarProductos1Widget> {
                             alignment: AlignmentDirectional(0.0, 0.0),
                             child: Container(
                               width: MediaQuery.sizeOf(context).width * 0.9,
-                              height: 100.0,
+                              height: MediaQuery.sizeOf(context).height * 0.12,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                                image: DecorationImage(
-                                  fit: BoxFit.cover,
-                                  image: Image.asset(
-                                    'assets/images/gradiante.png',
-                                  ).image,
-                                ),
-                                boxShadow: [
-                                  BoxShadow(
-                                    blurRadius: 4.0,
-                                    color: Color(0x33000000),
-                                    offset: Offset(
-                                      0.0,
-                                      2.0,
-                                    ),
-                                  )
-                                ],
-                                borderRadius: BorderRadius.circular(24.0),
+                                color: FlutterFlowTheme.of(context).primary,
+                                borderRadius: BorderRadius.circular(12.0),
                               ),
                               child: Align(
                                 alignment: AlignmentDirectional(0.0, 0.0),
@@ -183,7 +166,8 @@ PRODUCTO */
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Colors.white,
+                                        color:
+                                            FlutterFlowTheme.of(context).white,
                                         fontSize: 30.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w600,
@@ -204,7 +188,7 @@ PRODUCTO */
                               children: [
                                 Expanded(
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 1.0),
+                                    alignment: AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 24.0, 0.0),
@@ -214,7 +198,8 @@ PRODUCTO */
                                         child: Container(
                                           width: double.infinity,
                                           decoration: BoxDecoration(
-                                            color: Color(0x7DE3E3E3),
+                                            color: FlutterFlowTheme.of(context)
+                                                .white,
                                             borderRadius:
                                                 BorderRadius.circular(24.0),
                                           ),
@@ -335,6 +320,9 @@ PRODUCTO */
                                                                       .labelMedium
                                                                       .fontStyle,
                                                                 ),
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondaryText,
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight: FlutterFlowTheme.of(
@@ -370,7 +358,7 @@ PRODUCTO */
                                                                 ),
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .primaryText,
+                                                                    .secondaryText,
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight: FlutterFlowTheme.of(
@@ -452,6 +440,9 @@ PRODUCTO */
                                                                     .bodyMedium
                                                                     .fontStyle,
                                                           ),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryText,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
@@ -567,6 +558,8 @@ PRODUCTO */
                                             .bodyMedium
                                             .fontStyle,
                                       ),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -587,9 +580,10 @@ PRODUCTO */
                                 fillColor: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
                                 elevation: 2.0,
-                                borderColor: Colors.transparent,
-                                borderWidth: 0.0,
-                                borderRadius: 8.0,
+                                borderColor:
+                                    FlutterFlowTheme.of(context).alternate,
+                                borderWidth: 1.0,
+                                borderRadius: 12.0,
                                 margin: EdgeInsetsDirectional.fromSTEB(
                                     12.0, 0.0, 12.0, 0.0),
                                 hidesUnderline: true,
@@ -640,6 +634,8 @@ PRODUCTO */
                                             .bodyMedium
                                             .fontStyle,
                                       ),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -765,18 +761,28 @@ PRODUCTO */
                                                   decoration: BoxDecoration(
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .primaryBackground,
+                                                        .white,
                                                     boxShadow: [
                                                       BoxShadow(
-                                                        blurRadius: 4.0,
+                                                        blurRadius: 8.0,
                                                         color:
-                                                            Color(0x33000000),
+                                                            Color(0x1A000000),
                                                         offset: Offset(
                                                           0.0,
                                                           2.0,
                                                         ),
                                                       )
                                                     ],
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            12.0),
+                                                    border: Border.all(
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .alternate,
+                                                      width: 1.0,
+                                                    ),
                                                   ),
                                                   child: Row(
                                                     mainAxisSize:

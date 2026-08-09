@@ -2055,11 +2055,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Editar Producto',
     },
     '6l5hvf96': {
-      'en': 'Nombre del Producto',
+      'en': '',
       'es': 'Nombre del Producto',
     },
     '21amlkhk': {
-      'en': 'Descripcion',
+      'en': '',
       'es': 'Descripción',
     },
     'm1wlwcb8': {
@@ -2091,7 +2091,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Activo',
     },
     'cvnei46h': {
-      'en': 'EDITAR',
+      'en': 'Editar',
       'es': 'EDITAR',
     },
   },
@@ -2674,7 +2674,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Cantidad entera sin comas ni puntos',
     },
     'qfoy6tg6': {
-      'en': 'CREAR',
+      'en': 'Crear',
       'es': 'CREAR',
     },
   },

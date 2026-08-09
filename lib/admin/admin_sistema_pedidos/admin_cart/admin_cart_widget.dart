@@ -59,9 +59,9 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFFF0F5F9),
+        backgroundColor: Color(0xFFF7F5F1),
         appBar: AppBar(
-          backgroundColor: Color(0xFFF0F5F9),
+          backgroundColor: Color(0xFFF7F5F1),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -123,7 +123,7 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                 width: double.infinity,
                 height: 120.0,
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: FlutterFlowTheme.of(context).white,
                 ),
                 child: Padding(
                   padding:
@@ -149,7 +149,8 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                         .headlineMedium
                                         .fontStyle,
                                   ),
-                                  color: Color(0xFF161C24),
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
                                   fontSize: 32.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w600,
@@ -206,7 +207,8 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                                     .titleLarge
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF2797FF),
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
                                           fontSize: 22.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.bold,
@@ -231,7 +233,8 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                             .labelSmall
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF636F81),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       fontSize: 12.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -265,7 +268,8 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF161C24),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       fontSize: 14.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -336,7 +340,8 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                                     .titleLarge
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF2797FF),
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
                                           fontSize: 22.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.bold,
@@ -361,7 +366,8 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                             .labelSmall
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF636F81),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       fontSize: 12.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -446,9 +452,20 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                 width: double.infinity,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      blurRadius: 8.0,
+                                      color: Color(0x1A000000),
+                                      offset: Offset(
+                                        0.0,
+                                        2.0,
+                                      ),
+                                    )
+                                  ],
                                   borderRadius: BorderRadius.circular(12.0),
                                   border: Border.all(
-                                    color: Color(0xFFE0E3E7),
+                                    color:
+                                        FlutterFlowTheme.of(context).alternate,
                                     width: 1.0,
                                   ),
                                 ),
@@ -518,7 +535,9 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                                               .bodySmall
                                                               .fontStyle,
                                                     ),
-                                                    color: Color(0xFF636F81),
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .secondaryText,
                                                     fontSize: 12.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -563,7 +582,9 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                                                   .fontStyle,
                                                         ),
                                                         color:
-                                                            Color(0xFF2797FF),
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -647,8 +668,9 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                                                         .bodyMedium
                                                                         .fontStyle,
                                                                   ),
-                                                                  color: Color(
-                                                                      0xFF161C24),
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primaryText,
                                                                   fontSize:
                                                                       14.0,
                                                                   letterSpacing:
@@ -669,7 +691,7 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                                       borderRadius: 8.0,
                                                       buttonSize: 32.0,
                                                       fillColor:
-                                                          Color(0xFF2797FF),
+                                                          Color(0xFF9A3208),
                                                       icon: Icon(
                                                         Icons.add,
                                                         color: Colors.white,
@@ -704,7 +726,9 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                         child: FlutterFlowIconButton(
                                           borderRadius: 8.0,
                                           buttonSize: 32.0,
-                                          fillColor: Color(0xFFEE4444),
+                                          fillColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .primary,
                                           icon: Icon(
                                             Icons.delete_outline,
                                             color: Colors.white,
@@ -740,8 +764,19 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 8.0,
+                        color: Color(0x1A000000),
+                        offset: Offset(
+                          0.0,
+                          2.0,
+                        ),
+                      )
+                    ],
+                    borderRadius: BorderRadius.circular(12.0),
                     border: Border.all(
-                      color: Color(0xFFE0E3E7),
+                      color: FlutterFlowTheme.of(context).alternate,
                       width: 1.0,
                     ),
                   ),
@@ -769,7 +804,8 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF636F81),
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryText,
                                       fontSize: 14.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -867,7 +903,8 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF636F81),
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryText,
                                       fontSize: 14.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -1033,7 +1070,8 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                                     .titleMedium
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF2797FF),
+                                          color: FlutterFlowTheme.of(context)
+                                              .primary,
                                           fontSize: 16.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.bold,
@@ -1069,8 +1107,9 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                         16.0, 0.0, 16.0, 0.0),
                                     iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    iconColor: Color(0xFF2797FF),
-                                    color: Color(0xFFF0F5F9),
+                                    iconColor:
+                                        FlutterFlowTheme.of(context).primary,
+                                    color: FlutterFlowTheme.of(context).white,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
@@ -1081,7 +1120,8 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                                     .titleSmall
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF2797FF),
+                                          color: FlutterFlowTheme.of(context)
+                                              .tertiary,
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w600,
@@ -1092,8 +1132,8 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                         ),
                                     elevation: 0.0,
                                     borderSide: BorderSide(
-                                      color: Color(0xFF2797FF),
-                                      width: 2.0,
+                                      color: FlutterFlowTheme.of(context).grey2,
+                                      width: 1.0,
                                     ),
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
@@ -1120,7 +1160,7 @@ class _AdminCartWidgetState extends State<AdminCartWidget> {
                                     iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     iconColor: Colors.white,
-                                    color: Color(0xFF2797FF),
+                                    color: FlutterFlowTheme.of(context).primary,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(

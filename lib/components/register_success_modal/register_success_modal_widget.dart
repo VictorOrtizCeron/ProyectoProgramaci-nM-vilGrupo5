@@ -175,6 +175,8 @@ class _RegisterSuccessModalWidgetState
                                         .labelMedium
                                         .fontStyle,
                                   ),
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryText,
                                   letterSpacing: 0.0,
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .labelMedium
@@ -214,18 +216,14 @@ class _RegisterSuccessModalWidgetState
                                   .titleSmall
                                   .override(
                                     font: GoogleFonts.plusJakartaSans(
-                                      fontWeight: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .fontWeight,
+                                      fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .fontStyle,
                                     ),
                                     color: Colors.white,
                                     letterSpacing: 0.0,
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .fontWeight,
+                                    fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .fontStyle,

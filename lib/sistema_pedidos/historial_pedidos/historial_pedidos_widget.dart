@@ -63,7 +63,7 @@ class _HistorialPedidosWidgetState extends State<HistorialPedidosWidget>
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         body: SafeArea(
           top: true,
           child: Container(
@@ -74,15 +74,14 @@ class _HistorialPedidosWidgetState extends State<HistorialPedidosWidget>
                 Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    color: Color(0xFFF7F5F1),
                   ),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Container(
                         decoration: BoxDecoration(
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
+                          color: Color(0xFFF7F5F1),
                         ),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
@@ -105,19 +104,14 @@ class _HistorialPedidosWidgetState extends State<HistorialPedidosWidget>
                                       .labelLarge
                                       .override(
                                         font: GoogleFonts.plusJakartaSans(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelLarge
-                                                  .fontWeight,
+                                          fontWeight: FontWeight.w600,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge
                                                   .fontStyle,
                                         ),
                                         letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .labelLarge
-                                            .fontWeight,
+                                        fontWeight: FontWeight.w600,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .labelLarge
                                             .fontStyle,
@@ -196,21 +190,22 @@ class _HistorialPedidosWidgetState extends State<HistorialPedidosWidget>
                                                       .fontStyle,
                                             ),
                                         unselectedLabelStyle: TextStyle(),
-                                        labelColor: FlutterFlowTheme.of(context)
-                                            .primary,
+                                        labelColor:
+                                            FlutterFlowTheme.of(context).white,
                                         unselectedLabelColor:
-                                            FlutterFlowTheme.of(context).black3,
+                                            FlutterFlowTheme.of(context)
+                                                .primary,
                                         backgroundColor:
                                             FlutterFlowTheme.of(context)
-                                                .alternate,
+                                                .primary,
                                         unselectedBackgroundColor:
                                             FlutterFlowTheme.of(context)
                                                 .primaryBackground,
                                         unselectedBorderColor:
                                             FlutterFlowTheme.of(context)
-                                                .primaryBackground,
-                                        borderWidth: 2.0,
-                                        borderRadius: 8.0,
+                                                .alternate,
+                                        borderWidth: 1.0,
+                                        borderRadius: 12.0,
                                         elevation: 0.0,
                                         buttonMargin:
                                             EdgeInsetsDirectional.fromSTEB(
@@ -340,15 +335,29 @@ class _HistorialPedidosWidgetState extends State<HistorialPedidosWidget>
                                                               color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .primaryBackground,
+                                                              boxShadow: [
+                                                                BoxShadow(
+                                                                  blurRadius:
+                                                                      8.0,
+                                                                  color: Color(
+                                                                      0x1A000000),
+                                                                  offset:
+                                                                      Offset(
+                                                                    0.0,
+                                                                    2.0,
+                                                                  ),
+                                                                )
+                                                              ],
                                                               borderRadius:
                                                                   BorderRadius
                                                                       .circular(
-                                                                          16.0),
+                                                                          12.0),
                                                               border:
                                                                   Border.all(
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .grey,
+                                                                    .alternate,
+                                                                width: 1.0,
                                                               ),
                                                             ),
                                                             child: Padding(
@@ -632,13 +641,13 @@ class _HistorialPedidosWidgetState extends State<HistorialPedidosWidget>
                                                                                 0.0,
                                                                                 0.0),
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
+                                                                                FlutterFlowTheme.of(context).primary,
                                                                             textStyle: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                   font: GoogleFonts.plusJakartaSans(
                                                                                     fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
                                                                                     fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
                                                                                   ),
-                                                                                  color: FlutterFlowTheme.of(context).primaryText,
+                                                                                  color: FlutterFlowTheme.of(context).white,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
                                                                                   fontStyle: FlutterFlowTheme.of(context).labelMedium.fontStyle,
@@ -651,7 +660,7 @@ class _HistorialPedidosWidgetState extends State<HistorialPedidosWidget>
                                                                               width: 1.0,
                                                                             ),
                                                                             borderRadius:
-                                                                                BorderRadius.circular(30.0),
+                                                                                BorderRadius.circular(12.0),
                                                                           ),
                                                                         ),
                                                                       ),
@@ -783,16 +792,16 @@ class _HistorialPedidosWidgetState extends State<HistorialPedidosWidget>
                                                                 BoxDecoration(
                                                               color: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .primaryBackground,
+                                                                  .white,
                                                               borderRadius:
                                                                   BorderRadius
                                                                       .circular(
-                                                                          16.0),
+                                                                          12.0),
                                                               border:
                                                                   Border.all(
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .grey,
+                                                                    .alternate,
                                                               ),
                                                             ),
                                                             child: Padding(
@@ -1056,7 +1065,7 @@ class _HistorialPedidosWidgetState extends State<HistorialPedidosWidget>
                                                                                 0.0,
                                                                                 0.0),
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).primaryBackground,
+                                                                                FlutterFlowTheme.of(context).white,
                                                                             textStyle: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                   font: GoogleFonts.plusJakartaSans(
                                                                                     fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,
@@ -1071,11 +1080,11 @@ class _HistorialPedidosWidgetState extends State<HistorialPedidosWidget>
                                                                                 0.0,
                                                                             borderSide:
                                                                                 BorderSide(
-                                                                              color: FlutterFlowTheme.of(context).grey2,
+                                                                              color: FlutterFlowTheme.of(context).alternate,
                                                                               width: 1.0,
                                                                             ),
                                                                             borderRadius:
-                                                                                BorderRadius.circular(30.0),
+                                                                                BorderRadius.circular(12.0),
                                                                           ),
                                                                         ),
                                                                       ),

@@ -105,17 +105,13 @@ class _ConfirmModalWidgetState extends State<ConfirmModalWidget> {
                                     .titleMedium
                                     .override(
                                       font: GoogleFonts.plusJakartaSans(
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .titleMedium
-                                            .fontWeight,
+                                        fontWeight: FontWeight.w600,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .titleMedium
                                             .fontStyle,
                                       ),
                                       letterSpacing: 0.0,
-                                      fontWeight: FlutterFlowTheme.of(context)
-                                          .titleMedium
-                                          .fontWeight,
+                                      fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .fontStyle,
@@ -141,7 +137,7 @@ class _ConfirmModalWidgetState extends State<ConfirmModalWidget> {
                                     24.0, 16.0, 24.0, 16.0),
                                 iconPadding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
-                                color: FlutterFlowTheme.of(context).lightGrey,
+                                color: Color(0xFFE4F2F0),
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
@@ -153,7 +149,8 @@ class _ConfirmModalWidgetState extends State<ConfirmModalWidget> {
                                             .titleSmall
                                             .fontStyle,
                                       ),
-                                      color: FlutterFlowTheme.of(context).grey,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleSmall
@@ -163,7 +160,7 @@ class _ConfirmModalWidgetState extends State<ConfirmModalWidget> {
                                           .fontStyle,
                                     ),
                                 elevation: 0.0,
-                                borderRadius: BorderRadius.circular(30.0),
+                                borderRadius: BorderRadius.circular(12.0),
                               ),
                             ),
                             FFButtonWidget(

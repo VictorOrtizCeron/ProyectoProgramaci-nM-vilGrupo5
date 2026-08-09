@@ -86,7 +86,7 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             body: Center(
               child: SizedBox(
                 width: 40.0,
@@ -109,7 +109,7 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             drawer: Drawer(
               elevation: 16.0,
               child: Column(
@@ -300,7 +300,7 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
               ),
             ),
             appBar: AppBar(
-              backgroundColor: Colors.white,
+              backgroundColor: Color(0xFFF7F5F1),
               automaticallyImplyLeading: false,
               leading: FlutterFlowIconButton(
                 borderColor: Colors.transparent,
@@ -322,9 +322,7 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       font: GoogleFonts.plusJakartaSans(
-                        fontWeight: FlutterFlowTheme.of(context)
-                            .headlineMedium
-                            .fontWeight,
+                        fontWeight: FontWeight.w600,
                         fontStyle: FlutterFlowTheme.of(context)
                             .headlineMedium
                             .fontStyle,
@@ -332,9 +330,7 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
                       color: Color(0xFF040404),
                       fontSize: 22.0,
                       letterSpacing: 0.0,
-                      fontWeight: FlutterFlowTheme.of(context)
-                          .headlineMedium
-                          .fontWeight,
+                      fontWeight: FontWeight.w600,
                       fontStyle:
                           FlutterFlowTheme.of(context).headlineMedium.fontStyle,
                     ),
@@ -889,17 +885,13 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
                                   .titleMedium
                                   .override(
                                     font: GoogleFonts.plusJakartaSans(
-                                      fontWeight: FlutterFlowTheme.of(context)
-                                          .titleMedium
-                                          .fontWeight,
+                                      fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .fontStyle,
                                     ),
                                     letterSpacing: 0.0,
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .titleMedium
-                                        .fontWeight,
+                                    fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .titleMedium
                                         .fontStyle,
@@ -951,7 +943,13 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
                                       height:
                                           MediaQuery.sizeOf(context).height *
                                               0.475,
-                                      decoration: BoxDecoration(),
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: FlutterFlowTheme.of(context)
+                                              .alternate,
+                                          width: 1.0,
+                                        ),
+                                      ),
                                       child: Builder(
                                         builder: (context) {
                                           final audindex =

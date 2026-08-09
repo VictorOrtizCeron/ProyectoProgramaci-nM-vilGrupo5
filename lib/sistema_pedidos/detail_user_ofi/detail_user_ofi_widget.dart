@@ -454,10 +454,9 @@ class _DetailUserOfiWidgetState extends State<DetailUserOfiWidget> {
                                                                 .override(
                                                                   font: GoogleFonts
                                                                       .plusJakartaSans(
-                                                                    fontWeight: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .titleSmall
-                                                                        .fontWeight,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
                                                                     fontStyle: FlutterFlowTheme.of(
                                                                             context)
                                                                         .titleSmall
@@ -465,10 +464,9 @@ class _DetailUserOfiWidgetState extends State<DetailUserOfiWidget> {
                                                                   ),
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  fontWeight: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmall
-                                                                      .fontWeight,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w500,
                                                                   fontStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleSmall
@@ -566,18 +564,16 @@ class _DetailUserOfiWidgetState extends State<DetailUserOfiWidget> {
                                                                       .override(
                                                                         font: GoogleFonts
                                                                             .plusJakartaSans(
-                                                                          fontWeight: FlutterFlowTheme.of(context)
-                                                                              .titleMedium
-                                                                              .fontWeight,
+                                                                          fontWeight:
+                                                                              FontWeight.w600,
                                                                           fontStyle: FlutterFlowTheme.of(context)
                                                                               .titleMedium
                                                                               .fontStyle,
                                                                         ),
                                                                         letterSpacing:
                                                                             0.0,
-                                                                        fontWeight: FlutterFlowTheme.of(context)
-                                                                            .titleMedium
-                                                                            .fontWeight,
+                                                                        fontWeight:
+                                                                            FontWeight.w600,
                                                                         fontStyle: FlutterFlowTheme.of(context)
                                                                             .titleMedium
                                                                             .fontStyle,
@@ -725,10 +721,9 @@ class _DetailUserOfiWidgetState extends State<DetailUserOfiWidget> {
                                                                 .override(
                                                                   font: GoogleFonts
                                                                       .plusJakartaSans(
-                                                                    fontWeight: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .labelLarge
-                                                                        .fontWeight,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
                                                                     fontStyle: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelLarge
@@ -736,10 +731,9 @@ class _DetailUserOfiWidgetState extends State<DetailUserOfiWidget> {
                                                                   ),
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  fontWeight: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelLarge
-                                                                      .fontWeight,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w500,
                                                                   fontStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelLarge
@@ -859,10 +853,9 @@ class _DetailUserOfiWidgetState extends State<DetailUserOfiWidget> {
                                                                 .override(
                                                                   font: GoogleFonts
                                                                       .plusJakartaSans(
-                                                                    fontWeight: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .labelLarge
-                                                                        .fontWeight,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
                                                                     fontStyle: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelLarge
@@ -870,10 +863,9 @@ class _DetailUserOfiWidgetState extends State<DetailUserOfiWidget> {
                                                                   ),
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  fontWeight: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelLarge
-                                                                      .fontWeight,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w500,
                                                                   fontStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelLarge
@@ -1013,7 +1005,9 @@ class _DetailUserOfiWidgetState extends State<DetailUserOfiWidget> {
                                           height: 100.0,
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
+                                            borderRadius:
+                                                BorderRadius.circular(12.0),
                                           ),
                                           alignment:
                                               AlignmentDirectional(0.0, 0.0),

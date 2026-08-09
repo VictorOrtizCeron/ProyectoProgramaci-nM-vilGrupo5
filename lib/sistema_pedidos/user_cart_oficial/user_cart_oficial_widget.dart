@@ -60,7 +60,7 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFFF0F5F9),
+        backgroundColor: Color(0xFFF7F5F1),
         drawer: Drawer(
           elevation: 16.0,
           child: wrapWithModel(
@@ -70,7 +70,7 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
           ),
         ),
         appBar: AppBar(
-          backgroundColor: Color(0xFFF0F5F9),
+          backgroundColor: Color(0xFFF7F5F1),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -199,7 +199,8 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
                                                     .titleLarge
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF2797FF),
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
                                           fontSize: 22.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.bold,
@@ -224,7 +225,8 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
                                             .labelSmall
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF636F81),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       fontSize: 12.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -258,7 +260,8 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF161C24),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       fontSize: 14.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -325,7 +328,8 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
                                                     .titleLarge
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF2797FF),
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
                                           fontSize: 22.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.bold,
@@ -350,7 +354,8 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
                                             .labelSmall
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF636F81),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       fontSize: 12.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -431,9 +436,20 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
                                 width: double.infinity,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      blurRadius: 8.0,
+                                      color: Color(0x1A000000),
+                                      offset: Offset(
+                                        0.0,
+                                        2.0,
+                                      ),
+                                    )
+                                  ],
                                   borderRadius: BorderRadius.circular(12.0),
                                   border: Border.all(
-                                    color: Color(0xFFE0E3E7),
+                                    color:
+                                        FlutterFlowTheme.of(context).alternate,
                                     width: 1.0,
                                   ),
                                 ),
@@ -548,7 +564,9 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
                                                                   .fontStyle,
                                                         ),
                                                         color:
-                                                            Color(0xFF2797FF),
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -632,8 +650,9 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
                                                                         .bodyMedium
                                                                         .fontStyle,
                                                                   ),
-                                                                  color: Color(
-                                                                      0xFF161C24),
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondaryText,
                                                                   fontSize:
                                                                       14.0,
                                                                   letterSpacing:
@@ -654,7 +673,7 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
                                                       borderRadius: 8.0,
                                                       buttonSize: 32.0,
                                                       fillColor:
-                                                          Color(0xFF2797FF),
+                                                          Color(0xFF9A3208),
                                                       icon: Icon(
                                                         Icons.add,
                                                         color: Colors.white,
@@ -689,7 +708,9 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
                                         child: FlutterFlowIconButton(
                                           borderRadius: 8.0,
                                           buttonSize: 32.0,
-                                          fillColor: Color(0xFFEE4444),
+                                          fillColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .primary,
                                           icon: Icon(
                                             Icons.delete_outline,
                                             color: Colors.white,
@@ -724,8 +745,9 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.white,
+                    borderRadius: BorderRadius.circular(12.0),
                     border: Border.all(
-                      color: Color(0xFFE0E3E7),
+                      color: FlutterFlowTheme.of(context).alternate,
                       width: 1.0,
                     ),
                   ),
@@ -1005,7 +1027,8 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
                                                     .titleMedium
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF2797FF),
+                                          color: FlutterFlowTheme.of(context)
+                                              .primary,
                                           fontSize: 16.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.bold,
@@ -1041,8 +1064,9 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
                                         16.0, 0.0, 16.0, 0.0),
                                     iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    iconColor: Color(0xFF2797FF),
-                                    color: Color(0xFFF0F5F9),
+                                    iconColor:
+                                        FlutterFlowTheme.of(context).primary,
+                                    color: FlutterFlowTheme.of(context).white,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
@@ -1053,7 +1077,8 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
                                                     .titleSmall
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF2797FF),
+                                          color: FlutterFlowTheme.of(context)
+                                              .primary,
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w600,
@@ -1064,8 +1089,9 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
                                         ),
                                     elevation: 0.0,
                                     borderSide: BorderSide(
-                                      color: Color(0xFF2797FF),
-                                      width: 2.0,
+                                      color: FlutterFlowTheme.of(context)
+                                          .alternate,
+                                      width: 1.0,
                                     ),
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
@@ -1092,7 +1118,7 @@ class _UserCartOficialWidgetState extends State<UserCartOficialWidget> {
                                     iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     iconColor: Colors.white,
-                                    color: Color(0xFF2797FF),
+                                    color: FlutterFlowTheme.of(context).primary,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(

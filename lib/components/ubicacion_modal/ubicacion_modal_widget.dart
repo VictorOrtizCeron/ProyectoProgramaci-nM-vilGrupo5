@@ -157,17 +157,13 @@ class _UbicacionModalWidgetState extends State<UbicacionModalWidget> {
                               .headlineSmall
                               .override(
                                 font: GoogleFonts.plusJakartaSans(
-                                  fontWeight: FlutterFlowTheme.of(context)
-                                      .headlineSmall
-                                      .fontWeight,
+                                  fontWeight: FontWeight.w600,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .headlineSmall
                                       .fontStyle,
                                 ),
                                 letterSpacing: 0.0,
-                                fontWeight: FlutterFlowTheme.of(context)
-                                    .headlineSmall
-                                    .fontWeight,
+                                fontWeight: FontWeight.w600,
                                 fontStyle: FlutterFlowTheme.of(context)
                                     .headlineSmall
                                     .fontStyle,
@@ -343,25 +339,19 @@ class _UbicacionModalWidgetState extends State<UbicacionModalWidget> {
                             padding: EdgeInsets.all(8.0),
                             iconPadding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
+                            color: FlutterFlowTheme.of(context).white,
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
                                   font: GoogleFonts.plusJakartaSans(
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .fontWeight,
+                                    fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .fontStyle,
                                   ),
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryText,
+                                  color: FlutterFlowTheme.of(context).primary,
                                   letterSpacing: 0.0,
-                                  fontWeight: FlutterFlowTheme.of(context)
-                                      .titleSmall
-                                      .fontWeight,
+                                  fontWeight: FontWeight.w600,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .fontStyle,
@@ -430,18 +420,14 @@ class _UbicacionModalWidgetState extends State<UbicacionModalWidget> {
                                   .titleSmall
                                   .override(
                                     font: GoogleFonts.plusJakartaSans(
-                                      fontWeight: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .fontWeight,
+                                      fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .fontStyle,
                                     ),
                                     color: FlutterFlowTheme.of(context).info,
                                     letterSpacing: 0.0,
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .fontWeight,
+                                    fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .fontStyle,

@@ -66,7 +66,7 @@ class _ConfirmaPagoAdminWidgetState extends State<ConfirmaPagoAdminWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             body: Center(
               child: SizedBox(
                 width: 40.0,
@@ -89,9 +89,9 @@ class _ConfirmaPagoAdminWidgetState extends State<ConfirmaPagoAdminWidget> {
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             appBar: AppBar(
-              backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+              backgroundColor: Color(0xFFF7F5F1),
               automaticallyImplyLeading: false,
               leading: FlutterFlowIconButton(
                 borderColor: Colors.transparent,
@@ -498,7 +498,7 @@ class _ConfirmaPagoAdminWidgetState extends State<ConfirmaPagoAdminWidget> {
                                                   width: 1.0,
                                                 ),
                                                 borderRadius:
-                                                    BorderRadius.circular(8.0),
+                                                    BorderRadius.circular(12.0),
                                               ),
                                               focusedBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -506,7 +506,7 @@ class _ConfirmaPagoAdminWidgetState extends State<ConfirmaPagoAdminWidget> {
                                                   width: 1.0,
                                                 ),
                                                 borderRadius:
-                                                    BorderRadius.circular(8.0),
+                                                    BorderRadius.circular(12.0),
                                               ),
                                               errorBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -514,7 +514,7 @@ class _ConfirmaPagoAdminWidgetState extends State<ConfirmaPagoAdminWidget> {
                                                   width: 1.0,
                                                 ),
                                                 borderRadius:
-                                                    BorderRadius.circular(8.0),
+                                                    BorderRadius.circular(12.0),
                                               ),
                                               focusedErrorBorder:
                                                   OutlineInputBorder(
@@ -523,7 +523,7 @@ class _ConfirmaPagoAdminWidgetState extends State<ConfirmaPagoAdminWidget> {
                                                   width: 1.0,
                                                 ),
                                                 borderRadius:
-                                                    BorderRadius.circular(8.0),
+                                                    BorderRadius.circular(12.0),
                                               ),
                                               filled: true,
                                               fillColor:
@@ -640,7 +640,7 @@ class _ConfirmaPagoAdminWidgetState extends State<ConfirmaPagoAdminWidget> {
                                               color: Colors.transparent,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(8.0),
+                                                BorderRadius.circular(12.0),
                                           ),
                                         ),
                                       ].divide(SizedBox(width: 12.0)),
@@ -1139,7 +1139,7 @@ class _ConfirmaPagoAdminWidgetState extends State<ConfirmaPagoAdminWidget> {
                                         borderSide: BorderSide(
                                           color: FlutterFlowTheme.of(context)
                                               .alternate,
-                                          width: 2.0,
+                                          width: 1.0,
                                         ),
                                         borderRadius:
                                             BorderRadius.circular(12.0),

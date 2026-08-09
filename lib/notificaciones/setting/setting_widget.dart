@@ -51,7 +51,7 @@ class _SettingWidgetState extends State<SettingWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).lightGrey3,
+        backgroundColor: Color(0xFFF7F5F1),
         body: SafeArea(
           top: true,
           child: Container(
@@ -63,14 +63,14 @@ class _SettingWidgetState extends State<SettingWidget> {
                   width: double.infinity,
                   height: double.infinity,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).grey3,
+                    color: Color(0xFFF7F5F1),
                   ),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Container(
                         decoration: BoxDecoration(
-                          color: FlutterFlowTheme.of(context).grey3,
+                          color: Color(0xFFF7F5F1),
                         ),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
@@ -93,19 +93,14 @@ class _SettingWidgetState extends State<SettingWidget> {
                                       .labelLarge
                                       .override(
                                         font: GoogleFonts.plusJakartaSans(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelLarge
-                                                  .fontWeight,
+                                          fontWeight: FontWeight.w500,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge
                                                   .fontStyle,
                                         ),
                                         letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .labelLarge
-                                            .fontWeight,
+                                        fontWeight: FontWeight.w500,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .labelLarge
                                             .fontStyle,
@@ -157,11 +152,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                               .override(
                                                 font:
                                                     GoogleFonts.plusJakartaSans(
-                                                  fontWeight:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleMedium
-                                                          .fontWeight,
+                                                  fontWeight: FontWeight.w600,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -169,10 +160,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                           .fontStyle,
                                                 ),
                                                 letterSpacing: 0.0,
-                                                fontWeight:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleMedium
-                                                        .fontWeight,
+                                                fontWeight: FontWeight.w600,
                                                 fontStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .titleMedium
@@ -191,9 +179,15 @@ class _SettingWidgetState extends State<SettingWidget> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
-                                                BorderRadius.circular(16.0),
+                                                BorderRadius.circular(12.0),
+                                            border: Border.all(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                              width: 1.0,
+                                            ),
                                           ),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -233,6 +227,10 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -254,6 +252,11 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
                                                 dense: false,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          12.0),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -265,9 +268,15 @@ class _SettingWidgetState extends State<SettingWidget> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
-                                                BorderRadius.circular(16.0),
+                                                BorderRadius.circular(12.0),
+                                            border: Border.all(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                              width: 1.0,
+                                            ),
                                           ),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -308,6 +317,10 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -329,6 +342,11 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
                                                 dense: false,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          12.0),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -340,9 +358,15 @@ class _SettingWidgetState extends State<SettingWidget> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
-                                                BorderRadius.circular(16.0),
+                                                BorderRadius.circular(12.0),
+                                            border: Border.all(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                              width: 1.0,
+                                            ),
                                           ),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -383,6 +407,10 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -404,6 +432,11 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
                                                 dense: false,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          12.0),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -415,9 +448,15 @@ class _SettingWidgetState extends State<SettingWidget> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
-                                                BorderRadius.circular(16.0),
+                                                BorderRadius.circular(12.0),
+                                            border: Border.all(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                              width: 1.0,
+                                            ),
                                           ),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -458,6 +497,10 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -479,6 +522,11 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
                                                 dense: false,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          12.0),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -502,9 +550,15 @@ class _SettingWidgetState extends State<SettingWidget> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
-                                                BorderRadius.circular(16.0),
+                                                BorderRadius.circular(12.0),
+                                            border: Border.all(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                              width: 1.0,
+                                            ),
                                           ),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -544,6 +598,10 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -565,6 +623,11 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
                                                 dense: false,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          12.0),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -594,11 +657,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                               .override(
                                                 font:
                                                     GoogleFonts.plusJakartaSans(
-                                                  fontWeight:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleMedium
-                                                          .fontWeight,
+                                                  fontWeight: FontWeight.w600,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -606,10 +665,7 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                           .fontStyle,
                                                 ),
                                                 letterSpacing: 0.0,
-                                                fontWeight:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleMedium
-                                                        .fontWeight,
+                                                fontWeight: FontWeight.w600,
                                                 fontStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .titleMedium
@@ -628,9 +684,15 @@ class _SettingWidgetState extends State<SettingWidget> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
-                                                BorderRadius.circular(16.0),
+                                                BorderRadius.circular(12.0),
+                                            border: Border.all(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                              width: 1.0,
+                                            ),
                                           ),
                                           child: Material(
                                             color: Colors.transparent,
@@ -661,6 +723,9 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                                     .bodyMedium
                                                                     .fontStyle,
                                                           ),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryText,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -682,6 +747,10 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .primaryBackground,
                                               dense: false,
+                                              shape: RoundedRectangleBorder(
+                                                borderRadius:
+                                                    BorderRadius.circular(12.0),
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -692,9 +761,15 @@ class _SettingWidgetState extends State<SettingWidget> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
-                                                BorderRadius.circular(16.0),
+                                                BorderRadius.circular(12.0),
+                                            border: Border.all(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                              width: 1.0,
+                                            ),
                                           ),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -735,6 +810,10 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -756,6 +835,11 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
                                                 dense: false,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          12.0),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -767,9 +851,15 @@ class _SettingWidgetState extends State<SettingWidget> {
                                         child: Container(
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
-                                                BorderRadius.circular(16.0),
+                                                BorderRadius.circular(12.0),
+                                            border: Border.all(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .alternate,
+                                              width: 1.0,
+                                            ),
                                           ),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -851,13 +941,18 @@ class _SettingWidgetState extends State<SettingWidget> {
                                                   Icons.arrow_forward_ios,
                                                   color: FlutterFlowTheme.of(
                                                           context)
-                                                      .primary,
+                                                      .grey2,
                                                   size: 20.0,
                                                 ),
                                                 tileColor:
                                                     FlutterFlowTheme.of(context)
                                                         .primaryBackground,
                                                 dense: false,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          12.0),
+                                                ),
                                               ),
                                             ),
                                           ),

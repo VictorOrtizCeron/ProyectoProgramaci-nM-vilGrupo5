@@ -51,7 +51,7 @@ class _GestionProductosWidgetState extends State<GestionProductosWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         drawer: Drawer(
           elevation: 16.0,
           child: wrapWithModel(
@@ -61,14 +61,14 @@ class _GestionProductosWidgetState extends State<GestionProductosWidget> {
           ),
         ),
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primary,
+          backgroundColor: Color(0xFFF7F5F1),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderRadius: 20.0,
             buttonSize: 40.0,
             icon: Icon(
-              Icons.keyboard_double_arrow_left_outlined,
-              color: Colors.white,
+              Icons.arrow_back,
+              color: FlutterFlowTheme.of(context).primaryText,
               size: 30.0,
             ),
             onPressed: () async {
@@ -93,7 +93,7 @@ class _GestionProductosWidgetState extends State<GestionProductosWidget> {
                     fontStyle:
                         FlutterFlowTheme.of(context).titleLarge.fontStyle,
                   ),
-                  color: Colors.white,
+                  color: FlutterFlowTheme.of(context).primaryText,
                   fontSize: 20.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
@@ -186,8 +186,7 @@ class _GestionProductosWidgetState extends State<GestionProductosWidget> {
                         width: double.infinity,
                         height: 103.77,
                         decoration: BoxDecoration(
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
+                          color: FlutterFlowTheme.of(context).white,
                           boxShadow: [
                             BoxShadow(
                               blurRadius: 8.0,
@@ -198,7 +197,11 @@ class _GestionProductosWidgetState extends State<GestionProductosWidget> {
                               ),
                             )
                           ],
-                          borderRadius: BorderRadius.circular(16.0),
+                          borderRadius: BorderRadius.circular(12.0),
+                          border: Border.all(
+                            color: FlutterFlowTheme.of(context).alternate,
+                            width: 1.0,
+                          ),
                         ),
                         child: Padding(
                           padding: EdgeInsets.all(20.0),
@@ -342,7 +345,7 @@ class _GestionProductosWidgetState extends State<GestionProductosWidget> {
                                 width: 40.0,
                                 height: 40.0,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).primary,
+                                  color: Color(0xFFE9A62A),
                                   shape: BoxShape.circle,
                                 ),
                                 child: Align(
@@ -475,7 +478,7 @@ class _GestionProductosWidgetState extends State<GestionProductosWidget> {
                                 width: 40.0,
                                 height: 40.0,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).error,
+                                  color: FlutterFlowTheme.of(context).primary,
                                   shape: BoxShape.circle,
                                 ),
                                 child: Align(
@@ -578,7 +581,7 @@ class _GestionProductosWidgetState extends State<GestionProductosWidget> {
                           width: 12.0,
                           height: 12.0,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context).success,
+                            color: FlutterFlowTheme.of(context).primary,
                             shape: BoxShape.circle,
                           ),
                         ),

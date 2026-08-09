@@ -59,7 +59,7 @@ class _ResumenOrdenAdminWidgetState extends State<ResumenOrdenAdminWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             body: Center(
               child: SizedBox(
                 width: 40.0,
@@ -82,9 +82,9 @@ class _ResumenOrdenAdminWidgetState extends State<ResumenOrdenAdminWidget> {
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             appBar: AppBar(
-              backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+              backgroundColor: Color(0xFFF7F5F1),
               automaticallyImplyLeading: false,
               title: Text(
                 FFLocalizations.of(context).getText(
@@ -143,7 +143,7 @@ class _ResumenOrdenAdminWidgetState extends State<ResumenOrdenAdminWidget> {
                             width: 80.0,
                             height: 80.0,
                             decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context).success,
+                              color: Color(0xFFFF6A4D),
                               shape: BoxShape.circle,
                             ),
                             child: Align(
@@ -184,11 +184,10 @@ class _ResumenOrdenAdminWidgetState extends State<ResumenOrdenAdminWidget> {
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
+                            color: Colors.white,
                             boxShadow: [
                               BoxShadow(
-                                blurRadius: 4.0,
+                                blurRadius: 8.0,
                                 color: Color(0x1A000000),
                                 offset: Offset(
                                   0.0,
@@ -197,6 +196,10 @@ class _ResumenOrdenAdminWidgetState extends State<ResumenOrdenAdminWidget> {
                               )
                             ],
                             borderRadius: BorderRadius.circular(12.0),
+                            border: Border.all(
+                              color: FlutterFlowTheme.of(context).grey2,
+                              width: 1.0,
+                            ),
                           ),
                           child: Padding(
                             padding: EdgeInsets.all(16.0),
@@ -360,11 +363,10 @@ class _ResumenOrdenAdminWidgetState extends State<ResumenOrdenAdminWidget> {
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
+                            color: FlutterFlowTheme.of(context).white,
                             boxShadow: [
                               BoxShadow(
-                                blurRadius: 4.0,
+                                blurRadius: 8.0,
                                 color: Color(0x1A000000),
                                 offset: Offset(
                                   0.0,
@@ -373,6 +375,10 @@ class _ResumenOrdenAdminWidgetState extends State<ResumenOrdenAdminWidget> {
                               )
                             ],
                             borderRadius: BorderRadius.circular(12.0),
+                            border: Border.all(
+                              color: FlutterFlowTheme.of(context).alternate,
+                              width: 1.0,
+                            ),
                           ),
                           child: Padding(
                             padding: EdgeInsets.all(16.0),
@@ -536,11 +542,10 @@ class _ResumenOrdenAdminWidgetState extends State<ResumenOrdenAdminWidget> {
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
+                            color: FlutterFlowTheme.of(context).white,
                             boxShadow: [
                               BoxShadow(
-                                blurRadius: 4.0,
+                                blurRadius: 8.0,
                                 color: Color(0x1A000000),
                                 offset: Offset(
                                   0.0,
@@ -549,6 +554,10 @@ class _ResumenOrdenAdminWidgetState extends State<ResumenOrdenAdminWidget> {
                               )
                             ],
                             borderRadius: BorderRadius.circular(12.0),
+                            border: Border.all(
+                              color: FlutterFlowTheme.of(context).alternate,
+                              width: 1.0,
+                            ),
                           ),
                           child: Padding(
                             padding: EdgeInsets.all(16.0),
@@ -784,8 +793,7 @@ class _ResumenOrdenAdminWidgetState extends State<ResumenOrdenAdminWidget> {
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
+                            color: FlutterFlowTheme.of(context).white,
                             boxShadow: [
                               BoxShadow(
                                 blurRadius: 4.0,
@@ -797,6 +805,9 @@ class _ResumenOrdenAdminWidgetState extends State<ResumenOrdenAdminWidget> {
                               )
                             ],
                             borderRadius: BorderRadius.circular(12.0),
+                            border: Border.all(
+                              color: FlutterFlowTheme.of(context).alternate,
+                            ),
                           ),
                           child: Padding(
                             padding: EdgeInsets.all(16.0),

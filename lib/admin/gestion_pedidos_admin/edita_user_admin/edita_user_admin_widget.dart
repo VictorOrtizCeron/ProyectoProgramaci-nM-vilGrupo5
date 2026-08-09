@@ -75,7 +75,7 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             body: Center(
               child: SizedBox(
                 width: 40.0,
@@ -98,9 +98,9 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             appBar: AppBar(
-              backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+              backgroundColor: Color(0xFFF7F5F1),
               automaticallyImplyLeading: false,
               title: Text(
                 FFLocalizations.of(context).getText(
@@ -435,8 +435,7 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   filled: true,
-                                  fillColor: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
+                                  fillColor: FlutterFlowTheme.of(context).white,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -447,6 +446,8 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -562,8 +563,7 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   filled: true,
-                                  fillColor: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
+                                  fillColor: FlutterFlowTheme.of(context).white,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -574,6 +574,8 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -622,11 +624,9 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                     width: 349.9,
                                     height: 54.3,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFFFFAA68),
+                                      color:
+                                          FlutterFlowTheme.of(context).tertiary,
                                       borderRadius: BorderRadius.circular(8.0),
-                                      border: Border.all(
-                                        color: Color(0xFFBCBCBC),
-                                      ),
                                     ),
                                     child: Align(
                                       alignment: AlignmentDirectional(0.0, 0.0),
@@ -705,6 +705,8 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -721,8 +723,7 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                       FlutterFlowTheme.of(context).primaryText,
                                   size: 24.0,
                                 ),
-                                fillColor: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
+                                fillColor: FlutterFlowTheme.of(context).white,
                                 elevation: 0.0,
                                 borderColor:
                                     FlutterFlowTheme.of(context).alternate,
@@ -771,11 +772,8 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                     width: 349.9,
                                     height: 54.3,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFF7E86FF),
+                                      color: Color(0xFFE9A62A),
                                       borderRadius: BorderRadius.circular(8.0),
-                                      border: Border.all(
-                                        color: Color(0xFFB1B1B1),
-                                      ),
                                     ),
                                     child: Align(
                                       alignment: AlignmentDirectional(0.0, 0.0),
@@ -854,6 +852,8 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -870,8 +870,7 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                       FlutterFlowTheme.of(context).primaryText,
                                   size: 24.0,
                                 ),
-                                fillColor: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
+                                fillColor: FlutterFlowTheme.of(context).white,
                                 elevation: 0.0,
                                 borderColor:
                                     FlutterFlowTheme.of(context).alternate,
@@ -977,8 +976,7 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   filled: true,
-                                  fillColor: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
+                                  fillColor: FlutterFlowTheme.of(context).white,
                                   suffixIcon: InkWell(
                                     onTap: () async {
                                       safeSetState(() =>
@@ -1003,6 +1001,8 @@ class _EditaUserAdminWidgetState extends State<EditaUserAdminWidget> {
                                             .bodyMedium
                                             .fontStyle,
                                       ),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,

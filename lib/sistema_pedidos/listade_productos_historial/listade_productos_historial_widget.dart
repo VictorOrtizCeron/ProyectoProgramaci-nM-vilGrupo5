@@ -137,17 +137,13 @@ class _ListadeProductosHistorialWidgetState
                   ),
                   style: FlutterFlowTheme.of(context).headlineSmall.override(
                         font: GoogleFonts.plusJakartaSans(
-                          fontWeight: FlutterFlowTheme.of(context)
-                              .headlineSmall
-                              .fontWeight,
+                          fontWeight: FontWeight.w600,
                           fontStyle: FlutterFlowTheme.of(context)
                               .headlineSmall
                               .fontStyle,
                         ),
                         letterSpacing: 0.0,
-                        fontWeight: FlutterFlowTheme.of(context)
-                            .headlineSmall
-                            .fontWeight,
+                        fontWeight: FontWeight.w600,
                         fontStyle: FlutterFlowTheme.of(context)
                             .headlineSmall
                             .fontStyle,
@@ -220,9 +216,18 @@ class _ListadeProductosHistorialWidgetState
                                 width: double.infinity,
                                 height: 80.0,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
-                                  borderRadius: BorderRadius.circular(8.0),
+                                  color: FlutterFlowTheme.of(context).white,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      blurRadius: 8.0,
+                                      color: Color(0x1A000000),
+                                      offset: Offset(
+                                        0.0,
+                                        2.0,
+                                      ),
+                                    )
+                                  ],
+                                  borderRadius: BorderRadius.circular(12.0),
                                   border: Border.all(
                                     color:
                                         FlutterFlowTheme.of(context).alternate,
@@ -262,10 +267,7 @@ class _ListadeProductosHistorialWidgetState
                                                         font: GoogleFonts
                                                             .plusJakartaSans(
                                                           fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLarge
-                                                                  .fontWeight,
+                                                              FontWeight.w500,
                                                           fontStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -274,10 +276,7 @@ class _ListadeProductosHistorialWidgetState
                                                         ),
                                                         letterSpacing: 0.0,
                                                         fontWeight:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyLarge
-                                                                .fontWeight,
+                                                            FontWeight.w500,
                                                         fontStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -302,11 +301,7 @@ class _ListadeProductosHistorialWidgetState
                                                 .override(
                                                   font: GoogleFonts
                                                       .plusJakartaSans(
-                                                    fontWeight:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMedium
-                                                            .fontWeight,
+                                                    fontWeight: FontWeight.w500,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -314,11 +309,7 @@ class _ListadeProductosHistorialWidgetState
                                                             .fontStyle,
                                                   ),
                                                   letterSpacing: 0.0,
-                                                  fontWeight:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMedium
-                                                          .fontWeight,
+                                                  fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -343,11 +334,7 @@ class _ListadeProductosHistorialWidgetState
                                                 .override(
                                                   font: GoogleFonts
                                                       .plusJakartaSans(
-                                                    fontWeight:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .titleSmall
-                                                            .fontWeight,
+                                                    fontWeight: FontWeight.w500,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -358,11 +345,7 @@ class _ListadeProductosHistorialWidgetState
                                                           context)
                                                       .primary,
                                                   letterSpacing: 0.0,
-                                                  fontWeight:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmall
-                                                          .fontWeight,
+                                                  fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -423,9 +406,7 @@ class _ListadeProductosHistorialWidgetState
                               .bodyMedium
                               .override(
                                 font: GoogleFonts.plusJakartaSans(
-                                  fontWeight: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .fontWeight,
+                                  fontWeight: FontWeight.w500,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .fontStyle,
@@ -433,9 +414,7 @@ class _ListadeProductosHistorialWidgetState
                                 color:
                                     FlutterFlowTheme.of(context).secondaryText,
                                 letterSpacing: 0.0,
-                                fontWeight: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .fontWeight,
+                                fontWeight: FontWeight.w500,
                                 fontStyle: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .fontStyle,
@@ -455,18 +434,14 @@ class _ListadeProductosHistorialWidgetState
                       ),
                       style: FlutterFlowTheme.of(context).titleMedium.override(
                             font: GoogleFonts.plusJakartaSans(
-                              fontWeight: FlutterFlowTheme.of(context)
-                                  .titleMedium
-                                  .fontWeight,
+                              fontWeight: FontWeight.w600,
                               fontStyle: FlutterFlowTheme.of(context)
                                   .titleMedium
                                   .fontStyle,
                             ),
                             color: FlutterFlowTheme.of(context).primary,
                             letterSpacing: 0.0,
-                            fontWeight: FlutterFlowTheme.of(context)
-                                .titleMedium
-                                .fontWeight,
+                            fontWeight: FontWeight.w600,
                             fontStyle: FlutterFlowTheme.of(context)
                                 .titleMedium
                                 .fontStyle,

@@ -51,7 +51,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         body: SafeArea(
           top: true,
           child: Container(
@@ -63,7 +63,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                   width: double.infinity,
                   height: double.infinity,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    color: Color(0xFFF7F5F1),
                   ),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -197,10 +197,9 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                                                 .override(
                                                                   font: GoogleFonts
                                                                       .plusJakartaSans(
-                                                                    fontWeight: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .labelMedium
-                                                                        .fontWeight,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
                                                                     fontStyle: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelMedium
@@ -208,13 +207,12 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                                                   ),
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .primaryText,
+                                                                      .secondaryText,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  fontWeight: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMedium
-                                                                      .fontWeight,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w500,
                                                                   fontStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
@@ -309,36 +307,28 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                                     0.0, 0.0, 0.0, 0.0),
                                             color: FlutterFlowTheme.of(context)
                                                 .primary,
-                                            textStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmall
-                                                    .override(
-                                                      font: GoogleFonts
-                                                          .plusJakartaSans(
-                                                        fontWeight:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmall
-                                                                .fontWeight,
-                                                        fontStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmall
-                                                                .fontStyle,
-                                                      ),
-                                                      color: Colors.white,
-                                                      letterSpacing: 0.0,
-                                                      fontWeight:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleSmall
-                                                              .fontWeight,
-                                                      fontStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleSmall
-                                                              .fontStyle,
-                                                    ),
+                                            textStyle: FlutterFlowTheme.of(
+                                                    context)
+                                                .titleSmall
+                                                .override(
+                                                  font: GoogleFonts
+                                                      .plusJakartaSans(
+                                                    fontWeight: FontWeight.w600,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .titleSmall
+                                                            .fontStyle,
+                                                  ),
+                                                  color: Colors.white,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight: FontWeight.w600,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmall
+                                                          .fontStyle,
+                                                ),
                                             elevation: 0.0,
                                             borderRadius:
                                                 BorderRadius.circular(12.0),
@@ -362,10 +352,21 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                                 LoginAccountWidget.routeName);
                                           },
                                           child: Container(
+                                            width: MediaQuery.sizeOf(context)
+                                                    .width *
+                                                0.9,
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
+                                                      .white,
+                                              borderRadius:
+                                                  BorderRadius.circular(12.0),
+                                              border: Border.all(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .alternate,
+                                                width: 1.0,
+                                              ),
                                             ),
                                             child: Padding(
                                               padding: EdgeInsets.all(16.0),
@@ -389,8 +390,9 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                                                     .labelLarge
                                                                     .fontStyle,
                                                           ),
-                                                          color:
-                                                              Color(0xFF108BE8),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,

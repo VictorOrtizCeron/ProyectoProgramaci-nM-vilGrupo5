@@ -202,7 +202,7 @@ class _DatosEliminadosWidgetState extends State<DatosEliminadosWidget> {
                         padding: EdgeInsets.all(8.0),
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        color: Color(0xFFE4F2F0),
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(
@@ -214,7 +214,7 @@ class _DatosEliminadosWidgetState extends State<DatosEliminadosWidget> {
                                     .titleSmall
                                     .fontStyle,
                               ),
-                              color: FlutterFlowTheme.of(context).secondaryText,
+                              color: FlutterFlowTheme.of(context).primaryText,
                               letterSpacing: 0.0,
                               fontWeight: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -224,10 +224,6 @@ class _DatosEliminadosWidgetState extends State<DatosEliminadosWidget> {
                                   .fontStyle,
                             ),
                         elevation: 0.0,
-                        borderSide: BorderSide(
-                          color: FlutterFlowTheme.of(context).alternate,
-                          width: 1.0,
-                        ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                     ),

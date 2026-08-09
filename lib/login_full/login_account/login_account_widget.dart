@@ -60,7 +60,7 @@ class _LoginAccountWidgetState extends State<LoginAccountWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         body: SafeArea(
           top: true,
           child: Container(
@@ -71,7 +71,7 @@ class _LoginAccountWidgetState extends State<LoginAccountWidget> {
                 Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    color: Color(0xFFF7F5F1),
                   ),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -157,7 +157,7 @@ Iniciar sesión en la cuenta */
                                                   ),
                                                   color: FlutterFlowTheme.of(
                                                           context)
-                                                      .primaryText,
+                                                      .secondaryText,
                                                   letterSpacing: 0.0,
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
@@ -323,12 +323,12 @@ Iniciar sesión en la cuenta */
                                                         borderSide: BorderSide(
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .grey3,
+                                                              .alternate,
                                                           width: 1.0,
                                                         ),
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(16.0),
+                                                                .circular(12.0),
                                                       ),
                                                       focusedBorder:
                                                           OutlineInputBorder(
@@ -340,7 +340,7 @@ Iniciar sesión en la cuenta */
                                                         ),
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(16.0),
+                                                                .circular(12.0),
                                                       ),
                                                       errorBorder:
                                                           OutlineInputBorder(
@@ -352,7 +352,7 @@ Iniciar sesión en la cuenta */
                                                         ),
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(16.0),
+                                                                .circular(12.0),
                                                       ),
                                                       focusedErrorBorder:
                                                           OutlineInputBorder(
@@ -364,13 +364,13 @@ Iniciar sesión en la cuenta */
                                                         ),
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(16.0),
+                                                                .circular(12.0),
                                                       ),
                                                       filled: true,
                                                       fillColor:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .lightGrey2,
+                                                              .white,
                                                       contentPadding:
                                                           EdgeInsetsDirectional
                                                               .fromSTEB(
@@ -596,12 +596,12 @@ Iniciar sesión en la cuenta */
                                                         borderSide: BorderSide(
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .grey3,
+                                                              .alternate,
                                                           width: 1.0,
                                                         ),
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(16.0),
+                                                                .circular(12.0),
                                                       ),
                                                       focusedBorder:
                                                           OutlineInputBorder(
@@ -613,7 +613,7 @@ Iniciar sesión en la cuenta */
                                                         ),
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(16.0),
+                                                                .circular(12.0),
                                                       ),
                                                       errorBorder:
                                                           OutlineInputBorder(
@@ -625,7 +625,7 @@ Iniciar sesión en la cuenta */
                                                         ),
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(16.0),
+                                                                .circular(12.0),
                                                       ),
                                                       focusedErrorBorder:
                                                           OutlineInputBorder(
@@ -637,13 +637,13 @@ Iniciar sesión en la cuenta */
                                                         ),
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(16.0),
+                                                                .circular(12.0),
                                                       ),
                                                       filled: true,
                                                       fillColor:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .lightGrey2,
+                                                              .white,
                                                       prefixIcon: Icon(
                                                         Icons.lock_outlined,
                                                         color: valueOrDefault<
@@ -753,9 +753,7 @@ Iniciar sesión en la cuenta */
                                             },
                                             child: Container(
                                               decoration: BoxDecoration(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
+                                                color: Color(0xFFF7F5F1),
                                               ),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
@@ -792,10 +790,9 @@ Iniciar sesión en la cuenta */
                                                                 .override(
                                                                   font: GoogleFonts
                                                                       .plusJakartaSans(
-                                                                    fontWeight: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontWeight,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
                                                                     fontStyle: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
@@ -806,10 +803,9 @@ Iniciar sesión en la cuenta */
                                                                       .primary,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  fontWeight: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontWeight,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w500,
                                                                   fontStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
@@ -857,9 +853,7 @@ Iniciar sesión en la cuenta */
                                             },
                                             child: Container(
                                               decoration: BoxDecoration(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
+                                                color: Color(0xFFF7F5F1),
                                               ),
                                               child: InkWell(
                                                 splashColor: Colors.transparent,
@@ -920,10 +914,9 @@ Iniciar sesión en la cuenta */
                                                                 .override(
                                                                   font: GoogleFonts
                                                                       .plusJakartaSans(
-                                                                    fontWeight: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontWeight,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
                                                                     fontStyle: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
@@ -934,10 +927,9 @@ Iniciar sesión en la cuenta */
                                                                       .primary,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  fontWeight: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontWeight,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w500,
                                                                   fontStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
@@ -1080,11 +1072,7 @@ Iniciar sesión en la cuenta */
                                               .override(
                                                 font:
                                                     GoogleFonts.plusJakartaSans(
-                                                  fontWeight:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmall
-                                                          .fontWeight,
+                                                  fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -1093,10 +1081,7 @@ Iniciar sesión en la cuenta */
                                                 ),
                                                 color: Colors.white,
                                                 letterSpacing: 0.0,
-                                                fontWeight:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmall
-                                                        .fontWeight,
+                                                fontWeight: FontWeight.w500,
                                                 fontStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
@@ -1189,7 +1174,7 @@ Iniciar sesión en la cuenta */
                                                       .primary,
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
+                                                      .white,
                                               textStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
@@ -1223,11 +1208,11 @@ Iniciar sesión en la cuenta */
                                               borderSide: BorderSide(
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .grey2,
-                                                width: 0.0,
+                                                        .alternate,
+                                                width: 1.0,
                                               ),
                                               borderRadius:
-                                                  BorderRadius.circular(30.0),
+                                                  BorderRadius.circular(12.0),
                                             ),
                                           ),
                                         ),

@@ -54,7 +54,7 @@ class _NotificationSettingWidgetState extends State<NotificationSettingWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         body: SafeArea(
           top: true,
           child: Container(
@@ -68,15 +68,14 @@ class _NotificationSettingWidgetState extends State<NotificationSettingWidget> {
                     width: double.infinity,
                     height: double.infinity,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).primaryBackground,
+                      color: Color(0xFFF7F5F1),
                     ),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Container(
                           decoration: BoxDecoration(
-                            color:
-                                FlutterFlowTheme.of(context).primaryBackground,
+                            color: Color(0xFFF7F5F1),
                           ),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
@@ -107,20 +106,14 @@ class _NotificationSettingWidgetState extends State<NotificationSettingWidget> {
                                         .labelLarge
                                         .override(
                                           font: GoogleFonts.plusJakartaSans(
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelLarge
-                                                    .fontWeight,
+                                            fontWeight: FontWeight.w500,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge
                                                     .fontStyle,
                                           ),
                                           letterSpacing: 0.0,
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelLarge
-                                                  .fontWeight,
+                                          fontWeight: FontWeight.w500,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge
@@ -164,12 +157,13 @@ class _NotificationSettingWidgetState extends State<NotificationSettingWidget> {
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
-                                              .primaryBackground,
+                                              .white,
                                           borderRadius:
                                               BorderRadius.circular(12.0),
                                           border: Border.all(
                                             color: FlutterFlowTheme.of(context)
-                                                .grey2,
+                                                .alternate,
+                                            width: 1.0,
                                           ),
                                         ),
                                         child: Padding(
@@ -231,9 +225,7 @@ class _NotificationSettingWidgetState extends State<NotificationSettingWidget> {
                                                                 context)
                                                             .primary,
                                                     activeTrackColor:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .grey,
+                                                        Color(0xFFFDF0E9),
                                                     inactiveTrackColor:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -306,9 +298,7 @@ class _NotificationSettingWidgetState extends State<NotificationSettingWidget> {
                                                                 context)
                                                             .primary,
                                                     activeTrackColor:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .grey,
+                                                        Color(0xFFFDF0E9),
                                                     inactiveTrackColor:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -381,9 +371,7 @@ class _NotificationSettingWidgetState extends State<NotificationSettingWidget> {
                                                                 context)
                                                             .primary,
                                                     activeTrackColor:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .grey,
+                                                        Color(0xFFFDF0E9),
                                                     inactiveTrackColor:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -456,9 +444,7 @@ class _NotificationSettingWidgetState extends State<NotificationSettingWidget> {
                                                                 context)
                                                             .primary,
                                                     activeTrackColor:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .grey,
+                                                        Color(0xFFFDF0E9),
                                                     inactiveTrackColor:
                                                         FlutterFlowTheme.of(
                                                                 context)

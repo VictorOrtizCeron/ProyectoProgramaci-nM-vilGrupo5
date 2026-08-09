@@ -54,7 +54,7 @@ class _LanguageWidgetState extends State<LanguageWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         body: SafeArea(
           top: true,
           child: Container(
@@ -68,15 +68,14 @@ class _LanguageWidgetState extends State<LanguageWidget> {
                     width: double.infinity,
                     height: double.infinity,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).primaryBackground,
+                      color: Color(0xFFF7F5F1),
                     ),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Container(
                           decoration: BoxDecoration(
-                            color:
-                                FlutterFlowTheme.of(context).primaryBackground,
+                            color: Color(0xFFF7F5F1),
                           ),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
@@ -170,83 +169,89 @@ class _LanguageWidgetState extends State<LanguageWidget> {
                                                 autofocus: true,
                                                 obscureText: false,
                                                 decoration: InputDecoration(
-                                                  labelStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMedium
-                                                          .override(
-                                                            font: GoogleFonts
-                                                                .plusJakartaSans(
-                                                              fontWeight:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMedium
-                                                                      .fontWeight,
-                                                              fontStyle:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMedium
-                                                                      .fontStyle,
-                                                            ),
-                                                            letterSpacing: 0.0,
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMedium
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMedium
-                                                                    .fontStyle,
-                                                          ),
+                                                  labelStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .labelMedium
+                                                      .override(
+                                                        font: GoogleFonts
+                                                            .plusJakartaSans(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontStyle,
+                                                        ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontStyle,
+                                                      ),
                                                   hintText: FFLocalizations.of(
                                                           context)
                                                       .getText(
                                                     'rxjf1ypg' /* Buscar idiomas */,
                                                   ),
-                                                  hintStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMedium
-                                                          .override(
-                                                            font: GoogleFonts
-                                                                .plusJakartaSans(
-                                                              fontWeight:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMedium
-                                                                      .fontWeight,
-                                                              fontStyle:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMedium
-                                                                      .fontStyle,
-                                                            ),
-                                                            letterSpacing: 0.0,
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMedium
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMedium
-                                                                    .fontStyle,
-                                                          ),
+                                                  hintStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .labelMedium
+                                                      .override(
+                                                        font: GoogleFonts
+                                                            .plusJakartaSans(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontStyle,
+                                                        ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontStyle,
+                                                      ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
                                                     borderSide: BorderSide(
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .grey3,
+                                                              .alternate,
                                                       width: 1.0,
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            16.0),
+                                                            12.0),
                                                   ),
                                                   focusedBorder:
                                                       OutlineInputBorder(
@@ -259,7 +264,7 @@ class _LanguageWidgetState extends State<LanguageWidget> {
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            16.0),
+                                                            12.0),
                                                   ),
                                                   errorBorder:
                                                       OutlineInputBorder(
@@ -272,7 +277,7 @@ class _LanguageWidgetState extends State<LanguageWidget> {
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            16.0),
+                                                            12.0),
                                                   ),
                                                   focusedErrorBorder:
                                                       OutlineInputBorder(
@@ -285,13 +290,13 @@ class _LanguageWidgetState extends State<LanguageWidget> {
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            16.0),
+                                                            12.0),
                                                   ),
                                                   filled: true,
                                                   fillColor:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .lightGrey2,
+                                                          .white,
                                                   prefixIcon: Icon(
                                                     FFIcons.ksearch,
                                                     color: FlutterFlowTheme.of(
@@ -361,9 +366,9 @@ class _LanguageWidgetState extends State<LanguageWidget> {
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .primaryBackground,
+                                                        .white,
                                                 borderRadius:
-                                                    BorderRadius.circular(16.0),
+                                                    BorderRadius.circular(12.0),
                                                 border: Border.all(
                                                   color:
                                                       FFAppState().selected ==
@@ -483,9 +488,9 @@ class _LanguageWidgetState extends State<LanguageWidget> {
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .primaryBackground,
+                                                        .white,
                                                 borderRadius:
-                                                    BorderRadius.circular(16.0),
+                                                    BorderRadius.circular(12.0),
                                                 border: Border.all(
                                                   color:
                                                       FFAppState().selected ==

@@ -58,9 +58,9 @@ class _HistorialPedidosAdminWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+          backgroundColor: Color(0xFFF7F5F1),
           automaticallyImplyLeading: false,
           leading: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
@@ -130,14 +130,14 @@ class _HistorialPedidosAdminWidgetState
                               .headlineLarge
                               .override(
                                 font: GoogleFonts.plusJakartaSans(
-                                  fontWeight: FontWeight.bold,
+                                  fontWeight: FontWeight.w600,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .headlineLarge
                                       .fontStyle,
                                 ),
                                 color: FlutterFlowTheme.of(context).info,
                                 letterSpacing: 0.0,
-                                fontWeight: FontWeight.bold,
+                                fontWeight: FontWeight.w600,
                                 fontStyle: FlutterFlowTheme.of(context)
                                     .headlineLarge
                                     .fontStyle,
@@ -154,9 +154,7 @@ class _HistorialPedidosAdminWidgetState
                                 .bodyMedium
                                 .override(
                                   font: GoogleFonts.plusJakartaSans(
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .fontWeight,
+                                    fontWeight: FontWeight.w500,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .fontStyle,
@@ -164,9 +162,7 @@ class _HistorialPedidosAdminWidgetState
                                   color: FlutterFlowTheme.of(context).info,
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
-                                  fontWeight: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .fontWeight,
+                                  fontWeight: FontWeight.w500,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .fontStyle,
@@ -324,10 +320,25 @@ class _HistorialPedidosAdminWidgetState
                                     return Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
+                                        color:
+                                            FlutterFlowTheme.of(context).white,
+                                        boxShadow: [
+                                          BoxShadow(
+                                            blurRadius: 8.0,
+                                            color: Color(0x1A000000),
+                                            offset: Offset(
+                                              0.0,
+                                              2.0,
+                                            ),
+                                          )
+                                        ],
                                         borderRadius:
                                             BorderRadius.circular(12.0),
+                                        border: Border.all(
+                                          color: FlutterFlowTheme.of(context)
+                                              .alternate,
+                                          width: 1.0,
+                                        ),
                                       ),
                                       child: Padding(
                                         padding: EdgeInsets.all(16.0),
@@ -363,7 +374,7 @@ class _HistorialPedidosAdminWidgetState
                                                                       .plusJakartaSans(
                                                                     fontWeight:
                                                                         FontWeight
-                                                                            .w600,
+                                                                            .bold,
                                                                     fontStyle: FlutterFlowTheme.of(
                                                                             context)
                                                                         .titleMedium
@@ -373,7 +384,7 @@ class _HistorialPedidosAdminWidgetState
                                                                       0.0,
                                                                   fontWeight:
                                                                       FontWeight
-                                                                          .w600,
+                                                                          .bold,
                                                                   fontStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleMedium
@@ -512,7 +523,7 @@ class _HistorialPedidosAdminWidgetState
                                                                       .plusJakartaSans(
                                                                     fontWeight:
                                                                         FontWeight
-                                                                            .w600,
+                                                                            .w500,
                                                                     fontStyle: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodySmall
@@ -525,7 +536,7 @@ class _HistorialPedidosAdminWidgetState
                                                                       0.0,
                                                                   fontWeight:
                                                                       FontWeight
-                                                                          .w600,
+                                                                          .w500,
                                                                   fontStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodySmall

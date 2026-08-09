@@ -70,7 +70,7 @@ class _InventarioReporteriaWidgetState extends State<InventarioReporteriaWidget>
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             body: Center(
               child: SizedBox(
                 width: 40.0,
@@ -93,7 +93,7 @@ class _InventarioReporteriaWidgetState extends State<InventarioReporteriaWidget>
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             drawer: Drawer(
               elevation: 16.0,
               child: Column(
@@ -284,7 +284,7 @@ class _InventarioReporteriaWidgetState extends State<InventarioReporteriaWidget>
               ),
             ),
             appBar: AppBar(
-              backgroundColor: Colors.white,
+              backgroundColor: Color(0xFFF7F5F1),
               automaticallyImplyLeading: false,
               leading: FlutterFlowIconButton(
                 borderColor: Colors.transparent,
@@ -306,9 +306,7 @@ class _InventarioReporteriaWidgetState extends State<InventarioReporteriaWidget>
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       font: GoogleFonts.plusJakartaSans(
-                        fontWeight: FlutterFlowTheme.of(context)
-                            .headlineMedium
-                            .fontWeight,
+                        fontWeight: FontWeight.bold,
                         fontStyle: FlutterFlowTheme.of(context)
                             .headlineMedium
                             .fontStyle,
@@ -316,9 +314,7 @@ class _InventarioReporteriaWidgetState extends State<InventarioReporteriaWidget>
                       color: Color(0xFF040404),
                       fontSize: 22.0,
                       letterSpacing: 0.0,
-                      fontWeight: FlutterFlowTheme.of(context)
-                          .headlineMedium
-                          .fontWeight,
+                      fontWeight: FontWeight.bold,
                       fontStyle:
                           FlutterFlowTheme.of(context).headlineMedium.fontStyle,
                     ),

@@ -293,7 +293,7 @@ class _EliminarProductos2WidgetState extends State<EliminarProductos2Widget> {
                                             ),
                                         elevation: 0.0,
                                         borderRadius:
-                                            BorderRadius.circular(24.0),
+                                            BorderRadius.circular(12.0),
                                       ),
                                     ),
                                   ),

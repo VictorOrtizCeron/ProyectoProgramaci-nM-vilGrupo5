@@ -53,7 +53,7 @@ class _ChangePaymentMethodModalWidgetState
         Spacer(),
         Container(
           decoration: BoxDecoration(
-            color: FlutterFlowTheme.of(context).grey3,
+            color: FlutterFlowTheme.of(context).white,
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(40.0),
               topRight: Radius.circular(40.0),
@@ -106,17 +106,13 @@ class _ChangePaymentMethodModalWidgetState
                                   .titleLarge
                                   .override(
                                     font: GoogleFonts.plusJakartaSans(
-                                      fontWeight: FlutterFlowTheme.of(context)
-                                          .titleLarge
-                                          .fontWeight,
+                                      fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .titleLarge
                                           .fontStyle,
                                     ),
                                     letterSpacing: 0.0,
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .titleLarge
-                                        .fontWeight,
+                                    fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .titleLarge
                                         .fontStyle,
@@ -136,8 +132,12 @@ class _ChangePaymentMethodModalWidgetState
                           EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: FlutterFlowTheme.of(context).primaryBackground,
-                          borderRadius: BorderRadius.circular(16.0),
+                          color: FlutterFlowTheme.of(context).white,
+                          borderRadius: BorderRadius.circular(12.0),
+                          border: Border.all(
+                            color: FlutterFlowTheme.of(context).alternate,
+                            width: 1.0,
+                          ),
                         ),
                         child: Padding(
                           padding: EdgeInsets.all(14.0),
@@ -294,8 +294,12 @@ class _ChangePaymentMethodModalWidgetState
                           EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: FlutterFlowTheme.of(context).primaryBackground,
-                          borderRadius: BorderRadius.circular(16.0),
+                          color: FlutterFlowTheme.of(context).white,
+                          borderRadius: BorderRadius.circular(12.0),
+                          border: Border.all(
+                            color: FlutterFlowTheme.of(context).alternate,
+                            width: 1.0,
+                          ),
                         ),
                         child: Padding(
                           padding: EdgeInsets.all(14.0),

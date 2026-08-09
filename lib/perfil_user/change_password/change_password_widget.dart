@@ -68,15 +68,14 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                     width: double.infinity,
                     height: double.infinity,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).primaryBackground,
+                      color: Color(0xFFF7F5F1),
                     ),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Container(
                           decoration: BoxDecoration(
-                            color:
-                                FlutterFlowTheme.of(context).primaryBackground,
+                            color: Color(0xFFF7F5F1),
                           ),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
@@ -107,7 +106,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                         .labelLarge
                                         .override(
                                           font: GoogleFonts.plusJakartaSans(
-                                            fontWeight: FontWeight.bold,
+                                            fontWeight: FontWeight.w600,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge
@@ -115,7 +114,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                           ),
                                           fontSize: 17.0,
                                           letterSpacing: 0.0,
-                                          fontWeight: FontWeight.bold,
+                                          fontWeight: FontWeight.w600,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge
@@ -157,7 +156,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                               .override(
                                                 font:
                                                     GoogleFonts.plusJakartaSans(
-                                                  fontWeight: FontWeight.normal,
+                                                  fontWeight: FontWeight.w500,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -165,7 +164,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                                           .fontStyle,
                                                 ),
                                                 letterSpacing: 0.0,
-                                                fontWeight: FontWeight.normal,
+                                                fontWeight: FontWeight.w500,
                                                 fontStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -198,10 +197,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                                         font: GoogleFonts
                                                             .plusJakartaSans(
                                                           fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelLarge
-                                                                  .fontWeight,
+                                                              FontWeight.w600,
                                                           fontStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -210,10 +206,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                                         ),
                                                         letterSpacing: 0.0,
                                                         fontWeight:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelLarge
-                                                                .fontWeight,
+                                                            FontWeight.w600,
                                                         fontStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -244,83 +237,89 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                                 obscureText: false,
                                                 decoration: InputDecoration(
                                                   isDense: false,
-                                                  labelStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMedium
-                                                          .override(
-                                                            font: GoogleFonts
-                                                                .plusJakartaSans(
-                                                              fontWeight:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMedium
-                                                                      .fontWeight,
-                                                              fontStyle:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMedium
-                                                                      .fontStyle,
-                                                            ),
-                                                            letterSpacing: 0.0,
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMedium
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMedium
-                                                                    .fontStyle,
-                                                          ),
+                                                  labelStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .labelMedium
+                                                      .override(
+                                                        font: GoogleFonts
+                                                            .plusJakartaSans(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontStyle,
+                                                        ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontStyle,
+                                                      ),
                                                   hintText: FFLocalizations.of(
                                                           context)
                                                       .getText(
                                                     'ki7u6cx1' /* Ingrese su contraseña */,
                                                   ),
-                                                  hintStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelMedium
-                                                          .override(
-                                                            font: GoogleFonts
-                                                                .plusJakartaSans(
-                                                              fontWeight:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMedium
-                                                                      .fontWeight,
-                                                              fontStyle:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMedium
-                                                                      .fontStyle,
-                                                            ),
-                                                            letterSpacing: 0.0,
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMedium
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMedium
-                                                                    .fontStyle,
-                                                          ),
+                                                  hintStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .labelMedium
+                                                      .override(
+                                                        font: GoogleFonts
+                                                            .plusJakartaSans(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontStyle,
+                                                        ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontStyle,
+                                                      ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
                                                     borderSide: BorderSide(
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .grey3,
+                                                              .alternate,
                                                       width: 1.0,
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            16.0),
+                                                            12.0),
                                                   ),
                                                   focusedBorder:
                                                       OutlineInputBorder(
@@ -333,7 +332,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            16.0),
+                                                            12.0),
                                                   ),
                                                   errorBorder:
                                                       OutlineInputBorder(
@@ -346,7 +345,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            16.0),
+                                                            12.0),
                                                   ),
                                                   focusedErrorBorder:
                                                       OutlineInputBorder(
@@ -359,13 +358,13 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            16.0),
+                                                            12.0),
                                                   ),
                                                   filled: true,
                                                   fillColor:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .lightGrey2,
+                                                          .white,
                                                   prefixIcon: Icon(
                                                     Icons.lock_outlined,
                                                     color:
@@ -406,6 +405,9 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                                                     .bodyMedium
                                                                     .fontStyle,
                                                           ),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryText,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FlutterFlowTheme.of(

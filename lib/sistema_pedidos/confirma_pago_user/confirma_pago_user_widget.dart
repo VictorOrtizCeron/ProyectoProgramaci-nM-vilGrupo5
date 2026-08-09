@@ -58,9 +58,9 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+          backgroundColor: Color(0xFFF7F5F1),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -81,14 +81,14 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   font: GoogleFonts.plusJakartaSans(
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.bold,
                     fontStyle:
                         FlutterFlowTheme.of(context).headlineMedium.fontStyle,
                   ),
                   color: FlutterFlowTheme.of(context).primaryText,
                   fontSize: 18.0,
                   letterSpacing: 0.0,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.bold,
                   fontStyle:
                       FlutterFlowTheme.of(context).headlineMedium.fontStyle,
                 ),
@@ -138,8 +138,7 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
+                            color: FlutterFlowTheme.of(context).white,
                             borderRadius: BorderRadius.circular(12.0),
                             border: Border.all(
                               color: FlutterFlowTheme.of(context).alternate,
@@ -154,7 +153,7 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                               children: [
                                 Icon(
                                   Icons.shopping_cart_outlined,
-                                  color: Color(0xFF108BE8),
+                                  color: FlutterFlowTheme.of(context).primary,
                                   size: 24.0,
                                 ),
                                 Expanded(
@@ -263,13 +262,13 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                                 .titleLarge
                                 .override(
                                   font: GoogleFonts.plusJakartaSans(
-                                    fontWeight: FontWeight.w600,
+                                    fontWeight: FontWeight.bold,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .titleLarge
                                         .fontStyle,
                                   ),
                                   letterSpacing: 0.0,
-                                  fontWeight: FontWeight.w600,
+                                  fontWeight: FontWeight.bold,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .titleLarge
                                       .fontStyle,
@@ -280,8 +279,7 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                             child: Container(
                               width: double.infinity,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
+                                color: FlutterFlowTheme.of(context).white,
                                 borderRadius: BorderRadius.circular(12.0),
                                 border: Border.all(
                                   color: FlutterFlowTheme.of(context).alternate,
@@ -366,13 +364,13 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                                 .titleLarge
                                 .override(
                                   font: GoogleFonts.plusJakartaSans(
-                                    fontWeight: FontWeight.w600,
+                                    fontWeight: FontWeight.bold,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .titleLarge
                                         .fontStyle,
                                   ),
                                   letterSpacing: 0.0,
-                                  fontWeight: FontWeight.w600,
+                                  fontWeight: FontWeight.bold,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .titleLarge
                                       .fontStyle,
@@ -383,8 +381,7 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                             child: Container(
                               width: double.infinity,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
+                                color: FlutterFlowTheme.of(context).white,
                                 borderRadius: BorderRadius.circular(12.0),
                                 border: Border.all(
                                   color: FlutterFlowTheme.of(context).alternate,
@@ -777,8 +774,7 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                                         16.0, 0.0, 16.0, 0.0),
                                     iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
+                                    color: FlutterFlowTheme.of(context).white,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
@@ -790,7 +786,7 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                                                     .fontStyle,
                                           ),
                                           color: FlutterFlowTheme.of(context)
-                                              .primaryText,
+                                              .primary,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w600,
                                           fontStyle:
@@ -1021,7 +1017,8 @@ class _ConfirmaPagoUserWidgetState extends State<ConfirmaPagoUserWidget> {
                                         iconPadding:
                                             EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: Color(0xFF108BE8),
+                                        color: FlutterFlowTheme.of(context)
+                                            .primary,
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(

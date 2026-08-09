@@ -62,7 +62,7 @@ class _InventarioWidgetState extends State<InventarioWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             body: Center(
               child: SizedBox(
                 width: 40.0,
@@ -84,9 +84,9 @@ class _InventarioWidgetState extends State<InventarioWidget> {
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             appBar: AppBar(
-              backgroundColor: FlutterFlowTheme.of(context).primary,
+              backgroundColor: Color(0xFFF7F5F1),
               automaticallyImplyLeading: false,
               leading: FlutterFlowIconButton(
                 borderColor: Colors.transparent,
@@ -95,7 +95,7 @@ class _InventarioWidgetState extends State<InventarioWidget> {
                 buttonSize: 60.0,
                 icon: Icon(
                   Icons.chevron_left,
-                  color: FlutterFlowTheme.of(context).primaryBackground,
+                  color: FlutterFlowTheme.of(context).primaryText,
                   size: 30.0,
                 ),
                 onPressed: () async {
@@ -113,7 +113,7 @@ class _InventarioWidgetState extends State<InventarioWidget> {
                             .headlineMedium
                             .fontStyle,
                       ),
-                      color: FlutterFlowTheme.of(context).primaryBackground,
+                      color: FlutterFlowTheme.of(context).primaryText,
                       fontSize: 22.0,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.w600,
@@ -237,6 +237,9 @@ class _InventarioWidgetState extends State<InventarioWidget> {
                                                         .bodyMedium
                                                         .fontStyle,
                                               ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryText,
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
@@ -257,11 +260,14 @@ class _InventarioWidgetState extends State<InventarioWidget> {
                                               .secondaryText,
                                           size: 24.0,
                                         ),
-                                        fillColor: Color(0xFFF6F6F6),
+                                        fillColor:
+                                            FlutterFlowTheme.of(context).white,
                                         elevation: 2.0,
-                                        borderColor: Colors.transparent,
-                                        borderWidth: 0.0,
-                                        borderRadius: 8.0,
+                                        borderColor:
+                                            FlutterFlowTheme.of(context)
+                                                .alternate,
+                                        borderWidth: 1.0,
+                                        borderRadius: 12.0,
                                         margin: EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 12.0, 0.0),
                                         hidesUnderline: true,
@@ -536,6 +542,9 @@ class _InventarioWidgetState extends State<InventarioWidget> {
                                                         .bodyMedium
                                                         .fontStyle,
                                               ),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryText,
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
@@ -556,11 +565,14 @@ class _InventarioWidgetState extends State<InventarioWidget> {
                                               .secondaryText,
                                           size: 24.0,
                                         ),
-                                        fillColor: Color(0xFFF6F6F6),
+                                        fillColor:
+                                            FlutterFlowTheme.of(context).white,
                                         elevation: 2.0,
-                                        borderColor: Colors.transparent,
-                                        borderWidth: 0.0,
-                                        borderRadius: 8.0,
+                                        borderColor:
+                                            FlutterFlowTheme.of(context)
+                                                .alternate,
+                                        borderWidth: 1.0,
+                                        borderRadius: 12.0,
                                         margin: EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 12.0, 0.0),
                                         hidesUnderline: true,
@@ -683,7 +695,9 @@ class _InventarioWidgetState extends State<InventarioWidget> {
                                     'gssl46wh' /* Guardar registro */,
                                   ),
                                   options: FFButtonOptions(
-                                    height: 40.0,
+                                    width:
+                                        MediaQuery.sizeOf(context).width * 0.9,
+                                    height: 45.0,
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 0.0),
                                     iconPadding: EdgeInsetsDirectional.fromSTEB(
@@ -734,12 +748,13 @@ class _InventarioWidgetState extends State<InventarioWidget> {
                           'rkqxol0v' /* Ver inventario */,
                         ),
                         options: FFButtonOptions(
-                          height: 40.0,
+                          width: MediaQuery.sizeOf(context).width * 0.9,
+                          height: 45.0,
                           padding: EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: FlutterFlowTheme.of(context).accent1,
+                          color: FlutterFlowTheme.of(context).white,
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
                                     font: GoogleFonts.plusJakartaSans(
@@ -750,7 +765,7 @@ class _InventarioWidgetState extends State<InventarioWidget> {
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: Colors.white,
+                                    color: FlutterFlowTheme.of(context).primary,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleSmall
@@ -760,7 +775,11 @@ class _InventarioWidgetState extends State<InventarioWidget> {
                                         .fontStyle,
                                   ),
                           elevation: 0.0,
-                          borderRadius: BorderRadius.circular(8.0),
+                          borderSide: BorderSide(
+                            color: FlutterFlowTheme.of(context).alternate,
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(12.0),
                         ),
                       ),
                     ),

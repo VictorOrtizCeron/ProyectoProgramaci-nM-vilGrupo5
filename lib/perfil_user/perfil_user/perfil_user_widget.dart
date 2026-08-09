@@ -97,9 +97,9 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+          backgroundColor: Color(0xFFF7F5F1),
           automaticallyImplyLeading: false,
           leading: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
@@ -483,7 +483,7 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
                                               filled: true,
                                               fillColor:
                                                   FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
+                                                      .white,
                                               contentPadding:
                                                   EdgeInsetsDirectional
                                                       .fromSTEB(16.0, 16.0,
@@ -507,7 +507,7 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
                                                   ),
                                                   color: FlutterFlowTheme.of(
                                                           context)
-                                                      .primaryText,
+                                                      .secondaryText,
                                                   letterSpacing: 0.0,
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
@@ -674,7 +674,7 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
                                             filled: true,
                                             fillColor:
                                                 FlutterFlowTheme.of(context)
-                                                    .secondaryBackground,
+                                                    .white,
                                             contentPadding:
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 16.0, 16.0, 16.0),
@@ -704,7 +704,7 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
                                                 ),
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .primaryText,
+                                                        .secondaryText,
                                                 letterSpacing: 0.0,
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
@@ -872,7 +872,7 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
                                               filled: true,
                                               fillColor:
                                                   FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
+                                                      .white,
                                               contentPadding:
                                                   EdgeInsetsDirectional
                                                       .fromSTEB(16.0, 16.0,
@@ -903,7 +903,7 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
                                                   ),
                                                   color: FlutterFlowTheme.of(
                                                           context)
-                                                      .primaryText,
+                                                      .secondaryText,
                                                   letterSpacing: 0.0,
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
@@ -1072,7 +1072,7 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
                                             filled: true,
                                             fillColor:
                                                 FlutterFlowTheme.of(context)
-                                                    .secondaryBackground,
+                                                    .white,
                                             contentPadding:
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 16.0, 16.0, 16.0),
@@ -1102,7 +1102,7 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
                                                 ),
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .primaryText,
+                                                        .secondaryText,
                                                 letterSpacing: 0.0,
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
@@ -1203,7 +1203,7 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
                                           height: 56.0,
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                                .white,
                                             borderRadius:
                                                 BorderRadius.circular(12.0),
                                             border: Border.all(
@@ -1264,7 +1264,7 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
                                                                 ),
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .primaryText,
+                                                                    .secondaryText,
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight: FlutterFlowTheme.of(
@@ -1451,20 +1451,21 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
                                       iconPadding:
                                           EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
-                                      color: Colors.transparent,
+                                      color: FlutterFlowTheme.of(context).white,
                                       textStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
                                             font: GoogleFonts.plusJakartaSans(
-                                              fontWeight: FontWeight.w500,
+                                              fontWeight: FontWeight.w600,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFFFF6A4D),
+                                            color: FlutterFlowTheme.of(context)
+                                                .primary,
                                             letterSpacing: 0.0,
-                                            fontWeight: FontWeight.w500,
+                                            fontWeight: FontWeight.w600,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -1473,7 +1474,7 @@ class _PerfilUserWidgetState extends State<PerfilUserWidget> {
                                       elevation: 0.0,
                                       borderSide: BorderSide(
                                         color: FlutterFlowTheme.of(context)
-                                            .primary,
+                                            .alternate,
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),

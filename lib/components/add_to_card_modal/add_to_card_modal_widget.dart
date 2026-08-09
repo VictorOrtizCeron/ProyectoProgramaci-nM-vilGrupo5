@@ -155,6 +155,10 @@ class _AddToCardModalWidgetState extends State<AddToCardModalWidget> {
                                                                   .labelMedium
                                                                   .fontStyle,
                                                         ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryText,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
@@ -187,10 +191,7 @@ class _AddToCardModalWidgetState extends State<AddToCardModalWidget> {
                                                         font: GoogleFonts
                                                             .plusJakartaSans(
                                                           fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleMedium
-                                                                  .fontWeight,
+                                                              FontWeight.w600,
                                                           fontStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -199,10 +200,7 @@ class _AddToCardModalWidgetState extends State<AddToCardModalWidget> {
                                                         ),
                                                         letterSpacing: 0.0,
                                                         fontWeight:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleMedium
-                                                                .fontWeight,
+                                                            FontWeight.w600,
                                                         fontStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -834,10 +832,11 @@ class _AddToCardModalWidgetState extends State<AddToCardModalWidget> {
                                       ),
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
-                                      color: FlutterFlowTheme.of(context).grey2,
+                                      color: FlutterFlowTheme.of(context)
+                                          .alternate,
                                       width: 1.0,
                                     ),
-                                    borderRadius: BorderRadius.circular(16.0),
+                                    borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   focusedBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
@@ -845,25 +844,24 @@ class _AddToCardModalWidgetState extends State<AddToCardModalWidget> {
                                           FlutterFlowTheme.of(context).primary,
                                       width: 1.0,
                                     ),
-                                    borderRadius: BorderRadius.circular(16.0),
+                                    borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   errorBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
                                       color: FlutterFlowTheme.of(context).error,
                                       width: 1.0,
                                     ),
-                                    borderRadius: BorderRadius.circular(16.0),
+                                    borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   focusedErrorBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
                                       color: FlutterFlowTheme.of(context).error,
                                       width: 1.0,
                                     ),
-                                    borderRadius: BorderRadius.circular(16.0),
+                                    borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   filled: true,
-                                  fillColor:
-                                      FlutterFlowTheme.of(context).lightGrey2,
+                                  fillColor: FlutterFlowTheme.of(context).white,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium

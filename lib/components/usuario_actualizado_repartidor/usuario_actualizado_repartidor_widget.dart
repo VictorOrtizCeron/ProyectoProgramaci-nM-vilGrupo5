@@ -98,17 +98,13 @@ class _UsuarioActualizadoRepartidorWidgetState
                       style:
                           FlutterFlowTheme.of(context).headlineMedium.override(
                                 font: GoogleFonts.plusJakartaSans(
-                                  fontWeight: FlutterFlowTheme.of(context)
-                                      .headlineMedium
-                                      .fontWeight,
+                                  fontWeight: FontWeight.w500,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .headlineMedium
                                       .fontStyle,
                                 ),
                                 letterSpacing: 0.0,
-                                fontWeight: FlutterFlowTheme.of(context)
-                                    .headlineMedium
-                                    .fontWeight,
+                                fontWeight: FontWeight.w500,
                                 fontStyle: FlutterFlowTheme.of(context)
                                     .headlineMedium
                                     .fontStyle,
@@ -160,18 +156,14 @@ class _UsuarioActualizadoRepartidorWidgetState
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   font: GoogleFonts.plusJakartaSans(
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .fontWeight,
+                                    fontWeight: FontWeight.w500,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .fontStyle,
                                   ),
                                   color: FlutterFlowTheme.of(context).info,
                                   letterSpacing: 0.0,
-                                  fontWeight: FlutterFlowTheme.of(context)
-                                      .titleSmall
-                                      .fontWeight,
+                                  fontWeight: FontWeight.w500,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .fontStyle,
@@ -181,7 +173,7 @@ class _UsuarioActualizadoRepartidorWidgetState
                           color: Colors.transparent,
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(12.0),
                       ),
                     ),
                     FFButtonWidget(
@@ -197,22 +189,18 @@ class _UsuarioActualizadoRepartidorWidgetState
                         padding: EdgeInsets.all(8.0),
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        color: FlutterFlowTheme.of(context).white,
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   font: GoogleFonts.plusJakartaSans(
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .fontWeight,
+                                    fontWeight: FontWeight.w500,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .fontStyle,
                                   ),
                                   color: FlutterFlowTheme.of(context).primary,
                                   letterSpacing: 0.0,
-                                  fontWeight: FlutterFlowTheme.of(context)
-                                      .titleSmall
-                                      .fontWeight,
+                                  fontWeight: FontWeight.w500,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .fontStyle,
@@ -222,7 +210,7 @@ class _UsuarioActualizadoRepartidorWidgetState
                           color: FlutterFlowTheme.of(context).alternate,
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
+                        borderRadius: BorderRadius.circular(12.0),
                       ),
                     ),
                   ].divide(SizedBox(height: 12.0)),

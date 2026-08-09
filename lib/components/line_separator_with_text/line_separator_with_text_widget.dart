@@ -68,14 +68,12 @@ class _LineSeparatorWithTextWidgetState
               widget!.text!,
               style: FlutterFlowTheme.of(context).labelLarge.override(
                     font: GoogleFonts.plusJakartaSans(
-                      fontWeight:
-                          FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                      fontWeight: FontWeight.w500,
                       fontStyle:
                           FlutterFlowTheme.of(context).labelLarge.fontStyle,
                     ),
                     letterSpacing: 0.0,
-                    fontWeight:
-                        FlutterFlowTheme.of(context).labelLarge.fontWeight,
+                    fontWeight: FontWeight.w500,
                     fontStyle:
                         FlutterFlowTheme.of(context).labelLarge.fontStyle,
                   ),

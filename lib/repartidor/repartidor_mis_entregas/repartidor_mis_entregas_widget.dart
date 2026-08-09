@@ -59,9 +59,9 @@ class _RepartidorMisEntregasWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+          backgroundColor: Color(0xFFF7F5F1),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -83,13 +83,13 @@ class _RepartidorMisEntregasWidgetState
             ),
             style: FlutterFlowTheme.of(context).titleMedium.override(
                   font: GoogleFonts.plusJakartaSans(
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.bold,
                     fontStyle:
                         FlutterFlowTheme.of(context).titleMedium.fontStyle,
                   ),
                   fontSize: 18.0,
                   letterSpacing: 0.0,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.bold,
                   fontStyle: FlutterFlowTheme.of(context).titleMedium.fontStyle,
                 ),
           ),
@@ -195,8 +195,7 @@ class _RepartidorMisEntregasWidgetState
                                 return Container(
                                   width: double.infinity,
                                   decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
+                                    color: FlutterFlowTheme.of(context).white,
                                     boxShadow: [
                                       BoxShadow(
                                         blurRadius: 8.0,
@@ -208,6 +207,11 @@ class _RepartidorMisEntregasWidgetState
                                       )
                                     ],
                                     borderRadius: BorderRadius.circular(12.0),
+                                    border: Border.all(
+                                      color: FlutterFlowTheme.of(context)
+                                          .alternate,
+                                      width: 1.0,
+                                    ),
                                   ),
                                   child: Padding(
                                     padding: EdgeInsets.all(16.0),
@@ -278,7 +282,7 @@ class _RepartidorMisEntregasWidgetState
                                                           font: GoogleFonts
                                                               .plusJakartaSans(
                                                             fontWeight:
-                                                                FontWeight.w600,
+                                                                FontWeight.bold,
                                                             fontStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -291,7 +295,7 @@ class _RepartidorMisEntregasWidgetState
                                                           fontSize: 12.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
-                                                              FontWeight.w600,
+                                                              FontWeight.bold,
                                                           fontStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)

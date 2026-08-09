@@ -54,9 +54,9 @@ class _MenuRepartidorWidgetState extends State<MenuRepartidorWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+          backgroundColor: Color(0xFFF7F5F1),
           automaticallyImplyLeading: false,
           title: Row(
             mainAxisSize: MainAxisSize.max,
@@ -65,7 +65,7 @@ class _MenuRepartidorWidgetState extends State<MenuRepartidorWidget> {
                 width: 40.0,
                 height: 40.0,
                 decoration: BoxDecoration(
-                  color: Color(0xFF108BE8),
+                  color: FlutterFlowTheme.of(context).primary,
                   shape: BoxShape.circle,
                 ),
                 child: Align(
@@ -233,9 +233,7 @@ class _MenuRepartidorWidgetState extends State<MenuRepartidorWidget> {
                                 .bodyMedium
                                 .override(
                                   font: GoogleFonts.plusJakartaSans(
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .fontWeight,
+                                    fontWeight: FontWeight.w500,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .fontStyle,
@@ -243,9 +241,7 @@ class _MenuRepartidorWidgetState extends State<MenuRepartidorWidget> {
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   letterSpacing: 0.0,
-                                  fontWeight: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .fontWeight,
+                                  fontWeight: FontWeight.w500,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .fontStyle,
@@ -271,8 +267,7 @@ class _MenuRepartidorWidgetState extends State<MenuRepartidorWidget> {
                         width: 100.0,
                         height: 100.0,
                         decoration: BoxDecoration(
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
+                          color: FlutterFlowTheme.of(context).white,
                           boxShadow: [
                             BoxShadow(
                               blurRadius: 8.0,
@@ -284,6 +279,10 @@ class _MenuRepartidorWidgetState extends State<MenuRepartidorWidget> {
                             )
                           ],
                           borderRadius: BorderRadius.circular(12.0),
+                          border: Border.all(
+                            color: FlutterFlowTheme.of(context).alternate,
+                            width: 1.0,
+                          ),
                         ),
                         child: Padding(
                           padding: EdgeInsets.all(16.0),
@@ -338,10 +337,7 @@ class _MenuRepartidorWidgetState extends State<MenuRepartidorWidget> {
                                       .bodySmall
                                       .override(
                                         font: GoogleFonts.plusJakartaSans(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodySmall
-                                                  .fontWeight,
+                                          fontWeight: FontWeight.w500,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .bodySmall
@@ -350,9 +346,7 @@ class _MenuRepartidorWidgetState extends State<MenuRepartidorWidget> {
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryText,
                                         letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .bodySmall
-                                            .fontWeight,
+                                        fontWeight: FontWeight.w500,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .fontStyle,
@@ -434,10 +428,7 @@ class _MenuRepartidorWidgetState extends State<MenuRepartidorWidget> {
                                       .bodySmall
                                       .override(
                                         font: GoogleFonts.plusJakartaSans(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodySmall
-                                                  .fontWeight,
+                                          fontWeight: FontWeight.w500,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .bodySmall
@@ -446,9 +437,7 @@ class _MenuRepartidorWidgetState extends State<MenuRepartidorWidget> {
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryText,
                                         letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .bodySmall
-                                            .fontWeight,
+                                        fontWeight: FontWeight.w500,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .fontStyle,
@@ -530,10 +519,7 @@ class _MenuRepartidorWidgetState extends State<MenuRepartidorWidget> {
                                       .bodySmall
                                       .override(
                                         font: GoogleFonts.plusJakartaSans(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodySmall
-                                                  .fontWeight,
+                                          fontWeight: FontWeight.w500,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .bodySmall
@@ -542,9 +528,7 @@ class _MenuRepartidorWidgetState extends State<MenuRepartidorWidget> {
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryText,
                                         letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .bodySmall
-                                            .fontWeight,
+                                        fontWeight: FontWeight.w500,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .fontStyle,

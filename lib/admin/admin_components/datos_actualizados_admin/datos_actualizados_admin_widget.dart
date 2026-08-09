@@ -53,7 +53,7 @@ class _DatosActualizadosAdminWidgetState
         padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
         child: Container(
           decoration: BoxDecoration(
-            color: FlutterFlowTheme.of(context).secondaryBackground,
+            color: Colors.white,
             boxShadow: [
               BoxShadow(
                 blurRadius: 8.0,
@@ -156,7 +156,7 @@ class _DatosActualizadosAdminWidgetState
                         padding: EdgeInsets.all(8.0),
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).alternate,
+                        color: Color(0xFFE4F2F0),
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
                             .override(

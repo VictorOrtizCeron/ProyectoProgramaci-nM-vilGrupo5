@@ -66,9 +66,9 @@ class _AdminEliminarUsuarioWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+          backgroundColor: Color(0xFFF7F5F1),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -130,7 +130,7 @@ class _AdminEliminarUsuarioWidgetState
                                 width: 120.0,
                                 height: 120.0,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).accent1,
+                                  color: FlutterFlowTheme.of(context).alternate,
                                   image: DecorationImage(
                                     fit: BoxFit.cover,
                                     image: Image.network(
@@ -139,7 +139,7 @@ class _AdminEliminarUsuarioWidgetState
                                   ),
                                   shape: BoxShape.circle,
                                   border: Border.all(
-                                    color: FlutterFlowTheme.of(context).primary,
+                                    color: Color(0xFFFF6A4D),
                                     width: 3.0,
                                   ),
                                 ),
@@ -147,7 +147,7 @@ class _AdminEliminarUsuarioWidgetState
                                   alignment: AlignmentDirectional(0.0, 0.0),
                                   child: FaIcon(
                                     FontAwesomeIcons.exclamationCircle,
-                                    color: FlutterFlowTheme.of(context).primary,
+                                    color: Color(0xFFFF6A4D),
                                     size: 60.0,
                                   ),
                                 ),
@@ -168,7 +168,7 @@ class _AdminEliminarUsuarioWidgetState
                                         .headlineMedium
                                         .fontStyle,
                                   ),
-                                  color: FlutterFlowTheme.of(context).error,
+                                  color: FlutterFlowTheme.of(context).primary,
                                   fontSize: 24.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.bold,
@@ -193,8 +193,8 @@ class _AdminEliminarUsuarioWidgetState
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryText,
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
                                   fontSize: 16.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FlutterFlowTheme.of(context)
@@ -293,7 +293,7 @@ class _AdminEliminarUsuarioWidgetState
                                               ),
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryText,
+                                                      .secondaryText,
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
@@ -359,7 +359,7 @@ class _AdminEliminarUsuarioWidgetState
                                               ),
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryText,
+                                                      .secondaryText,
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
@@ -425,7 +425,7 @@ class _AdminEliminarUsuarioWidgetState
                                               ),
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryText,
+                                                      .secondaryText,
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
@@ -491,7 +491,7 @@ class _AdminEliminarUsuarioWidgetState
                                               ),
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryText,
+                                                      .secondaryText,
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
@@ -562,7 +562,7 @@ class _AdminEliminarUsuarioWidgetState
                                               ),
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryText,
+                                                      .secondaryText,
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
@@ -685,6 +685,7 @@ class _AdminEliminarUsuarioWidgetState
                                       FFLocalizations.of(context).getText(
                                         'l8wqzlhe' /* Al eliminar este usuario, se p... */,
                                       ),
+                                      textAlign: TextAlign.center,
                                       style: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .override(
@@ -699,7 +700,7 @@ class _AdminEliminarUsuarioWidgetState
                                                       .fontStyle,
                                             ),
                                             color: FlutterFlowTheme.of(context)
-                                                .secondaryText,
+                                                .primaryText,
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
                                             fontWeight:
@@ -773,7 +774,7 @@ class _AdminEliminarUsuarioWidgetState
                           padding: EdgeInsets.all(8.0),
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: FlutterFlowTheme.of(context).error,
+                          color: FlutterFlowTheme.of(context).primary,
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
                                     font: GoogleFonts.plusJakartaSans(

@@ -180,7 +180,8 @@ class _EditarProductos3WidgetState extends State<EditarProductos3Widget> {
                                         0.0, 20.0, 0.0, 0.0),
                                     child: Icon(
                                       Icons.check_box_rounded,
-                                      color: Color(0xFFE98F6B),
+                                      color:
+                                          FlutterFlowTheme.of(context).tertiary,
                                       size: 100.0,
                                     ),
                                   ),
@@ -283,7 +284,8 @@ class _EditarProductos3WidgetState extends State<EditarProductos3Widget> {
                                         iconPadding:
                                             EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: Color(0xFFE98F6B),
+                                        color: FlutterFlowTheme.of(context)
+                                            .tertiary,
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
@@ -311,7 +313,7 @@ class _EditarProductos3WidgetState extends State<EditarProductos3Widget> {
                                             ),
                                         elevation: 0.0,
                                         borderRadius:
-                                            BorderRadius.circular(24.0),
+                                            BorderRadius.circular(12.0),
                                       ),
                                     ),
                                   ),

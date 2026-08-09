@@ -49,7 +49,7 @@ class _UserCreateCompletlyWidgetState extends State<UserCreateCompletlyWidget> {
       child: Container(
         width: double.infinity,
         decoration: BoxDecoration(
-          color: FlutterFlowTheme.of(context).accent1,
+          color: Color(0xFFFDF0E9),
           borderRadius: BorderRadius.circular(12.0),
           border: Border.all(
             color: FlutterFlowTheme.of(context).primary,

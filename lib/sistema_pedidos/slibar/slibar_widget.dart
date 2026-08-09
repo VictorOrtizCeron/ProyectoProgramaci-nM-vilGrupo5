@@ -107,7 +107,7 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                               .headlineMedium
                               .override(
                                 font: GoogleFonts.outfit(
-                                  fontWeight: FontWeight.w500,
+                                  fontWeight: FontWeight.w600,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .headlineMedium
                                       .fontStyle,
@@ -115,7 +115,7 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                                 color: Color(0xFF15161E),
                                 fontSize: 24.0,
                                 letterSpacing: 0.0,
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeight.w600,
                                 fontStyle: FlutterFlowTheme.of(context)
                                     .headlineMedium
                                     .fontStyle,
@@ -139,8 +139,8 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                   child: Container(
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: Color(0xFFF1F4F8),
-                      borderRadius: BorderRadius.circular(8.0),
+                      color: FlutterFlowTheme.of(context).white,
+                      borderRadius: BorderRadius.circular(12.0),
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
@@ -169,7 +169,8 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                                           .bodyLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF15161E),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -199,7 +200,7 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(12.0),
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
@@ -228,7 +229,8 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                                           .labelLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF606A85),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -258,7 +260,7 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(12.0),
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
@@ -287,7 +289,8 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                                           .labelLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF606A85),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -317,7 +320,7 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(12.0),
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
@@ -346,7 +349,8 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                                           .labelLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF606A85),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -384,7 +388,7 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(12.0),
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
@@ -413,7 +417,8 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                                           .labelLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF606A85),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -443,7 +448,7 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(12.0),
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
@@ -472,7 +477,8 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                                           .labelLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF606A85),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -504,7 +510,7 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(8.0),
+                          borderRadius: BorderRadius.circular(12.0),
                         ),
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
@@ -534,7 +540,8 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                                                   .labelLarge
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF606A85),
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryText,
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -581,11 +588,11 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                                 width: 50.0,
                                 height: 50.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x4D9489F5),
+                                  color: Color(0xFFFDF0E9),
                                   borderRadius: BorderRadius.circular(12.0),
                                   border: Border.all(
-                                    color: Color(0xFF6F61EF),
-                                    width: 2.0,
+                                    color: FlutterFlowTheme.of(context).primary,
+                                    width: 1.0,
                                   ),
                                 ),
                                 child: Padding(
@@ -627,7 +634,7 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                                               .override(
                                                 font:
                                                     GoogleFonts.plusJakartaSans(
-                                                  fontWeight: FontWeight.w500,
+                                                  fontWeight: FontWeight.w600,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -637,7 +644,7 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                                                 color: Color(0xFF15161E),
                                                 fontSize: 16.0,
                                                 letterSpacing: 0.0,
-                                                fontWeight: FontWeight.w500,
+                                                fontWeight: FontWeight.w600,
                                                 fontStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
@@ -662,7 +669,9 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                                                           .labelMedium
                                                           .fontStyle,
                                                 ),
-                                                color: Color(0xFF606A85),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryText,
                                                 fontSize: 10.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w500,
@@ -692,7 +701,9 @@ class _SlibarWidgetState extends State<SlibarWidget> {
                                                           .bodySmall
                                                           .fontStyle,
                                                 ),
-                                                color: Color(0xFF6F61EF),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
                                                 fontSize: 12.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w500,

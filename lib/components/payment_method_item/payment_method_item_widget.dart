@@ -47,8 +47,12 @@ class _PaymentMethodItemWidgetState extends State<PaymentMethodItemWidget> {
       padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
       child: Container(
         decoration: BoxDecoration(
-          color: FlutterFlowTheme.of(context).primaryBackground,
-          borderRadius: BorderRadius.circular(16.0),
+          color: FlutterFlowTheme.of(context).white,
+          borderRadius: BorderRadius.circular(12.0),
+          border: Border.all(
+            color: FlutterFlowTheme.of(context).alternate,
+            width: 1.0,
+          ),
         ),
         child: Padding(
           padding: EdgeInsets.all(14.0),

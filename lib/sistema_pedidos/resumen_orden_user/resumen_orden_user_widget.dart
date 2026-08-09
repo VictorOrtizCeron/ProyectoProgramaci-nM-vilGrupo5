@@ -58,7 +58,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             body: Center(
               child: SizedBox(
                 width: 40.0,
@@ -81,9 +81,9 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             appBar: AppBar(
-              backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+              backgroundColor: Color(0xFFF7F5F1),
               automaticallyImplyLeading: false,
               title: Text(
                 FFLocalizations.of(context).getText(
@@ -91,14 +91,14 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                 ),
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       font: GoogleFonts.plusJakartaSans(
-                        fontWeight: FontWeight.w600,
+                        fontWeight: FontWeight.bold,
                         fontStyle: FlutterFlowTheme.of(context)
                             .headlineMedium
                             .fontStyle,
                       ),
                       fontSize: 22.0,
                       letterSpacing: 0.0,
-                      fontWeight: FontWeight.w600,
+                      fontWeight: FontWeight.bold,
                       fontStyle:
                           FlutterFlowTheme.of(context).headlineMedium.fontStyle,
                     ),
@@ -183,8 +183,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
+                            color: FlutterFlowTheme.of(context).white,
                             boxShadow: [
                               BoxShadow(
                                 blurRadius: 4.0,
@@ -196,6 +195,10 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                               )
                             ],
                             borderRadius: BorderRadius.circular(12.0),
+                            border: Border.all(
+                              color: FlutterFlowTheme.of(context).alternate,
+                              width: 1.0,
+                            ),
                           ),
                           child: Padding(
                             padding: EdgeInsets.all(16.0),
@@ -363,8 +366,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
+                            color: FlutterFlowTheme.of(context).white,
                             boxShadow: [
                               BoxShadow(
                                 blurRadius: 4.0,
@@ -376,6 +378,10 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                               )
                             ],
                             borderRadius: BorderRadius.circular(12.0),
+                            border: Border.all(
+                              color: FlutterFlowTheme.of(context).alternate,
+                              width: 1.0,
+                            ),
                           ),
                           child: Padding(
                             padding: EdgeInsets.all(16.0),
@@ -540,8 +546,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
+                            color: FlutterFlowTheme.of(context).white,
                             boxShadow: [
                               BoxShadow(
                                 blurRadius: 4.0,
@@ -553,6 +558,10 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                               )
                             ],
                             borderRadius: BorderRadius.circular(12.0),
+                            border: Border.all(
+                              color: FlutterFlowTheme.of(context).alternate,
+                              width: 1.0,
+                            ),
                           ),
                           child: Padding(
                             padding: EdgeInsets.all(16.0),
@@ -788,8 +797,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
+                            color: FlutterFlowTheme.of(context).white,
                             boxShadow: [
                               BoxShadow(
                                 blurRadius: 4.0,
@@ -801,6 +809,10 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                               )
                             ],
                             borderRadius: BorderRadius.circular(12.0),
+                            border: Border.all(
+                              color: FlutterFlowTheme.of(context).alternate,
+                              width: 1.0,
+                            ),
                           ),
                           child: Padding(
                             padding: EdgeInsets.all(16.0),
@@ -1141,8 +1153,7 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                                   24.0, 0.0, 24.0, 0.0),
                               iconPadding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context)
-                                  .primaryBackground,
+                              color: FlutterFlowTheme.of(context).white,
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
@@ -1162,8 +1173,8 @@ class _ResumenOrdenUserWidgetState extends State<ResumenOrdenUserWidget> {
                                   ),
                               elevation: 0.0,
                               borderSide: BorderSide(
-                                color: FlutterFlowTheme.of(context).primary,
-                                width: 2.0,
+                                color: FlutterFlowTheme.of(context).alternate,
+                                width: 1.0,
                               ),
                               borderRadius: BorderRadius.circular(12.0),
                             ),

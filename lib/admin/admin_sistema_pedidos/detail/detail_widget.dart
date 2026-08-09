@@ -64,7 +64,7 @@ class _DetailWidgetState extends State<DetailWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             body: Center(
               child: SizedBox(
                 width: 40.0,
@@ -93,7 +93,7 @@ class _DetailWidgetState extends State<DetailWidget> {
           },
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: Color(0xFFF7F5F1),
             body: Container(
               width: double.infinity,
               height: double.infinity,
@@ -103,7 +103,7 @@ class _DetailWidgetState extends State<DetailWidget> {
                     width: double.infinity,
                     height: double.infinity,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: Color(0xFFF7F5F1),
                     ),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -562,7 +562,7 @@ class _DetailWidgetState extends State<DetailWidget> {
                                                               BoxDecoration(
                                                             color: FlutterFlowTheme
                                                                     .of(context)
-                                                                .grey3,
+                                                                .alternate,
                                                             borderRadius:
                                                                 BorderRadius
                                                                     .circular(
@@ -588,7 +588,7 @@ class _DetailWidgetState extends State<DetailWidget> {
                                                                       .primaryText
                                                                   : FlutterFlowTheme.of(
                                                                           context)
-                                                                      .lightGrey,
+                                                                      .white,
                                                               size: 20.0,
                                                             ),
                                                             incrementIconBuilder:
@@ -601,7 +601,7 @@ class _DetailWidgetState extends State<DetailWidget> {
                                                                       .primaryText
                                                                   : FlutterFlowTheme.of(
                                                                           context)
-                                                                      .lightGrey,
+                                                                      .white,
                                                               size: 20.0,
                                                             ),
                                                             countBuilder:
@@ -774,6 +774,9 @@ class _DetailWidgetState extends State<DetailWidget> {
                                                                       .bodyMedium
                                                                       .fontStyle,
                                                                 ),
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondaryText,
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight: FlutterFlowTheme.of(
@@ -974,8 +977,9 @@ class _DetailWidgetState extends State<DetailWidget> {
                                           width: 100.0,
                                           height: 100.0,
                                           decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                            color: Color(0xFFF7F5F1),
+                                            borderRadius:
+                                                BorderRadius.circular(12.0),
                                           ),
                                           alignment:
                                               AlignmentDirectional(0.0, 0.0),

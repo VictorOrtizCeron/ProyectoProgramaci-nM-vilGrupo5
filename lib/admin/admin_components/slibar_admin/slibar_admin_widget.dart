@@ -139,8 +139,8 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                   child: Container(
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: Color(0xFFF1F4F8),
-                      borderRadius: BorderRadius.circular(8.0),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(12.0),
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
@@ -169,7 +169,8 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                                           .bodyLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF15161E),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -199,7 +200,7 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(12.0),
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
@@ -228,7 +229,8 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                                           .labelLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF606A85),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -258,7 +260,7 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(12.0),
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
@@ -287,7 +289,8 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                                           .labelLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF606A85),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -317,7 +320,7 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(12.0),
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
@@ -354,7 +357,8 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                                             .labelLarge
                                             .fontStyle,
                                       ),
-                                      color: Color(0xFF606A85),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -393,7 +397,7 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(12.0),
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
@@ -422,7 +426,8 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                                           .labelLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF606A85),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -452,7 +457,7 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(12.0),
                     ),
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
@@ -481,7 +486,8 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                                           .labelLarge
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF606A85),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -513,7 +519,7 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(8.0),
+                          borderRadius: BorderRadius.circular(12.0),
                         ),
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
@@ -543,7 +549,8 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                                                   .labelLarge
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF606A85),
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryText,
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -590,11 +597,11 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                                 width: 50.0,
                                 height: 50.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0x4D9489F5),
+                                  color: Color(0xFFFDF0E9),
                                   borderRadius: BorderRadius.circular(12.0),
                                   border: Border.all(
-                                    color: Color(0xFF6F61EF),
-                                    width: 2.0,
+                                    color: FlutterFlowTheme.of(context).primary,
+                                    width: 1.0,
                                   ),
                                 ),
                                 child: Padding(
@@ -646,7 +653,9 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                                                           .bodyLarge
                                                           .fontStyle,
                                                 ),
-                                                color: Color(0xFF15161E),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryText,
                                                 fontSize: 16.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w500,
@@ -677,7 +686,9 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                                                           .labelMedium
                                                           .fontStyle,
                                                 ),
-                                                color: Color(0xFF606A85),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryText,
                                                 fontSize: 10.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w500,
@@ -707,7 +718,9 @@ class _SlibarAdminWidgetState extends State<SlibarAdminWidget> {
                                                           .bodySmall
                                                           .fontStyle,
                                                 ),
-                                                color: Color(0xFF6F61EF),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
                                                 fontSize: 12.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w500,

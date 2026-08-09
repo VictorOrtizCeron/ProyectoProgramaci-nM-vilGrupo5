@@ -99,17 +99,13 @@ class _MyOrderItemWidgetState extends State<MyOrderItemWidget> {
                                     .titleMedium
                                     .override(
                                       font: GoogleFonts.plusJakartaSans(
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .titleMedium
-                                            .fontWeight,
+                                        fontWeight: FontWeight.w600,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .titleMedium
                                             .fontStyle,
                                       ),
                                       letterSpacing: 0.0,
-                                      fontWeight: FlutterFlowTheme.of(context)
-                                          .titleMedium
-                                          .fontWeight,
+                                      fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .fontStyle,
@@ -275,32 +271,27 @@ class _MyOrderItemWidgetState extends State<MyOrderItemWidget> {
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .labelMedium
-                            .override(
-                              font: GoogleFonts.plusJakartaSans(
-                                fontWeight: FlutterFlowTheme.of(context)
-                                    .labelMedium
-                                    .fontWeight,
-                                fontStyle: FlutterFlowTheme.of(context)
-                                    .labelMedium
-                                    .fontStyle,
-                              ),
-                              color: FlutterFlowTheme.of(context).primaryText,
-                              letterSpacing: 0.0,
-                              fontWeight: FlutterFlowTheme.of(context)
-                                  .labelMedium
-                                  .fontWeight,
-                              fontStyle: FlutterFlowTheme.of(context)
-                                  .labelMedium
-                                  .fontStyle,
-                            ),
+                        textStyle:
+                            FlutterFlowTheme.of(context).labelMedium.override(
+                                  font: GoogleFonts.plusJakartaSans(
+                                    fontWeight: FontWeight.w500,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
+                                  ),
+                                  color: FlutterFlowTheme.of(context).primary,
+                                  letterSpacing: 0.0,
+                                  fontWeight: FontWeight.w500,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .fontStyle,
+                                ),
                         elevation: 0.0,
                         borderSide: BorderSide(
-                          color: FlutterFlowTheme.of(context).grey2,
+                          color: FlutterFlowTheme.of(context).alternate,
                           width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(30.0),
+                        borderRadius: BorderRadius.circular(12.0),
                       ),
                     ),
                   ),
@@ -322,18 +313,14 @@ class _MyOrderItemWidgetState extends State<MyOrderItemWidget> {
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
                                   font: GoogleFonts.plusJakartaSans(
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .fontWeight,
+                                    fontWeight: FontWeight.w500,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .fontStyle,
                                   ),
                                   color: Colors.white,
                                   letterSpacing: 0.0,
-                                  fontWeight: FlutterFlowTheme.of(context)
-                                      .titleSmall
-                                      .fontWeight,
+                                  fontWeight: FontWeight.w500,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .fontStyle,

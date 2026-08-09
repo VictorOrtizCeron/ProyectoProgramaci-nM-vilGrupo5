@@ -49,7 +49,7 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Color(0xFFF7F5F1),
         body: SafeArea(
           top: true,
           child: Container(
@@ -60,15 +60,14 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                 Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    color: Color(0xFFF7F5F1),
                   ),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Container(
                         decoration: BoxDecoration(
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
+                          color: Color(0xFFF7F5F1),
                         ),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
@@ -99,19 +98,14 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                       .labelLarge
                                       .override(
                                         font: GoogleFonts.plusJakartaSans(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelLarge
-                                                  .fontWeight,
+                                          fontWeight: FontWeight.w500,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge
                                                   .fontStyle,
                                         ),
                                         letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .labelLarge
-                                            .fontWeight,
+                                        fontWeight: FontWeight.w500,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .labelLarge
                                             .fontStyle,
@@ -122,8 +116,7 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                 width: 40.0,
                                 height: 40.0,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context)
-                                      .primaryBackground,
+                                  color: FlutterFlowTheme.of(context).primary,
                                   shape: BoxShape.circle,
                                 ),
                               ),
@@ -168,10 +161,7 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                                           font: GoogleFonts
                                                               .plusJakartaSans(
                                                             fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleMedium
-                                                                    .fontWeight,
+                                                                FontWeight.w600,
                                                             fontStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -180,10 +170,7 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                                           ),
                                                           letterSpacing: 0.0,
                                                           fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleMedium
-                                                                  .fontWeight,
+                                                              FontWeight.w600,
                                                           fontStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -204,33 +191,42 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
+                                                      .white,
                                               borderRadius:
                                                   BorderRadius.circular(16.0),
+                                              border: Border.all(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .alternate,
+                                                width: 1.0,
+                                              ),
                                             ),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                Container(
-                                                  width: 60.0,
-                                                  height: 60.0,
-                                                  decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .grey3,
-                                                    shape: BoxShape.circle,
-                                                  ),
-                                                  child: Align(
-                                                    alignment:
-                                                        AlignmentDirectional(
-                                                            0.0, 0.0),
-                                                    child: Icon(
-                                                      FFIcons.kdiscount2,
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                      size: 24.0,
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          10.0, 0.0, 0.0, 0.0),
+                                                  child: Container(
+                                                    width: 60.0,
+                                                    height: 60.0,
+                                                    decoration: BoxDecoration(
+                                                      color: Color(0xFFFDF0E9),
+                                                      shape: BoxShape.circle,
+                                                    ),
+                                                    child: Align(
+                                                      alignment:
+                                                          AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Icon(
+                                                        FFIcons.kdiscount2,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        size: 24.0,
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
@@ -343,33 +339,43 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
+                                                      .white,
                                               borderRadius:
-                                                  BorderRadius.circular(16.0),
+                                                  BorderRadius.circular(12.0),
+                                              border: Border.all(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .alternate,
+                                                width: 1.0,
+                                              ),
                                             ),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                Container(
-                                                  width: 60.0,
-                                                  height: 60.0,
-                                                  decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .grey3,
-                                                    shape: BoxShape.circle,
-                                                  ),
-                                                  child: Align(
-                                                    alignment:
-                                                        AlignmentDirectional(
-                                                            0.0, 0.0),
-                                                    child: Icon(
-                                                      Icons.system_update_sharp,
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                      size: 24.0,
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          10.0, 0.0, 0.0, 0.0),
+                                                  child: Container(
+                                                    width: 60.0,
+                                                    height: 60.0,
+                                                    decoration: BoxDecoration(
+                                                      color: Color(0xFFFDF0E9),
+                                                      shape: BoxShape.circle,
+                                                    ),
+                                                    child: Align(
+                                                      alignment:
+                                                          AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Icon(
+                                                        Icons
+                                                            .system_update_sharp,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        size: 24.0,
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
@@ -482,34 +488,43 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
+                                                      .white,
                                               borderRadius:
-                                                  BorderRadius.circular(16.0),
+                                                  BorderRadius.circular(12.0),
+                                              border: Border.all(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .alternate,
+                                                width: 1.0,
+                                              ),
                                             ),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                Container(
-                                                  width: 60.0,
-                                                  height: 60.0,
-                                                  decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .grey3,
-                                                    shape: BoxShape.circle,
-                                                  ),
-                                                  child: Align(
-                                                    alignment:
-                                                        AlignmentDirectional(
-                                                            0.0, 0.0),
-                                                    child: Icon(
-                                                      Icons
-                                                          .local_post_office_outlined,
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                      size: 24.0,
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          10.0, 0.0, 0.0, 0.0),
+                                                  child: Container(
+                                                    width: 60.0,
+                                                    height: 60.0,
+                                                    decoration: BoxDecoration(
+                                                      color: Color(0xFFFDF0E9),
+                                                      shape: BoxShape.circle,
+                                                    ),
+                                                    child: Align(
+                                                      alignment:
+                                                          AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Icon(
+                                                        Icons
+                                                            .local_post_office_outlined,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        size: 24.0,
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
@@ -622,33 +637,42 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
+                                                      .white,
                                               borderRadius:
-                                                  BorderRadius.circular(16.0),
+                                                  BorderRadius.circular(12.0),
+                                              border: Border.all(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .alternate,
+                                                width: 1.0,
+                                              ),
                                             ),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                Container(
-                                                  width: 60.0,
-                                                  height: 60.0,
-                                                  decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .grey3,
-                                                    shape: BoxShape.circle,
-                                                  ),
-                                                  child: Align(
-                                                    alignment:
-                                                        AlignmentDirectional(
-                                                            0.0, 0.0),
-                                                    child: Icon(
-                                                      FFIcons.kdiscount2,
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                      size: 24.0,
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          10.0, 0.0, 0.0, 0.0),
+                                                  child: Container(
+                                                    width: 60.0,
+                                                    height: 60.0,
+                                                    decoration: BoxDecoration(
+                                                      color: Color(0xFFFDF0E9),
+                                                      shape: BoxShape.circle,
+                                                    ),
+                                                    child: Align(
+                                                      alignment:
+                                                          AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Icon(
+                                                        FFIcons.kdiscount2,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        size: 24.0,
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
@@ -777,10 +801,7 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                                           font: GoogleFonts
                                                               .plusJakartaSans(
                                                             fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleMedium
-                                                                    .fontWeight,
+                                                                FontWeight.w600,
                                                             fontStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -789,10 +810,7 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                                           ),
                                                           letterSpacing: 0.0,
                                                           fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleMedium
-                                                                  .fontWeight,
+                                                              FontWeight.w600,
                                                           fontStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -813,33 +831,42 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
+                                                      .white,
                                               borderRadius:
-                                                  BorderRadius.circular(16.0),
+                                                  BorderRadius.circular(12.0),
+                                              border: Border.all(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .alternate,
+                                                width: 1.0,
+                                              ),
                                             ),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                Container(
-                                                  width: 60.0,
-                                                  height: 60.0,
-                                                  decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .grey3,
-                                                    shape: BoxShape.circle,
-                                                  ),
-                                                  child: Align(
-                                                    alignment:
-                                                        AlignmentDirectional(
-                                                            0.0, 0.0),
-                                                    child: Icon(
-                                                      FFIcons.kdiscount2,
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                      size: 24.0,
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          10.0, 0.0, 0.0, 0.0),
+                                                  child: Container(
+                                                    width: 60.0,
+                                                    height: 60.0,
+                                                    decoration: BoxDecoration(
+                                                      color: Color(0xFFFDF0E9),
+                                                      shape: BoxShape.circle,
+                                                    ),
+                                                    child: Align(
+                                                      alignment:
+                                                          AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Icon(
+                                                        FFIcons.kdiscount2,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        size: 24.0,
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
@@ -952,33 +979,43 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
+                                                      .white,
                                               borderRadius:
-                                                  BorderRadius.circular(16.0),
+                                                  BorderRadius.circular(12.0),
+                                              border: Border.all(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .alternate,
+                                                width: 1.0,
+                                              ),
                                             ),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                Container(
-                                                  width: 60.0,
-                                                  height: 60.0,
-                                                  decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .grey3,
-                                                    shape: BoxShape.circle,
-                                                  ),
-                                                  child: Align(
-                                                    alignment:
-                                                        AlignmentDirectional(
-                                                            0.0, 0.0),
-                                                    child: Icon(
-                                                      Icons.system_update_sharp,
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                      size: 24.0,
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          10.0, 0.0, 0.0, 0.0),
+                                                  child: Container(
+                                                    width: 60.0,
+                                                    height: 60.0,
+                                                    decoration: BoxDecoration(
+                                                      color: Color(0xFFFDF0E9),
+                                                      shape: BoxShape.circle,
+                                                    ),
+                                                    child: Align(
+                                                      alignment:
+                                                          AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Icon(
+                                                        Icons
+                                                            .system_update_sharp,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        size: 24.0,
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
@@ -1091,34 +1128,43 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
+                                                      .white,
                                               borderRadius:
-                                                  BorderRadius.circular(16.0),
+                                                  BorderRadius.circular(12.0),
+                                              border: Border.all(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .alternate,
+                                                width: 1.0,
+                                              ),
                                             ),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                Container(
-                                                  width: 60.0,
-                                                  height: 60.0,
-                                                  decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .grey3,
-                                                    shape: BoxShape.circle,
-                                                  ),
-                                                  child: Align(
-                                                    alignment:
-                                                        AlignmentDirectional(
-                                                            0.0, 0.0),
-                                                    child: Icon(
-                                                      Icons
-                                                          .local_post_office_outlined,
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .primary,
-                                                      size: 24.0,
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          10.0, 0.0, 0.0, 0.0),
+                                                  child: Container(
+                                                    width: 60.0,
+                                                    height: 60.0,
+                                                    decoration: BoxDecoration(
+                                                      color: Color(0xFFFDF0E9),
+                                                      shape: BoxShape.circle,
+                                                    ),
+                                                    child: Align(
+                                                      alignment:
+                                                          AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Icon(
+                                                        Icons
+                                                            .local_post_office_outlined,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        size: 24.0,
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
@@ -1231,33 +1277,45 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
+                                                      .white,
                                               borderRadius:
-                                                  BorderRadius.circular(16.0),
+                                                  BorderRadius.circular(12.0),
+                                              border: Border.all(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .alternate,
+                                                width: 1.0,
+                                              ),
                                             ),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                Container(
-                                                  width: 60.0,
-                                                  height: 60.0,
-                                                  decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .grey3,
-                                                    shape: BoxShape.circle,
-                                                  ),
-                                                  child: Align(
-                                                    alignment:
-                                                        AlignmentDirectional(
-                                                            0.0, 0.0),
-                                                    child: Icon(
-                                                      FFIcons.kdiscount2,
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          10.0, 0.0, 0.0, 0.0),
+                                                  child: Container(
+                                                    width: 60.0,
+                                                    height: 60.0,
+                                                    decoration: BoxDecoration(
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .primary,
-                                                      size: 24.0,
+                                                              .grey3,
+                                                      shape: BoxShape.circle,
+                                                    ),
+                                                    child: Align(
+                                                      alignment:
+                                                          AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Icon(
+                                                        FFIcons.kdiscount2,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        size: 24.0,
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
@@ -1370,33 +1428,45 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                             decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
+                                                      .white,
                                               borderRadius:
-                                                  BorderRadius.circular(16.0),
+                                                  BorderRadius.circular(12.0),
+                                              border: Border.all(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .alternate,
+                                                width: 1.0,
+                                              ),
                                             ),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                Container(
-                                                  width: 60.0,
-                                                  height: 60.0,
-                                                  decoration: BoxDecoration(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .grey3,
-                                                    shape: BoxShape.circle,
-                                                  ),
-                                                  child: Align(
-                                                    alignment:
-                                                        AlignmentDirectional(
-                                                            0.0, 0.0),
-                                                    child: Icon(
-                                                      FFIcons.kdiscount2,
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          10.0, 0.0, 0.0, 0.0),
+                                                  child: Container(
+                                                    width: 60.0,
+                                                    height: 60.0,
+                                                    decoration: BoxDecoration(
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .primary,
-                                                      size: 24.0,
+                                                              .grey3,
+                                                      shape: BoxShape.circle,
+                                                    ),
+                                                    child: Align(
+                                                      alignment:
+                                                          AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Icon(
+                                                        FFIcons.kdiscount2,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        size: 24.0,
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
