@@ -810,12 +810,16 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'l8wqzlhe': {
       'en':
-          'Al eliminar este usuario, se perderán todos sus datos asociados incluyendo historial de actividades y configuraciones personalizadas.',
+          'Al eliminar este usuario, se perderán todos sus datos asociados incluyendo historial de actividades y configuraciones personalizadas. Alternativamente puede solo desactivarlo (soft delete)',
       'es':
           'Al eliminar este usuario, se perderán todos sus datos asociados, incluido el historial de actividades y configuraciones personalizadas.',
     },
     '52o4ave9': {
       'en': 'Eliminar Usuario',
+      'es': 'Eliminar usuario',
+    },
+    'wsbyqm86': {
+      'en': 'Desactivar usuario',
       'es': 'Eliminar usuario',
     },
     '7rvhdk5q': {

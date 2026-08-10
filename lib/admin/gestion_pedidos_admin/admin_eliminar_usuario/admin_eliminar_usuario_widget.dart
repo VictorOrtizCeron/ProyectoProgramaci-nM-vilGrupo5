@@ -1,6 +1,7 @@
 import '/admin/admin_components/datos_eliminados/datos_eliminados_widget.dart';
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
+import '/backend/schema/enums/enums.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -701,7 +702,7 @@ class _AdminEliminarUsuarioWidgetState
                                             ),
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryText,
-                                            fontSize: 16.0,
+                                            fontSize: 13.0,
                                             letterSpacing: 0.0,
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
@@ -730,74 +731,152 @@ class _AdminEliminarUsuarioWidgetState
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      FFButtonWidget(
-                        onPressed: () async {
-                          await widget!.eliminarUser!.reference.delete();
+                      Row(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Expanded(
+                            child: Padding(
+                              padding: EdgeInsets.all(5.0),
+                              child: FFButtonWidget(
+                                onPressed: () async {
+                                  await widget!.eliminarUser!.reference
+                                      .delete();
 
-                          await AuditoriaRecord.collection
-                              .doc()
-                              .set(createAuditoriaRecordData(
-                                fechaAUD: getCurrentTimestamp,
-                                accionAUD: 'DELETE',
-                                usuarioAUD: currentUserReference,
-                                productoAUD: valueOrDefault<String>(
-                                  currentUserEmail,
-                                  'Email Error',
-                                ),
-                                tablaAUD: 'USUARIO',
-                              ));
-                          await showModalBottomSheet(
-                            isScrollControlled: true,
-                            backgroundColor: Colors.transparent,
-                            enableDrag: false,
-                            context: context,
-                            builder: (context) {
-                              return GestureDetector(
-                                onTap: () {
-                                  FocusScope.of(context).unfocus();
-                                  FocusManager.instance.primaryFocus?.unfocus();
+                                  await AuditoriaRecord.collection
+                                      .doc()
+                                      .set(createAuditoriaRecordData(
+                                        fechaAUD: getCurrentTimestamp,
+                                        accionAUD: 'DELETE',
+                                        usuarioAUD: currentUserReference,
+                                        productoAUD: valueOrDefault<String>(
+                                          currentUserEmail,
+                                          'Email Error',
+                                        ),
+                                        tablaAUD: 'USUARIO',
+                                      ));
+                                  await showModalBottomSheet(
+                                    isScrollControlled: true,
+                                    backgroundColor: Colors.transparent,
+                                    enableDrag: false,
+                                    context: context,
+                                    builder: (context) {
+                                      return GestureDetector(
+                                        onTap: () {
+                                          FocusScope.of(context).unfocus();
+                                          FocusManager.instance.primaryFocus
+                                              ?.unfocus();
+                                        },
+                                        child: Padding(
+                                          padding:
+                                              MediaQuery.viewInsetsOf(context),
+                                          child: DatosEliminadosWidget(),
+                                        ),
+                                      );
+                                    },
+                                  ).then((value) => safeSetState(() {}));
                                 },
-                                child: Padding(
-                                  padding: MediaQuery.viewInsetsOf(context),
-                                  child: DatosEliminadosWidget(),
+                                text: FFLocalizations.of(context).getText(
+                                  '52o4ave9' /* Eliminar Usuario */,
                                 ),
-                              );
-                            },
-                          ).then((value) => safeSetState(() {}));
-                        },
-                        text: FFLocalizations.of(context).getText(
-                          '52o4ave9' /* Eliminar Usuario */,
-                        ),
-                        options: FFButtonOptions(
-                          width: double.infinity,
-                          height: 50.0,
-                          padding: EdgeInsets.all(8.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 0.0),
-                          color: FlutterFlowTheme.of(context).primary,
-                          textStyle:
-                              FlutterFlowTheme.of(context).titleSmall.override(
-                                    font: GoogleFonts.plusJakartaSans(
-                                      fontWeight: FontWeight.w600,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .fontStyle,
-                                    ),
-                                    color: Colors.white,
-                                    fontSize: 16.0,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.w600,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .fontStyle,
+                                options: FFButtonOptions(
+                                  width: double.infinity,
+                                  height: 50.0,
+                                  padding: EdgeInsets.all(8.0),
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 0.0),
+                                  color: FlutterFlowTheme.of(context).primary,
+                                  textStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .override(
+                                        font: GoogleFonts.plusJakartaSans(
+                                          fontWeight: FontWeight.w600,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontStyle,
+                                        ),
+                                        color: Colors.white,
+                                        fontSize: 16.0,
+                                        letterSpacing: 0.0,
+                                        fontWeight: FontWeight.w600,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontStyle,
+                                      ),
+                                  elevation: 0.0,
+                                  borderSide: BorderSide(
+                                    color: Colors.transparent,
+                                    width: 1.0,
                                   ),
-                          elevation: 0.0,
-                          borderSide: BorderSide(
-                            color: Colors.transparent,
-                            width: 1.0,
+                                  borderRadius: BorderRadius.circular(12.0),
+                                ),
+                              ),
+                            ),
                           ),
-                          borderRadius: BorderRadius.circular(12.0),
-                        ),
+                          Expanded(
+                            child: Padding(
+                              padding: EdgeInsets.all(5.0),
+                              child: FFButtonWidget(
+                                onPressed: () async {
+                                  await widget!.eliminarUser!.reference
+                                      .update(createUsuariosRecordData(
+                                    estado: UserEstadoDatos.Inactivo,
+                                  ));
+
+                                  await AuditoriaRecord.collection
+                                      .doc()
+                                      .set(createAuditoriaRecordData(
+                                        fechaAUD: getCurrentTimestamp,
+                                        accionAUD: 'DELETE',
+                                        usuarioAUD: currentUserReference,
+                                        productoAUD: valueOrDefault<String>(
+                                          currentUserEmail,
+                                          'Email Error',
+                                        ),
+                                        tablaAUD: 'USUARIO',
+                                      ));
+                                  context.safePop();
+                                },
+                                text: FFLocalizations.of(context).getText(
+                                  'wsbyqm86' /* Desactivar usuario */,
+                                ),
+                                options: FFButtonOptions(
+                                  width: double.infinity,
+                                  height: 50.0,
+                                  padding: EdgeInsets.all(8.0),
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 0.0),
+                                  color: FlutterFlowTheme.of(context).primary,
+                                  textStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .override(
+                                        font: GoogleFonts.plusJakartaSans(
+                                          fontWeight: FontWeight.w600,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontStyle,
+                                        ),
+                                        color: Colors.white,
+                                        fontSize: 16.0,
+                                        letterSpacing: 0.0,
+                                        fontWeight: FontWeight.w600,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontStyle,
+                                      ),
+                                  elevation: 0.0,
+                                  borderSide: BorderSide(
+                                    color: Colors.transparent,
+                                    width: 1.0,
+                                  ),
+                                  borderRadius: BorderRadius.circular(12.0),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                       FFButtonWidget(
                         onPressed: () async {
