@@ -133,19 +133,19 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         brightness: Brightness.light,
         scrollbarTheme: ScrollbarThemeData(
-          thumbVisibility: MaterialStateProperty.all(true),
+          thumbVisibility: MaterialStateProperty.all(false),
           trackVisibility: MaterialStateProperty.all(false),
           interactive: true,
           thickness: MaterialStateProperty.all(5.0),
           radius: Radius.circular(100.0),
           thumbColor: MaterialStateProperty.resolveWith((states) {
             if (states.contains(MaterialState.dragged)) {
-              return Color(4293413904);
+              return Color(4279000738);
             }
             if (states.contains(MaterialState.hovered)) {
-              return Color(4293413904);
+              return Color(4279000738);
             }
-            return Color(4293413904);
+            return Color(4279000738);
           }),
           minThumbLength: 25.0,
         ),

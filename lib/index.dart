@@ -92,5 +92,3 @@ export '/admin/productos_admin/gestion_productos/gestion_productos_widget.dart'
     show GestionProductosWidget;
 export '/admin/gestion_pedidos_admin/edita_user_admin/edita_user_admin_widget.dart'
     show EditaUserAdminWidget;
-export '/admin/productos_admin/agregar_productos_test_bug/agregar_productos_test_bug_widget.dart'
-    show AgregarProductosTestBugWidget;

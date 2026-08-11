@@ -510,11 +510,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               collectionNamePath: ['USUARIOS'],
             ),
           ),
-        ),
-        FFRoute(
-          name: AgregarProductosTestBugWidget.routeName,
-          path: AgregarProductosTestBugWidget.routePath,
-          builder: (context, params) => AgregarProductosTestBugWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

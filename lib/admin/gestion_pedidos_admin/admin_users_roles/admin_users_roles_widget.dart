@@ -10,7 +10,6 @@ import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'admin_users_roles_model.dart';
@@ -85,6 +84,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
               automaticallyImplyLeading: false,
               title: Row(
                 mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   InkWell(
                     splashColor: Colors.transparent,
@@ -126,6 +126,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                     .titleLarge
                                     .fontStyle,
                               ),
+                              fontSize: 20.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.w600,
                               fontStyle: FlutterFlowTheme.of(context)
@@ -168,40 +169,33 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      FlutterFlowIconButton(
-                        borderRadius: 12.0,
-                        buttonSize: 40.0,
-                        fillColor: FlutterFlowTheme.of(context).primary,
-                        icon: Icon(
-                          Icons.notifications_rounded,
-                          color: FlutterFlowTheme.of(context).white,
-                          size: 20.0,
-                        ),
-                        onPressed: () {
-                          print('IconButton pressed ...');
-                        },
-                      ),
-                      AuthUserStreamWidget(
-                        builder: (context) => InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
-                            context.pushNamed(PerfilAdminWidget.routeName);
-                          },
-                          child: Container(
-                            width: 56.31,
-                            height: 56.31,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFE9A62A),
-                              image: DecorationImage(
-                                fit: BoxFit.cover,
-                                image: Image.network(
-                                  currentUserPhoto,
-                                ).image,
+                      Padding(
+                        padding: EdgeInsets.all(5.0),
+                        child: AuthUserStreamWidget(
+                          builder: (context) => InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              context.pushNamed(PerfilAdminWidget.routeName);
+                            },
+                            child: Container(
+                              width: 56.31,
+                              height: 56.31,
+                              decoration: BoxDecoration(
+                                color: Color(0xFFE9A62A),
+                                image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: Image.network(
+                                    valueOrDefault<String>(
+                                      currentUserPhoto,
+                                      'https://firebasestorage.googleapis.com/v0/b/proyectoprogramacionmovi-c6375.firebasestorage.app/o/Image-not-found.png?alt=media&token=d7f1ab77-a4b0-4fdb-a373-acbbb22855c2',
+                                    ),
+                                  ).image,
+                                ),
+                                shape: BoxShape.circle,
                               ),
-                              shape: BoxShape.circle,
                             ),
                           ),
                         ),
@@ -535,7 +529,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                       children: [
                                         Text(
                                           FFLocalizations.of(context).getText(
-                                            'gkq08qdz' /* NOMBRE */,
+                                            'gkq08qdz' /* Nombre */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
@@ -561,21 +555,9 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                                         .fontStyle,
                                               ),
                                         ),
-                                        Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            FaIcon(
-                                              FontAwesomeIcons.userCog,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .white,
-                                              size: 24.0,
-                                            ),
-                                          ],
-                                        ),
                                         Text(
                                           FFLocalizations.of(context).getText(
-                                            '6va1fsxk' /* CORREO */,
+                                            '6va1fsxk' /* Correro */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
@@ -601,21 +583,9 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                                         .fontStyle,
                                               ),
                                         ),
-                                        Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Icon(
-                                              FFIcons.kmailCog,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .white,
-                                              size: 26.0,
-                                            ),
-                                          ],
-                                        ),
                                         Text(
                                           FFLocalizations.of(context).getText(
-                                            'p9pi40nv' /* ROL */,
+                                            'p9pi40nv' /* Rol */,
                                           ),
                                           textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)
@@ -644,7 +614,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                         ),
                                         Text(
                                           FFLocalizations.of(context).getText(
-                                            'p3rgr7ei' /* ACCIONES */,
+                                            'p3rgr7ei' /* Acciones */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
@@ -661,7 +631,7 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .white,
-                                                fontSize: 13.0,
+                                                fontSize: 15.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.bold,
                                                 fontStyle:
@@ -903,62 +873,66 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                                         ],
                                                       ),
                                                     ),
-                                                    Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  4.0,
-                                                                  4.0,
-                                                                  8.0,
-                                                                  4.0),
-                                                      child: Container(
-                                                        width: 96.53,
-                                                        decoration:
-                                                            BoxDecoration(
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .accent2,
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      16.0),
-                                                        ),
-                                                        alignment:
-                                                            AlignmentDirectional(
-                                                                -1.0, 0.0),
-                                                        child: FFButtonWidget(
-                                                          onPressed: () {
-                                                            print(
-                                                                'Button pressed ...');
-                                                          },
-                                                          text: valueOrDefault<
-                                                              String>(
-                                                            userListAdminItem
-                                                                .roles,
-                                                            'Sin Rol asignado',
-                                                          ),
-                                                          options:
-                                                              FFButtonOptions(
-                                                            width: 163.49,
-                                                            height: 26.0,
-                                                            padding:
-                                                                EdgeInsetsDirectional
+                                                    Column(
+                                                      mainAxisSize:
+                                                          MainAxisSize.max,
+                                                      children: [
+                                                        Padding(
+                                                          padding:
+                                                              EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                      4.0,
+                                                                      4.0,
+                                                                      8.0,
+                                                                      4.0),
+                                                          child: Container(
+                                                            width: 96.5,
+                                                            decoration:
+                                                                BoxDecoration(
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .accent2,
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          16.0),
+                                                            ),
+                                                            alignment:
+                                                                AlignmentDirectional(
+                                                                    -1.0, 0.0),
+                                                            child:
+                                                                FFButtonWidget(
+                                                              onPressed: () {
+                                                                print(
+                                                                    'Button pressed ...');
+                                                              },
+                                                              text:
+                                                                  valueOrDefault<
+                                                                      String>(
+                                                                userListAdminItem
+                                                                    .roles,
+                                                                'Sin Rol asignado',
+                                                              ),
+                                                              options:
+                                                                  FFButtonOptions(
+                                                                width: 163.5,
+                                                                height: 26.0,
+                                                                padding: EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         0.0,
                                                                         16.0,
                                                                         0.0),
-                                                            iconPadding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0),
-                                                            color: Color(
-                                                                0xFF58CCBE),
-                                                            textStyle:
-                                                                FlutterFlowTheme.of(
+                                                                iconPadding:
+                                                                    EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                color: Color(
+                                                                    0xFF58CCBE),
+                                                                textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .titleSmall
                                                                     .override(
@@ -986,91 +960,102 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                                                                           .titleSmall
                                                                           .fontStyle,
                                                                     ),
-                                                            elevation: 0.0,
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        12.0),
+                                                                elevation: 0.0,
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            12.0),
+                                                              ),
+                                                            ),
                                                           ),
                                                         ),
-                                                      ),
-                                                    ),
-                                                    Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .center,
-                                                      children: [
-                                                        FlutterFlowIconButton(
-                                                          borderRadius: 12.0,
-                                                          buttonSize: 40.0,
-                                                          fillColor:
-                                                              Color(0xFFFDF0E9),
-                                                          icon: Icon(
-                                                            Icons.edit_rounded,
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .tertiary,
-                                                            size: 26.0,
-                                                          ),
-                                                          showLoadingIndicator:
-                                                              true,
-                                                          onPressed: () async {
-                                                            context.pushNamed(
-                                                              EditaUserAdminWidget
-                                                                  .routeName,
-                                                              queryParameters: {
-                                                                'refUserAdmin':
-                                                                    serializeParam(
-                                                                  userListAdminItem
-                                                                      .reference,
-                                                                  ParamType
-                                                                      .DocumentReference,
-                                                                ),
-                                                              }.withoutNulls,
-                                                            );
-                                                          },
-                                                        ),
-                                                        FlutterFlowIconButton(
-                                                          borderRadius: 12.0,
-                                                          buttonSize: 40.0,
-                                                          fillColor:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .warning,
-                                                          icon: Icon(
-                                                            Icons
-                                                                .delete_rounded,
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .error,
-                                                            size: 26.0,
-                                                          ),
-                                                          showLoadingIndicator:
-                                                              true,
-                                                          onPressed: () async {
-                                                            context.pushNamed(
-                                                              AdminEliminarUsuarioWidget
-                                                                  .routeName,
-                                                              queryParameters: {
-                                                                'eliminarUser':
-                                                                    serializeParam(
-                                                                  userListAdminItem,
-                                                                  ParamType
-                                                                      .Document,
-                                                                ),
-                                                              }.withoutNulls,
-                                                              extra: <String,
-                                                                  dynamic>{
-                                                                'eliminarUser':
-                                                                    userListAdminItem,
+                                                        Row(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .center,
+                                                          children: [
+                                                            FlutterFlowIconButton(
+                                                              borderRadius:
+                                                                  12.0,
+                                                              buttonSize: 40.0,
+                                                              fillColor: Color(
+                                                                  0xFFFDF0E9),
+                                                              icon: Icon(
+                                                                Icons
+                                                                    .edit_rounded,
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .tertiary,
+                                                                size: 26.0,
+                                                              ),
+                                                              showLoadingIndicator:
+                                                                  true,
+                                                              onPressed:
+                                                                  () async {
+                                                                context
+                                                                    .pushNamed(
+                                                                  EditaUserAdminWidget
+                                                                      .routeName,
+                                                                  queryParameters:
+                                                                      {
+                                                                    'refUserAdmin':
+                                                                        serializeParam(
+                                                                      userListAdminItem
+                                                                          .reference,
+                                                                      ParamType
+                                                                          .DocumentReference,
+                                                                    ),
+                                                                  }.withoutNulls,
+                                                                );
                                                               },
-                                                            );
-                                                          },
+                                                            ),
+                                                            FlutterFlowIconButton(
+                                                              borderRadius:
+                                                                  12.0,
+                                                              buttonSize: 40.0,
+                                                              fillColor:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .warning,
+                                                              icon: Icon(
+                                                                Icons
+                                                                    .delete_rounded,
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .error,
+                                                                size: 26.0,
+                                                              ),
+                                                              showLoadingIndicator:
+                                                                  true,
+                                                              onPressed:
+                                                                  () async {
+                                                                context
+                                                                    .pushNamed(
+                                                                  AdminEliminarUsuarioWidget
+                                                                      .routeName,
+                                                                  queryParameters:
+                                                                      {
+                                                                    'eliminarUser':
+                                                                        serializeParam(
+                                                                      userListAdminItem,
+                                                                      ParamType
+                                                                          .Document,
+                                                                    ),
+                                                                  }.withoutNulls,
+                                                                  extra: <String,
+                                                                      dynamic>{
+                                                                    'eliminarUser':
+                                                                        userListAdminItem,
+                                                                  },
+                                                                );
+                                                              },
+                                                            ),
+                                                          ].divide(SizedBox(
+                                                              width: 10.0)),
                                                         ),
-                                                      ].divide(SizedBox(
-                                                          width: 10.0)),
+                                                      ],
                                                     ),
                                                   ],
                                                 ),
@@ -1086,45 +1071,6 @@ class _AdminUsersRolesWidgetState extends State<AdminUsersRolesWidget> {
                             ],
                           ),
                         ),
-                      ),
-                    ),
-                    FFButtonWidget(
-                      onPressed: () async {
-                        context.pushNamed(AdminMenuInicialWidget.routeName);
-                      },
-                      text: FFLocalizations.of(context).getText(
-                        'cuqa5wzj' /* Regresar al Menú Principal */,
-                      ),
-                      options: FFButtonOptions(
-                        width: double.infinity,
-                        height: 50.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            24.0, 0.0, 24.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  font: GoogleFonts.plusJakartaSans(
-                                    fontWeight: FontWeight.w600,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .fontStyle,
-                                  ),
-                                  color: FlutterFlowTheme.of(context).primary,
-                                  fontSize: 16.0,
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.w600,
-                                  fontStyle: FlutterFlowTheme.of(context)
-                                      .titleSmall
-                                      .fontStyle,
-                                ),
-                        elevation: 0.0,
-                        borderSide: BorderSide(
-                          color: FlutterFlowTheme.of(context).primary,
-                          width: 2.0,
-                        ),
-                        borderRadius: BorderRadius.circular(12.0),
                       ),
                     ),
                   ]

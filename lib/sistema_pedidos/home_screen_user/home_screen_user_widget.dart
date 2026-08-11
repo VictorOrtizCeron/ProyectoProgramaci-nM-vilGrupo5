@@ -115,7 +115,8 @@ class _HomeScreenUserWidgetState extends State<HomeScreenUserWidget> {
               ),
             ),
             appBar: PreferredSize(
-              preferredSize: Size.fromHeight(34.0),
+              preferredSize:
+                  Size.fromHeight(MediaQuery.sizeOf(context).height * 0.06),
               child: AppBar(
                 backgroundColor: Color(0xFFF7F5F1),
                 automaticallyImplyLeading: false,

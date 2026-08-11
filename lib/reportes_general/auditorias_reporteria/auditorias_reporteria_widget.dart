@@ -420,7 +420,7 @@ class _AuditoriasReporteriaWidgetState extends State<AuditoriasReporteriaWidget>
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'x77na4ox' /* SELECCION DE FECHA */,
+                            'x77na4ox' /* Seleccionar fecha */,
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(

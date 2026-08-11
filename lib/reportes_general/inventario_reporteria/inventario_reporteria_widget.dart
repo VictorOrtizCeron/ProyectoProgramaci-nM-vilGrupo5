@@ -387,7 +387,7 @@ class _InventarioReporteriaWidgetState extends State<InventarioReporteriaWidget>
                       width: MediaQuery.sizeOf(context).width * 1.0,
                       height: MediaQuery.sizeOf(context).height * 0.1,
                       decoration: BoxDecoration(
-                        color: Color(0xFFE84C10),
+                        color: FlutterFlowTheme.of(context).primary,
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 4.0,

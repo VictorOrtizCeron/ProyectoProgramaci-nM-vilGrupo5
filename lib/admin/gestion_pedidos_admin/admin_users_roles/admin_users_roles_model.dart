@@ -11,7 +11,6 @@ import '/index.dart';
 import 'admin_users_roles_widget.dart' show AdminUsersRolesWidget;
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 

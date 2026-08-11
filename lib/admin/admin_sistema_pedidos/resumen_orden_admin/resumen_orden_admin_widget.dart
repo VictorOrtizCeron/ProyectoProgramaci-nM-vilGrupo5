@@ -143,7 +143,7 @@ class _ResumenOrdenAdminWidgetState extends State<ResumenOrdenAdminWidget> {
                             width: 80.0,
                             height: 80.0,
                             decoration: BoxDecoration(
-                              color: Color(0xFFFF6A4D),
+                              color: FlutterFlowTheme.of(context).primary,
                               shape: BoxShape.circle,
                             ),
                             child: Align(

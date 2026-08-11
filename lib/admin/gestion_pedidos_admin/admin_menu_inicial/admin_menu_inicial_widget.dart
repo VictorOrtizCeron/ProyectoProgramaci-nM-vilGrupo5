@@ -70,8 +70,8 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
               children: [
                 AuthUserStreamWidget(
                   builder: (context) => Container(
-                    width: 60.0,
-                    height: 60.0,
+                    width: 45.0,
+                    height: 45.0,
                     clipBehavior: Clip.antiAlias,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
@@ -146,6 +146,7 @@ class _AdminMenuInicialWidgetState extends State<AdminMenuInicialWidget> {
                                     .bodySmall
                                     .fontStyle,
                               ),
+                          overflow: TextOverflow.ellipsis,
                         ),
                       ),
                     ].divide(SizedBox(height: 2.0)),

@@ -181,7 +181,8 @@ class _EliminarProductos2WidgetState extends State<EliminarProductos2Widget> {
                                         0.0, 20.0, 0.0, 0.0),
                                     child: Icon(
                                       Icons.check_box_rounded,
-                                      color: Color(0xFFE98F6B),
+                                      color:
+                                          FlutterFlowTheme.of(context).primary,
                                       size: 100.0,
                                     ),
                                   ),
@@ -265,7 +266,8 @@ class _EliminarProductos2WidgetState extends State<EliminarProductos2Widget> {
                                         iconPadding:
                                             EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: Color(0xFFE98F6B),
+                                        color: FlutterFlowTheme.of(context)
+                                            .primary,
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(

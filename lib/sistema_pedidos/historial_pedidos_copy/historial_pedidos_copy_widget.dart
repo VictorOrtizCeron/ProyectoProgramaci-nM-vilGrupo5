@@ -642,7 +642,7 @@ class _HistorialPedidosCopyWidgetState extends State<HistorialPedidosCopyWidget>
                                                                                 0.0,
                                                                                 0.0),
                                                                             color:
-                                                                                Color(0xFFE84C10),
+                                                                                FlutterFlowTheme.of(context).primary,
                                                                             textStyle: FlutterFlowTheme.of(context).labelMedium.override(
                                                                                   font: GoogleFonts.plusJakartaSans(
                                                                                     fontWeight: FlutterFlowTheme.of(context).labelMedium.fontWeight,

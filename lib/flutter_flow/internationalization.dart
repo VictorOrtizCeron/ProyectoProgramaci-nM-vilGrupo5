@@ -945,24 +945,20 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Administrador',
     },
     'gkq08qdz': {
-      'en': 'NOMBRE',
+      'en': 'Nombre',
       'es': 'NOMBRE',
     },
     '6va1fsxk': {
-      'en': 'CORREO',
+      'en': 'Correro',
       'es': 'CORREO',
     },
     'p9pi40nv': {
-      'en': 'ROL',
+      'en': 'Rol',
       'es': 'ROL',
     },
     'p3rgr7ei': {
-      'en': 'ACCIONES',
+      'en': 'Acciones',
       'es': 'ACCIONES',
-    },
-    'cuqa5wzj': {
-      'en': 'Regresar al Menú Principal',
-      'es': 'Regresar al Menú Principal',
     },
   },
   // VerInventario
@@ -1593,7 +1589,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Volver',
     },
     '2ncqjmxx': {
-      'en': 'SELECCION DE FECHA',
+      'en': 'Seleccionar fecha',
       'es': 'SELECCIÓN DE FECHA',
     },
     '87vsneuc': {
@@ -1949,7 +1945,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Volver',
     },
     'x77na4ox': {
-      'en': 'SELECCION DE FECHA',
+      'en': 'Seleccionar fecha',
       'es': 'SELECCIÓN DE FECHA',
     },
     '84bn3fyi': {
@@ -2229,7 +2225,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Desactivar Producto',
     },
     'mmho6n6f': {
-      'en': 'SELECCION DE\nPRODUCTO',
+      'en': 'Selección de producto',
       'es': 'SELECCIÓN DE PRODUCTO',
     },
     'qlf56puc': {
@@ -2789,17 +2785,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Actualizar Datos',
     },
   },
-  // AgregarProductosTestBug
-  {
-    '3r7cndw7': {
-      'en': 'Si redirige',
-      'es': '',
-    },
-    'c81dhh8n': {
-      'en': 'Home',
-      'es': '',
-    },
-  },
   // registerSuccess_modal
   {
     'vkxriblo': {
@@ -3250,7 +3235,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Permite tu Ubicacion Aca!',
     },
     'x81293r2': {
-      'en': 'Select Location',
+      'en': 'Selecciona  tu localización',
       'es': 'Seleccionar ubicación',
     },
     '5s1qt1ir': {
@@ -3258,15 +3243,15 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Coordenadas seleccionadas',
     },
     'ojq86myy': {
-      'en': 'Cancel',
+      'en': 'Cancelar',
       'es': 'Cancelar',
     },
     '1gai6scc': {
-      'en': 'Confirm Location',
+      'en': 'Confirma localización',
       'es': 'Confirmar ubicación',
     },
     'sw8xt2b3': {
-      'en': 'Getting your location...',
+      'en': 'Obteniendo tu localización...',
       'es': 'Obteniendo su ubicación...',
     },
   },

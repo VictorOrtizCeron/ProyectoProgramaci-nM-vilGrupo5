@@ -388,7 +388,7 @@ class _CierresReporteriaWidgetState extends State<CierresReporteriaWidget>
                       width: MediaQuery.sizeOf(context).width * 1.0,
                       height: MediaQuery.sizeOf(context).height * 0.1,
                       decoration: BoxDecoration(
-                        color: Color(0xFFE84C10),
+                        color: FlutterFlowTheme.of(context).primary,
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 4.0,
@@ -405,7 +405,7 @@ class _CierresReporteriaWidgetState extends State<CierresReporteriaWidget>
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            '2ncqjmxx' /* SELECCION DE FECHA */,
+                            '2ncqjmxx' /* Seleccionar fecha */,
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(

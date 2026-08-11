@@ -242,7 +242,6 @@ final parametersBuilderMap =
           'refUserAdmin': getParameter<DocumentReference>(data, 'refUserAdmin'),
         },
       ),
-  'AgregarProductosTestBug': ParameterData.none(),
 };
 
 Map<String, dynamic> getInitialParameterData(Map<String, dynamic> data) {

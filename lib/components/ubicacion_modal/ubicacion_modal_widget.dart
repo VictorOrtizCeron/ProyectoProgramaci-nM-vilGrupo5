@@ -150,7 +150,7 @@ class _UbicacionModalWidgetState extends State<UbicacionModalWidget> {
                       children: [
                         Text(
                           FFLocalizations.of(context).getText(
-                            'x81293r2' /* Select Location */,
+                            'x81293r2' /* Selecciona  tu localización */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .headlineSmall
@@ -161,6 +161,7 @@ class _UbicacionModalWidgetState extends State<UbicacionModalWidget> {
                                       .headlineSmall
                                       .fontStyle,
                                 ),
+                                fontSize: 22.0,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.w600,
                                 fontStyle: FlutterFlowTheme.of(context)
@@ -329,7 +330,7 @@ class _UbicacionModalWidgetState extends State<UbicacionModalWidget> {
                             Navigator.pop(context);
                           },
                           text: FFLocalizations.of(context).getText(
-                            'ojq86myy' /* Cancel */,
+                            'ojq86myy' /* Cancelar */,
                           ),
                           options: FFButtonOptions(
                             width: 120.0,
@@ -406,7 +407,7 @@ class _UbicacionModalWidgetState extends State<UbicacionModalWidget> {
                               _model.updatePage(() {});
                             },
                             text: FFLocalizations.of(context).getText(
-                              '1gai6scc' /* Confirm Location */,
+                              '1gai6scc' /* Confirma localización */,
                             ),
                             options: FFButtonOptions(
                               height: 48.45,
@@ -469,7 +470,7 @@ class _UbicacionModalWidgetState extends State<UbicacionModalWidget> {
                             ),
                             Text(
                               FFLocalizations.of(context).getText(
-                                'sw8xt2b3' /* Getting your location... */,
+                                'sw8xt2b3' /* Obteniendo tu localización... */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
