@@ -7,7 +7,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import '/flutter_flow/permissions_util.dart';
-import '/index.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -179,8 +178,7 @@ class _UbicacionModalWidgetState extends State<UbicacionModalWidget> {
                             size: 24.0,
                           ),
                           onPressed: () async {
-                            context.pushNamed(HomeScreenUserWidget.routeName);
-
+                            context.safePop();
                             _model.updatePage(() {});
                           },
                         ),
